@@ -1,4 +1,4 @@
-name="41st Elite Corp Aux Mod";
+name="41st Elite Corps Aux Mod";
 author="41st Dev Team";
 picture="";
 overview="";
