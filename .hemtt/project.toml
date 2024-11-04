@@ -1,0 +1,7 @@
+name = "41st Elite Corp Aux Mod"
+author = "41st Dev Team"
+prefix = "41st"
+mainprefix = "z"
+
+[hemtt.release]
+archive = false # Default: true
