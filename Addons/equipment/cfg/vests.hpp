@@ -13,7 +13,8 @@ class GVEST(Base_Chest): SWLB_CEE_ARF_Vest
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Base = "Chest";
+        rank = "Base";
+		Style = "Chest";
     };
 };
 
@@ -32,7 +33,8 @@ class GVEST(Enlisted_Chest): SWLB_CEE_Force_Recon_NCO
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Enlisted = "Chest";
+        rank = "Enlisted";
+		Style = "Chest";
     };
 };
 
@@ -51,7 +53,8 @@ class GVEST(Sergeant_Chest): SWLB_CEE_Force_Recon_NCO
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Sergeant = "Chest";
+        rank = "Sergeant";
+		Style = "Chest";
     };
 };
 
@@ -70,7 +73,8 @@ class GVEST(Officer_Chest): SWLB_CEE_Force_Recon_Officer
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Officer = "Chest";
+        rank = "Officer";
+		Style = "Chest";
     };
 };
 
@@ -89,7 +93,8 @@ class GVEST(Base_Engineer): SWLB_CEE_Engineer_Vest
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Base = "Engineer";
+        rank = "Base";
+		Style = "Engineer";
     };
 };
 
@@ -108,7 +113,8 @@ class GVEST(Enlisted_Engineer): SWLB_CEE_Engineer_Vest_NCO
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Enlisted = "Engineer";
+        rank = "Enlisted";
+		Style = "Engineer";
     };
 };
 
@@ -127,7 +133,8 @@ class GVEST(Officer_Engineer): SWLB_CEE_Engineer_Vest_Officer
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Officer = "Engineer";
+        rank = "Officer";
+		Style = "Engineer";
     };
 };
 
@@ -146,7 +153,8 @@ class GVEST(Base_Recon): SWLB_clone_recon_armor
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Base = "Recon";
+        rank = "Base";
+		Style = "Recon";
     };
 };
 
@@ -165,7 +173,8 @@ class GVEST(Sergeant_Recon): SWLB_clone_recon_nco_armor
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Sergeant = "Recon";
+        rank = "Sergeant";
+		Style = "Recon";
     };
 };
 
@@ -184,7 +193,8 @@ class GVEST(Officer_Recon): SWLB_clone_recon_officer_armor
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Officer = "Recon";
+        rank = "Officer";
+		Style = "Recon";
     };
 };
 
@@ -203,7 +213,8 @@ class GVEST(Base_Heavy): ls_gar_heavy_vest
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Base = "Heavy";
+        rank = "Base";
+		Style = "Heavy";
     };
 };
 
@@ -222,7 +233,8 @@ class GVEST(Enlisted_Heavy): ls_gar_heavyAlt_vest
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Enlisted = "Heavy";
+        rank = "Enlisted";
+		Style = "Heavy";
     };
 };
 
@@ -241,7 +253,8 @@ class GVEST(Officer_Heavy): ls_gar_airborneOfficer_vest
 
 	class XtdGearInfo {
         model = QGVAR(Vest);
-        Officer = "Heavy";
+        rank = "Officer";
+		Style = "Heavy";
     };
 };
 

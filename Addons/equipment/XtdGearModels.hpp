@@ -69,58 +69,29 @@ class XtdGearModels
 		class GVAR(Vest) {
 			label = "(41st) Rank Vests";
 			author = AUTHOR;
-			options[] = {"Base","Enlisted","Sergeant","Officer"};
+			options[] = {"rank", "style"};
 
-			class Base {
-				changeingame = 0;
-				values[] = 
-				{
-					"Chest","Engineer","Recon","Heavy"
-				};
+			class rank {
+				label = "Rank";
+				alwaysSelectable = 1;
+				changeInGame = 0;
+				values[] = {"Base", "Enlisted", "Sergeant", "Officer"};
 
-				class Chest { label = "Chest";};
-				class Engineer { label = "Engineer";};
-				class Recon { label = "Recon";};
-				class Heavy { label = "Heavy";};
+				class Base { label = "Base"; };
+				class Enlisted { label = "Enlisted"; };
+				class Sergeant { label = "Sergeant"; };
+				class Officer { label = "Officer"; };
 			};
 
-			class Enlisted {
-				changeingame = 0;
-				values[] = 
-				{
-					"Chest","Engineer","Recon","Heavy"
-				};
+			class style: rank {
+				label = "Style";
+				alwaysSelectable = 0;
+				values[] = {"Chest", "Engineer", "Recon", "Heavy"};
 
-				class Chest { label = "Chest";};
-				class Engineer { label = "Engineer";};
-				class Recon { label = "Recon";};
-				class Heavy { label = "Heavy";};
-			};
-
-			class Sergeant {
-				changeingame = 0;
-				values[] = 
-				{
-					"Chest","Engineer","Recon","Heavy"
-				};
-
-				class Chest { label = "Chest";};
-				class Engineer { label = "Engineer";};
-				class Recon { label = "Recon";};
-				class Heavy { label = "Heavy";};
-			};
-
-			class Officer {
-				changeingame = 0;
-				values[] = 
-				{
-					"Chest","Engineer","Recon","Heavy"
-				};
-
-				class Chest { label = "Chest";};
-				class Engineer { label = "Engineer";};
-				class Recon { label = "Recon";};
-				class Heavy { label = "Heavy";};
+				class Chest { label = "Chest"; };
+				class Engineer { label = "Engineer"; };
+				class Recon { label = "Recon"; };
+				class Heavy { label = "Heavy"; };
 			};
 		};
 
@@ -173,5 +144,5 @@ class XtdGearModels
 				class Bags { label = "Bags";};
 			};
 		};
-	};
+    };
 };
