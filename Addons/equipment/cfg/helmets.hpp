@@ -7,7 +7,7 @@ class GHELMET(P2): ls_gar_phase2_helmet
 	{
 		"camo1","visor"
 	};
-	hiddenselectionsmaterials[]= {QPATHTOF(data\Helmets\Base\Rank\p2Helmet.rvmat)};
+	hiddenselectionsmaterials[]= {QPATHTOF(data\Helmets\Base\Rank\P2Helmet.rvmat)};
 	hiddenSelectionsTextures[]=
 	{
 		QPATHTOF(data\Helmets\Base\Rank\p2Helmet_unmarked_co.paa)

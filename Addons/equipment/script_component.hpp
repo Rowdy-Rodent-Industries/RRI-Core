@@ -289,8 +289,8 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     editorSubcategory = QEGVAR(edsubcat,##var1##);\
 	hiddenSelectionsTextures[]=\
 	{\
-		QPATHTOF(data\uniforms\##var1##\Ranks\##var2##_Armor_##var1##_Upper_CO.paa),\
-		QPATHTOF(data\uniforms\##var1##\Ranks\##var2##_Armor_##var1##_Lower_CO.paa),\
+		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor1_##var2##_CO.paa),\
+		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor2_##var2##_CO.paa),\
 		"SFA_Equipment_R\Uniform\Havoc\data\Havoc_Undersuit_co.paa"\
 	};\
 	linkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\

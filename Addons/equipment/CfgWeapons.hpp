@@ -84,8 +84,15 @@ class CfgWeapons
 		#include "cfg\helmets.hpp"
 
 	//Uniforms
-		class ls_gar_phase2_uniform;
-		class ls_gar_marshalCommander_uniform;
+		class ls_blueforUniform_base;
+		class ls_gar_phase2_uniform:ls_blueforUniform_base
+		{
+			class ItemInfo;
+		};
+		class ls_gar_marshalCommander_uniform:ls_blueforUniform_base
+		{
+			class ItemInfo;
+		};
 
 		#include "cfg\Uniforms.hpp"
 };

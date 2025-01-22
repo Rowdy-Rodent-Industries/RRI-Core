@@ -1,11 +1,12 @@
 class GUNIFORM(Base): ls_gar_phase2_uniform
 {
 	scope = 2;
+	scopeArsenal = 2;
 	displayName = "(41st) P2 Uniform";
 
 	class ItemInfo: ItemInfo {
 		uniformType = "Neopren";
-		uniformClass = QGUNIT(base);
+		uniformClass = QGUNIT(Base);
 		containerClass = UNIFORM_SUPPLYCLASS;
 		mass = 40;
 	};
