@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
@@ -14,6 +15,11 @@ class CfgPatches {
     };
 };
 
-#include "CfgFactionClasses.hpp"
-#include "CfgEditorCategories.hpp"
-#include "CfgEditorSubcategories.hpp"
+	class Mode_SemiAuto;
+	class Mode_Burst;
+    class Mode_FullAuto;
+    class CowsSlot;
+
+    #include "CfgWeapons.hpp"
+    #include "CfgVehicles.hpp"
+    #include "XtdGearModels.hpp"
