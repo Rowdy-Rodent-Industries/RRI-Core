@@ -1,17 +1,17 @@
-#define COMPONENT weapons
-#define COMPONENT_BEAUTIFIED weapons
+#define COMPONENT equipment
+#define COMPONENT_BEAUTIFIED equipment
 #include "\z\rri\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
 // #define ENABLE_PERFORMANCE_COUNTERS
 
-#ifdef DEBUG_ENABLED_WEAPONS
+#ifdef DEBUG_ENABLED_EQUIPMENT
     #define DEBUG_MODE_FULL
 #endif
 
-#ifdef DEBUG_SETTINGS_WEAPONS
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_WEAPONS
+#ifdef DEBUG_SETTINGS_EQUIPMENT
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_EQUIPMENT
 #endif
 
 #define HELMET_PROTECTION \
@@ -224,5 +224,99 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
         depends = "HitHead"; \
     };\
 }
+
+//Helmets
+#define MACRO_RANK_HELMET(var1,var2,var3) class GHELMET(##var2##_##var3##): GHELMET(##var2##) {\
+	scope = ##var1##;\
+	scopeArsenal = ##var1##;\
+	author = AUTHOR;\
+	displayName = QUOTE((41st) ##var2## ##var3## Helmet);\
+	hiddenSelections[]=\
+	{\
+		"camo1","visor"\
+	};\
+	hiddenSelectionsTextures[]=\
+	{\
+		QPATHTOF(data\Helmets\##var2##\Rank\##var2##_##var3##_CO.paa),"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"\
+	};\
+	class XtdGearInfo {\
+        model = QGVAR(helmet);\
+        Type = QUOTE(##var2##);\
+		Rank = QUOTE(##var3##);\
+    };\
+}
+
+#define MACRO_Custom_Helmet(var1,var2,var3) class GHELMET(##var2##): GHELMET(##var3##) {\
+	scope = ##var1##;\
+	scopeArsenal = ##var1##;\
+	author = AUTHOR;\
+	displayName = QUOTE((41st) ##var2## ##var3## Helmet);\
+	hiddenSelections[]=\
+	{\
+		"camo1","visor"\
+	};\
+	hiddenSelectionsTextures[]=\
+	{\
+		QPATHTOF(data\helmets\##var3##\Custom\##var3##_##var2##_CO.paa)\
+	};\
+}
+
+// Uniforms
+#define MACRO_UNIFORM(var1,var2)class GUNIFORM(##var1##_##var2##): GUNIFORM(Base){\
+	scope = 2;\
+	scopeArsenal = 2;\
+	author = AUTHOR;\
+	displayName = QUOTE((41st) ##var1## Uniform (##var2##));\
+	class ItemInfo: ItemInfo {\
+		uniformClass = QGUNIT(##var1##_##var2##);\
+	};\
+	class XtdGearInfo {\
+        model = QGVAR(Uniforms);\
+        Type = QUOTE(##var1##);\
+		Rank = QUOTE(##var2##);\
+    };\
+}
+
+// Units
+#define MACRO_RANK_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
+	scope = 2;\
+	scopeArsenal = 2;\
+	displayName = QUOTE((41st) ##var1## Trooper (##var2##));\
+	uniformClass = QGUNIFORM(##var1##_##var2##);\
+	side = 1;\
+    faction = QEGVAR(faction,41st);\
+	editorCategory = QEGVAR(edcat,41st);\
+    editorSubcategory = QEGVAR(edsubcat,##var1##);\
+	hiddenSelectionsTextures[]=\
+	{\
+		QPATHTOF(data\uniforms\##var1##\Ranks\##var2##_Armor_##var1##_Upper_CO.paa),\
+		QPATHTOF(data\uniforms\##var1##\Ranks\##var2##_Armor_##var1##_Lower_CO.paa),\
+		"SFA_Equipment_R\Uniform\Havoc\data\Havoc_Undersuit_co.paa"\
+	};\
+	linkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
+	respawnLinkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
+	UNIT_HITPOINTS;\
+}
+
+#define MACRO_CUSTOM_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
+	scope = 2;\
+	scopeArsenal = 2;\
+	displayName = QUOTE((41st) ##var1## Trooper (##var2##));\
+	uniformClass = QGUNIFORM(##var1##_##var2##);\
+	side = 1;\
+    faction = QEGVAR(faction,41st);\
+	editorCategory = QEGVAR(edcat,41st);\
+    editorSubcategory = QEGVAR(edsubcat,##var1##);\
+	hiddenSelectionsTextures[]=\
+	{\
+		QPATHTOF(data\uniforms\##var1##\Custom\##var2##_Armor_##var1##_Upper_CO.paa),\
+		QPATHTOF(data\uniforms\##var1##\Custom\##var2##_Armor_##var1##_Lower_CO.paa),\
+		"SFA_Equipment_R\Uniform\Havoc\data\Havoc_Undersuit_co.paa"\
+	};\
+	linkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
+	respawnLinkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
+	UNIT_HITPOINTS;\
+}
+
 
 #include "\z\rri\addons\main\script_macros.hpp"

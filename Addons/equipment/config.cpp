@@ -1,11 +1,20 @@
 #include "script_component.hpp"
 
+#include "config_lists.hpp" 
 
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            BACKPACK_LIST,
+            UNIT_LIST
+        };
+        weapons[] = {
+            HELMET_LIST,
+            NVG_LIST,
+            UNIFORM_LIST,
+            VEST_LIST
+        };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"rri_main"};
         author = AUTHOR;

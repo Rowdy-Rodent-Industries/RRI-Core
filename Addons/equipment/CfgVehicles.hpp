@@ -9,9 +9,9 @@ class CfgVehicles
 	class SWLB_clone_bag_belt;
 	class SWLB_clone_bag;
 
-	#include "cfg/Backpacks.hpp"
+	#include "cfg/backpacks.hpp"
 
 	class lsd_gar_phase2_base;
 	class ls_gar_marshalCommander_base;
-	#include "cfg/Units.hpp"
+	#include "cfg/units.hpp"
 };

@@ -5,16 +5,32 @@ class XtdGearModels
 		class GVAR(helmet) {
 			label = "(41st) Rank Helmets";
 			author = AUTHOR;
-			options[] = {"camo"};
+			options[] = {"Type", "Rank"};
 
-			class camo {
+			class Type {
 				changeingame = 0;
 				values[] = 
 				{
-
+					"P2","Pilot","ARF","BARC","RTO"
 				};
 
-				class test { label = "";};
+				class P2 { label = "P2";};
+				class Pilot { label = "Pilot";};
+				class ARF { label = "ARF";};
+				class BARC { label = "BARC";};
+				class RTO { label = "RTO";};
+			};
+			class Rank: Type {
+				changeingame = 0;
+				values[] = 
+				{
+					"Recruit","Enlisted","Veteran","NCO"
+				};
+
+				class Recruit { label = "Recruit";};
+				class Enlisted { label = "Enlisted";};
+				class Veteran { label = "Veteran";};
+				class NCO { label = "NCO";};
 			};
 		};
 
@@ -37,16 +53,32 @@ class XtdGearModels
 		class GVAR(uniforms) {
 			label = "(41st) Rank Unforms";
 			author = AUTHOR;
-			options[] = {"camo"};
+			options[] = {"Type", "Rank"};
 
-			class camo {
+			class Type {
 				changeingame = 0;
 				values[] = 
 				{
-
+					"P2","Pilot","ARF","BARC","RTO"
 				};
 
-				class test { label = "";};
+				class P2 { label = "P2";};
+				class Pilot { label = "Pilot";};
+				class ARF { label = "ARF";};
+				class BARC { label = "BARC";};
+				class RTO { label = "RTO";};
+			};
+			class Rank: Type {
+				changeingame = 0;
+				values[] = 
+				{
+					"Recruit","Enlisted","Veteran","NCO"
+				};
+
+				class Recruit { label = "Recruit";};
+				class Enlisted { label = "Enlisted";};
+				class Veteran { label = "Veteran";};
+				class NCO { label = "NCO";};
 			};
 		};
 

@@ -23,3 +23,8 @@ class GUNIFORM(MC): ls_gar_marshalCommander_uniform
 		mass = 40;
 	};
 };
+
+MACRO_UNIFORM(P2,Recruit);
+MACRO_UNIFORM(P2,Enlisted);
+MACRO_UNIFORM(P2,Veteran);
+MACRO_UNIFORM(P2,NCO);

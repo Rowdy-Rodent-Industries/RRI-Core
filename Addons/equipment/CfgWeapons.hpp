@@ -59,33 +59,33 @@ class CfgWeapons
 	
 	#include "cfg\vests.hpp"
 
-//NVG
-	class JLTS_NVG_droid_chip_1;
-	class lsd_gar_standard_nvg;
-	class lsd_gar_standardSPC_nvg;
-	class lsd_gar_rangefinder_nvg;
-	class lsd_gar_p2SingleHeadLamp_nvg;
-	class lsd_gar_medicalScannerSPC_nvg;
-	class lsd_gar_p2Commander_nvg;
-	class lsd_gar_p2MarshalCommander_nvg;
-	class SWLB_CEE_Engineer_Comms;
-	class lsd_gar_artilleryGunner_nvg;
-	class ls_memefor_splinterCell_nvg;
+	//NVG
+		class JLTS_NVG_droid_chip_1;
+		class lsd_gar_standard_nvg;
+		class lsd_gar_standardSPC_nvg;
+		class lsd_gar_rangefinder_nvg;
+		class lsd_gar_p2SingleHeadLamp_nvg;
+		class lsd_gar_medicalScannerSPC_nvg;
+		class lsd_gar_p2Commander_nvg;
+		class lsd_gar_p2MarshalCommander_nvg;
+		class SWLB_CEE_Engineer_Comms;
+		class lsd_gar_artilleryGunner_nvg;
+		class ls_memefor_splinterCell_nvg;
 
-	#include "cfg\nvg.hpp"
+		#include "cfg\nvg.hpp"
 
-//Helemts
-	class ls_gar_phase2_helmet;
-	class ls_gar_phase2Pilot_helmet;
-	class ls_gar_phase1Arf_helmet;
-	class ls_gar_barc_helmet;
-	class ls_sob_phase2SpecOp_helmet;
+	//Helemts
+		class ls_gar_phase2_helmet;
+		class ls_gar_phase2Pilot_helmet;
+		class ls_gar_phase1Arf_helmet;
+		class ls_gar_barc_helmet;
+		class ls_sob_phase2SpecOp_helmet;
 
-	#include "cfg\helmets.hpp"
+		#include "cfg\helmets.hpp"
 
-//Uniforms
-	class ls_gar_phase2_uniform;
-	class ls_gar_marshalCommander_uniform;
+	//Uniforms
+		class ls_gar_phase2_uniform;
+		class ls_gar_marshalCommander_uniform;
 
-	#include "cfg\Uniforms.hpp"
+		#include "cfg\Uniforms.hpp"
 };
