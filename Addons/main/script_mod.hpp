@@ -1,7 +1,7 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
 #define MAINPREFIX z
-#define PREFIX EC
+#define PREFIX rri
 
 #define AUTHOR QUOTE(41st Aux Team)
 #define MOD_NAME_BEAUTIFIED QUOTE(41st Aux Mod)

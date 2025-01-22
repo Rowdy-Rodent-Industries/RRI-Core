@@ -1,6 +1,6 @@
 #define COMPONENT common
 #define COMPONENT_BEAUTIFIED Common
-#include "\z\41st-AUX\addons\main\script_mod.hpp"
+#include "\z\rri\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,4 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_COMMON
 #endif
 
-#include "\z\41st-AUX\addons\main\script_macros.hpp"
+#include "\z\rri\addons\main\script_macros.hpp"
