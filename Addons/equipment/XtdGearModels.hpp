@@ -121,7 +121,10 @@ class XtdGearModels
 				class SpecOp { label = "SpecOp";};
 			};
 		};
+    };
 
+	class CfgVehicles
+	{
 		class GVAR(backpacks) {
 			label = "(41st) backpacks";
 			author = AUTHOR;
@@ -144,5 +147,5 @@ class XtdGearModels
 				class Bags { label = "Bags";};
 			};
 		};
-    };
+	};
 };
