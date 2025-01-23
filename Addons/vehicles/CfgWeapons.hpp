@@ -8,7 +8,10 @@ class CfgWeapons {
 	class 3as_BTLB_Heavy_Cannon;
 	class Cannon_30mm_Plane_CAS_02_F;
 	class 3as_LAAT_Medium_Canon;
-	class 3as_ARC_Light_Canon;
+	class 3AS_ARC_Light_Canon: Cannon_30mm_Plane_CAS_02_F
+	{
+		class LowROF;
+	};
 	class Mk82BombLauncher;
 //Precision Weapons
 
@@ -268,7 +271,7 @@ class CfgWeapons {
         magazines[] = {QGVAR(AG_Cannon_Mag)};
         reloadTime = 0.30;
 
-		class Manual: 3as_ARC_Light_Canon
+		class Manual: 3AS_ARC_Light_Canon
 		{
 			reloadTime=0.5;
 			displayName="Air to Ground Cannon";
@@ -299,7 +302,7 @@ class CfgWeapons {
 
 	class GVAR(Heavy_Cannon): CannonCore
 	{
-		displayName = "Arc Rear Cannon";
+		displayName = "Arc Heavy Cannon";
 		canLock=1;
 		ballisticsComputer="4 + 2 + 8";
 		burst=1;
@@ -397,11 +400,7 @@ class CfgWeapons {
 		};
 	};
 
-	class 3as_ARC_Light_Canon_Rear: Cannon_30mm_Plane_CAS_02_F
-	{
-		class LowROF;
-	};
-	class GVAR(Rear_Cannon): 3as_ARC_Light_Canon_Rear
+	class GVAR(ARC_Cannon): 3AS_ARC_Light_Canon
 	{
 		scope = 2;
 		displayName = "Arc Air to Air Cannon";
@@ -411,7 +410,7 @@ class CfgWeapons {
 
 		magazines[] = 
 		{
-			QGVAR(Rear_Cannon_Mag)
+			QGVAR(ARC_Cannon_Mag)
 		};
 
 		reloadTime = 0.05;

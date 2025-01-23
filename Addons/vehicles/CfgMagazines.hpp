@@ -209,10 +209,10 @@ class CfgMagazines {
         initSpeed = 1200;
     };
 
-    class GVAR(Rear_Cannon_Mag): 3as_PylonWeapon_ARC_240Rnd_Heavy_Shells
+    class GVAR(ARC_Cannon_Mag): 3as_PylonWeapon_ARC_240Rnd_Heavy_Shells
     {
         count = 1000;
-        ammo = QGVAR(Heavy_Cannon_Ammo);
+        ammo = QGVAR(AA_Cannon_Ammo);
         displayName = "Rear Cannon";
         displayNameShort = "A2A";
         tracersEvery = 1;

@@ -64,4 +64,16 @@ class CfgVehicles
 	};
 	#include "cfg\aircraft\laati.hpp"
     #include "cfg\aircraft\laatc.hpp"
+
+	class Plane_Fighter_03_base_F;
+	class Plane_Fighter_03_dynamicLoadout_base_F;
+	class 3as_arc_170_base: Plane_Fighter_03_dynamicLoadout_base_F
+	{
+		class Turrets;
+		class Components;
+		class ACE_SelfActions;
+		class AnimationSources;
+	};
+
+	#include "cfg\aircraft\arc.hpp"
 };
