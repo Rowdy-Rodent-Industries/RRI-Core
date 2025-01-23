@@ -6,7 +6,7 @@ class CfgEditorSubcategories {
 	class GVAR(edsubcat_Fixed) {
 		displayName = "Fixed Wing";
 	};
-	class GVAR(edsubcat_Helo) {
+	class GVAR(edsubcat_Heli) {
 		displayName = "Helicopters";
 	};
         

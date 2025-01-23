@@ -20,6 +20,32 @@ class CfgPatches {
     class Mode_FullAuto;
     class CowsSlot;
 
+    class SensorTemplatePassiveRadar;
+    class SensorTemplateAntiRadiation;
+    class SensorTemplateActiveRadar;
+    class SensorTemplateIR;
+    class SensorTemplateVisual;
+    class SensorTemplateMan;
+    class SensorTemplateLaser;
+    class SensorTemplateNV;
+    class SensorTemplateDataLink;
+    class DefaultVehicleSystemsDisplayManagerLeft
+    {
+        class components;
+    };
+    class DefaultVehicleSystemsDisplayManagerRight
+    {
+        class components;
+    };
+    class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+    {
+        class components;
+    };
+    class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+    {
+        class components;
+    };
+
     #include "CfgWeapons.hpp"
     #include "CfgMagazines.hpp"
     #include "CfgAmmo.hpp" 
