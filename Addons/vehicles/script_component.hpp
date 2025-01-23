@@ -14,6 +14,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_VEHICLES
 #endif
 
-#define CARGO_XX(a,b) class _xx_##a## {type = QUOTE(a); amount = b;}
-
 #include "\z\rri\addons\main\script_macros.hpp"

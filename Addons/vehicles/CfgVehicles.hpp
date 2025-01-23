@@ -102,7 +102,14 @@ class CfgVehicles
 	class 3AS_Delta7_Base_F;
 	#include "cfg\aircraft\delta.hpp"
 
-	class BTL_Base;
+	class class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
+        class Components;
+        class TextureSources;
+        class pilotCamera;
+        class Turrets;
+        class UserActions;
+        class ACE_SelfActions;
+    };
 	#include "cfg\aircraft\bltb.hpp"
 
 	class 3AS_ATTE_Base;

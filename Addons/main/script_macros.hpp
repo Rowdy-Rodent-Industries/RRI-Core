@@ -91,3 +91,6 @@
 
 // AFM macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
+
+//Ace Cargo
+#define CARGO_XX(a,b) class _xx_##a## {type = QUOTE(a); amount = b;}

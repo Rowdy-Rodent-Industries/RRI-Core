@@ -30,7 +30,7 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
 	weapons[] = {QGVAR(AA_Cannon),QGVAR(Z95_Heavy_Cannon),"ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
 	magazines[] = {
         QGVAR(AA_Cannon_Mag), QGVAR(AA_Cannon_Mag),
-        QZ95_Cannon_Mag,QZ95_Cannon_Mag,
+        QGVAR(Z95_Cannon_Mag),QGVAR(Z95_Cannon_Mag),
         "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple",
         "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple",
         "Laserbatteries"
