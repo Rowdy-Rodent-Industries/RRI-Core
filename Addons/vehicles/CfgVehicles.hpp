@@ -115,4 +115,9 @@ class CfgVehicles
 
 	class 3as_ATAP_base;
 	#include "cfg\tank\atap.hpp"
+
+	class 3AS_PX10_REP_F;
+	class 3AS_PX10_REP_UP;
+	class 3AS_PX10_REP_R3;
+	#include "cfg\tank\px10.hpp"
 };
