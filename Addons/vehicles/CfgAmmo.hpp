@@ -525,4 +525,41 @@ class CfgAmmo {
 		explosive = 0.1;
 		cost = 1;
 	};
+
+	class GVAR(ATTE_Base_Ammo): 3AS_Mass_Driver_Shell
+	{
+		hit = 150;
+        indirectHit = 75;
+        indirectHitRange = 10;
+        timeToLive=30;
+        Caliber = 25;
+        model = "ls_weapons_core\Effects\laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+        soundSetSonicCrack[]=
+		{
+			"3AS_Cannon_Flyby_SoundSet"
+		};
+
+        airfriction = 0;
+		coefgravity = 0;
+		deflecting = 0;
+	};
+
+	class GVAR(ATTE_AP_Ammo):GVAR(ATTE_Base_Ammo)
+	{
+		hit = 900;
+		indirectHit = 100;
+		indirectHitRange = 3;
+		caliber = 40;
+		explosive = 0.2;
+	};
+
+	class GVAR(ATTE_HE_Ammo): GVAR(ATTE_Base_Ammo)
+	{
+		hit = 250;
+		indirectHit = 30;
+		indirectHitRange = 10;
+		caliber = 20;
+		explosive = 0.7;
+	};
 };

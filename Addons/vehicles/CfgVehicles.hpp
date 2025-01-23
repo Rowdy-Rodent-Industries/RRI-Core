@@ -104,4 +104,9 @@ class CfgVehicles
 
 	class BTL_Base;
 	#include "cfg\aircraft\bltb.hpp"
+
+	class 3AS_ATTE_Base;
+	#include "cfg\tank\atte.hpp"
+
+	
 };

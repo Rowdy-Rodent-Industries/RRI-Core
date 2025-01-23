@@ -433,4 +433,14 @@ class CfgWeapons {
 			};
 		};
 	};
+
+	class GVAR(ATTE_Top_Cannon): 3AS_Mass_Driver_Cannon
+	{
+		displayName = "Heavy Mass Driver";
+		magazines[] = {QGVAR(ATTE_AP),QGVAR(ATTE_HE)};
+		magazineReloadTime = 10;
+		reloadTime = 1.5;
+
+		ballisticsComputer = "1";
+	};
 };

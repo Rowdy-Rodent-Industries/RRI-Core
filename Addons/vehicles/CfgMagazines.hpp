@@ -218,4 +218,21 @@ class CfgMagazines {
         tracersEvery = 1;
         initSpeed = 1200;
     };
+
+//ATTE Mags
+    class GVAR(ATTE_AP): 3AS_30Rnd_Mass_Driver_shells
+    {
+        displayName = "10rnd AP";
+        displayNameShort = "AP";
+        ammo = QGVAR(ATTE_AP_Ammo);
+        count = 10;
+    };
+
+    class GVAR(ATTE_HE): 3AS_30Rnd_Mass_Driver_shells
+    {
+        displayName = "15rnd HE";
+        displayNameShort = "HE";
+        ammo = QGVAR(ATTE_HE_Ammo);
+        count = 15;
+    };
 };
