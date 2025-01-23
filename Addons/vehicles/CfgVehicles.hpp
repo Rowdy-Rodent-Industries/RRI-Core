@@ -98,4 +98,10 @@ class CfgVehicles
 		};
 	};
 	#include "cfg\aircraft\z95.hpp"
+
+	class 3AS_Delta7_Base_F;
+	#include "cfg\aircraft\delta.hpp"
+
+	class BTL_Base;
+	#include "cfg\aircraft\bltb.hpp"
 };

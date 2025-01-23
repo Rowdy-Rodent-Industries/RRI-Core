@@ -358,8 +358,8 @@ class GVAR(LAATMK2): 3as_laat_Base
 	scope = 2;
 	scopeCurator = 2;
 	side = 1;
-	displayName = "(41st) LAAT/I Mk.1";
-	displayNameShort = "(41st) LAAT/I Mk.1";
+	displayName = "(41st) LAAT/I Mk.2";
+	displayNameShort = "(41st) LAAT/I Mk.2";
 
 	weapons[] = {
         "Laserdesignator_pilotCamera", QGVAR(LAAT_Cannon), "ls_weapon_CMFlareLauncher"
