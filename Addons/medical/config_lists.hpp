@@ -1,0 +1,1 @@
+#define ITEMS QGVAR(Painkiller)
