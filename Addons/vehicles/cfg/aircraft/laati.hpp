@@ -24,6 +24,14 @@ class GVAR(LAAT): 3as_laat_Base
 	maximumLoad = 2500;
 	ace_cargo_space = 25;
 
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(static,Ressuply_Base),2);
+			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+		};
+	};
+
 	hiddenSelectionsTextures[] = {
 		QPATHTOF(data\laati\Hull_CO.paa),
 		QPATHTOF(data\laati\wings_CO.paa),
@@ -373,6 +381,14 @@ class GVAR(LAATMK2): 3as_laat_Base
 
 	maximumLoad = 2500;
 	ace_cargo_space = 25;
+
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(static,Ressuply_Base),2);
+			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+		};
+	};
 
 	hiddenSelectionsTextures[] = {
 		QPATHTOF(data\laati\Hull_CO.paa),

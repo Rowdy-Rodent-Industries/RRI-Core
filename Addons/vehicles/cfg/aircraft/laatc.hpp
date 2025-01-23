@@ -284,7 +284,7 @@ class GVAR(LAATC): 3as_laat_Base
                 class PylonLeft1 { 
                     attachment = QGVAR(AA_Typhoon); 
                     priority = 1; 
-                    hardpoints[] = {QGVAR(AGM_Pylon), QGVAR(AA_Pylon)}; 
+                    hardpoints[] = {QGVAR(AA_Pylon)}; 
                     UIposition[] = {0.20, 0.1}; 
                 }; 
                 class PylonRight1: PylonLeft1 { 
@@ -292,9 +292,9 @@ class GVAR(LAATC): 3as_laat_Base
                     UIposition[] = {0.45, 0.1}; 
                 }; 
                 class PylonLeft2 { 
-                    attachment = QGVAR(AGM_JackHammer); 
+                    attachment = QGVAR(AA_Typhoon); 
                     priority = 2; 
-                    hardpoints[] = {QGVAR(AGM_Pylon), QGVAR(AA_Pylon)}; 
+                    hardpoints[] = {QGVAR(AA_Pylon)}; 
                     UIposition[] = {0.06, 0.35}; 
                 }; 
                 class PylonRight2: PylonLeft2 { 

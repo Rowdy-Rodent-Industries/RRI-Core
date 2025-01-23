@@ -54,7 +54,8 @@ class CfgAmmo {
 	{
 		displayName = "Stalkers";
 		displayNameShort = "Stalkers";
-		model="\A3\Weapons_F_Jets\Ammo\Missile_SAM_02_fly_F.p3d";
+		model="3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
+		proxyShape="3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 		airLock = 0;
 		hit = 800;
 		missileLockCone = 120;
@@ -339,6 +340,7 @@ class CfgAmmo {
 		timeToLive=13;
 		irLock=1;
 		laserLock=1;
+		initTime = 0.5;
 		missileLockMinDistance=1;
 		missileLockMaxDistance=10000;
 		missileLockCone	= 270;
@@ -526,6 +528,19 @@ class CfgAmmo {
 		cost = 1;
 	};
 
+	class GVAR(Z95_Cannon_Ammo): 3as_Arc_Heavy_Energy_shell
+	{
+		allowAgainstInfantry = 1;
+		aiAmmoUsageFlags="128 + 256 + 512";
+		hit = 300;
+		indirectHit = 90;
+		indirectHitRange = 5;
+		caliber = 40;
+		explosive = 0.3;
+		cost = 1;
+	};
+
+//ATTE Ammo
 	class GVAR(ATTE_Base_Ammo): 3AS_Mass_Driver_Shell
 	{
 		hit = 150;

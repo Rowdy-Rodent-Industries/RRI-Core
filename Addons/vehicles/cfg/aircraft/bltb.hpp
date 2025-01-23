@@ -21,6 +21,12 @@ class GVAR(BLTB): BTL_Base
 	soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.31622776,1};
 	soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",0.31622776,1.0};
 
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+		};
+	};
+
 	class pilotCamera
 	{
 		class OpticsIn

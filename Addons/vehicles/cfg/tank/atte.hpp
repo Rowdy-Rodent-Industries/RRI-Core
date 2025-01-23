@@ -11,6 +11,14 @@ class GVAR(ATTE): 3AS_ATTE_Base
 
 	ace_cargo_space = 50;
 
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(static,Ressuply_Base),2);
+			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+		};
+	};
+
 	armor=800;
 
 	class Turrets: Turrets

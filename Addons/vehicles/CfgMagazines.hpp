@@ -219,6 +219,16 @@ class CfgMagazines {
         initSpeed = 1200;
     };
 
+    class GVAR(Z95_Cannon_Mag): 3as_PylonWeapon_ARC_240Rnd_Heavy_Shells
+    {
+        count = 50;
+        ammo = QGVAR(Z95_Cannon_Ammo);
+        displayName = "Z-95 Heavy Cannon";
+        displayNameShort = "Heavy";
+        tracersEvery = 1;
+        initSpeed = 1200;
+    };
+
 //ATTE Mags
     class GVAR(ATTE_AP): 3AS_30Rnd_Mass_Driver_shells
     {

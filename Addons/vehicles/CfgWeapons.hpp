@@ -434,6 +434,117 @@ class CfgWeapons {
 		};
 	};
 
+	class GVAR(Z95_Heavy_Cannon): CannonCore
+	{
+        displayName = "Z-95 Heavy Cannon";
+		canLock = 1;
+		ballisticsComputer = "1 + 4";
+		magazines[] = {QGVAR(Z95_Cannon_Mag)};
+		reloadTime = 0.06;
+
+		cursor="EmptyCursor";
+		cursorAim="mg";
+        nameSound="cannon";
+
+        modes[]=
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		class GunParticles
+		{
+		};
+		class manual: CannonCore
+		{
+			displayName="SDS 8/5 Dual Pulse Lasers";
+			autoFire=1;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_YwingBlaster_SoundSet"
+				};
+			};
+			reloadTime=0.059999999;
+			dispersion=0.0099999998;
+			soundContinuous=0;
+			showToPlayer=1;
+			burst=1;
+			aiRateOfFire=0.02;
+			aiRateOfFireDistance=1;
+			minRange=1;
+			minRangeProbab=0.0099999998;
+			midRange=2;
+			midRangeProbab=0.0099999998;
+			maxRange=3;
+			maxRangeProbab=0.0099999998;
+			textureType="fullAuto";
+		};
+		class close: manual
+		{
+			showToPlayer=0;
+			burst=5;
+			burstRangeMax=25;
+			aiBurstTerminable=1;
+			aiRateOfFire=0.25;
+			aiRateOfFireDistance=400;
+			aiRateOfFireDispersion=1;
+			minRange=0;
+			minRangeProbab=0.94999999;
+			midRange=250;
+			midRangeProbab=0.89999998;
+			maxRange=400;
+			maxRangeProbab=0.2;
+		};
+		class short: close
+		{
+			burstRangeMax=15;
+			aiRateOfFire=0.5;
+			aiRateOfFireDistance=600;
+			aiRateOfFireDispersion=2;
+			minRange=300;
+			minRangeProbab=0.55000001;
+			midRange=400;
+			midRangeProbab=0.40000001;
+			maxRange=600;
+			maxRangeProbab=0.1;
+		};
+		class medium: close
+		{
+			burstRangeMax=10;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=900;
+			aiRateOfFireDispersion=4;
+			minRange=500;
+			minRangeProbab=0.25;
+			midRange=700;
+			midRangeProbab=0.2;
+			maxRange=900;
+			maxRangeProbab=0.1;
+		};
+		class far: close
+		{
+			burstRangeMax=10;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=1500;
+			aiRateOfFireDispersion=6;
+			minRange=800;
+			minRangeProbab=0.15000001;
+			midRange=1000;
+			midRangeProbab=0.1;
+			maxRange=1500;
+			maxRangeProbab=0.0099999998;
+		};
+    };
+
 //ATTE Weapons
 	class GVAR(ATTE_Top_Cannon): 3AS_Mass_Driver_Cannon
 	{

@@ -37,6 +37,14 @@ class GVAR(Nuclass): 3AS_Nuclass_Blank {
 	soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",0.31622776,1.0};
 
 	ace_cargo_space = 100;
+
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(static,Ressuply_Base),2);
+			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+		};
+	};
 };
 
 class GVAR(RhoCLass): 3AS_Rho_REP_F {
@@ -78,4 +86,12 @@ class GVAR(RhoCLass): 3AS_Rho_REP_F {
 	soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",0.31622776,1.0};
 
 	ace_cargo_space = 100;
+
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(static,Ressuply_Base),2);
+			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+		};
+	};
 };

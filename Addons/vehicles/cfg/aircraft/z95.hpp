@@ -27,13 +27,20 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
 		"3AS\3AS_Z95\data\glass\glass_ca"
 	};
 
-	weapons[] = {QGVAR(AA_Cannon),"ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+	weapons[] = {QGVAR(AA_Cannon),QGVAR(Z95_Heavy_Cannon),"ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
 	magazines[] = {
         QGVAR(AA_Cannon_Mag), QGVAR(AA_Cannon_Mag),
+        QZ95_Cannon_Mag,QZ95_Cannon_Mag,
         "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple",
         "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple",
         "Laserbatteries"
     };
+
+    class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+		};
+	};
 
 	class pilotCamera
     {
@@ -137,14 +144,6 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
                 class pylons6: pylons5 {
                     UIposition[] = {0.15, 0.25};
                     mirroredMissilePos = 5;
-                };
-
-                class Pylons7 {
-                    hardpoints[] = {"z95_CANON_PYLON"};
-                    priority = 5;
-                    attachment = "3as_PylonWeapon_Z95_240Rnd_Heavy_Shells";
-                    maxweight = 4000;
-                    UIposition[] = {0.325, 0.15};
                 };
             };
 

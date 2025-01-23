@@ -17,6 +17,12 @@ class GVAR(TX130_Base): WM_iftx_01_Base
     enginePower = 1850;
     peakTorque = 7000;
 
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+		};
+	};
+
 	class Turrets:Turrets
 	{
 		class MainTurret_bottom: MainTurret_bottom
@@ -166,6 +172,12 @@ class GVAR(TX130_Recon): 3as_saber_m1Recon
     maxSpeed = 140;
     enginePower = 2000;
     peakTorque = 7000;
+
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+		};
+	};
 };
 
 class GVAR(TX130_Super): 3AS_Saber_01_Base
@@ -186,6 +198,12 @@ class GVAR(TX130_Super): 3AS_Saber_01_Base
 	maxSpeed = 95;
     enginePower = 1450;
     peakTorque = 5200;
+
+	class ACE_Cargo {
+		class Cargo {
+			CARGO_XX(EGVAR(static,FuelCanister),1);
+		};
+	};
 
 	class Turrets: Turrets
 	{
