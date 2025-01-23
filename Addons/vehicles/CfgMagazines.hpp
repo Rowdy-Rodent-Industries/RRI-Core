@@ -262,4 +262,13 @@ class CfgMagazines {
         count = 30;
         initSpeed = 1000;
     };
+
+//ATAP magazines 
+    class GVAR(ATAP_HEAT): 3AS_15Rnd_ATAP_AT_Mag
+    {
+        displayName = "20rnd HEAT";
+        displayNameShort = "HEAT";
+        ammo = QGVAR(ATAP_HEAT_Ammo);
+        count = 20;
+    };
 };

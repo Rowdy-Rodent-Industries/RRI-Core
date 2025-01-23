@@ -592,4 +592,18 @@ class CfgAmmo {
 		caliber = 35;
 		explosive = 0.3;
 	};
+
+//ATAP
+	class GVAR(ATAP_HEAT_Ammo): GVAR(ATTE_Base_Ammo)
+	{
+		hit = 600;
+		indirectHit = 100;
+		indirectHitRange = 5;
+		warheadName = "HEAT";
+		caliber = 40;
+		soundSetSonicCrack[]=
+		{
+			"3AS_Cannon_Flyby_SoundSet"
+		};
+	};
 };

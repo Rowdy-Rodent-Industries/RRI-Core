@@ -640,4 +640,9 @@ class CfgWeapons {
 			maxRangeProbab = 0.1;
 		};
 	};
+
+	class GVAR(ATAP_Cannon): 3AS_ATAP_AT_Turret
+	{
+		magazines[] = {QGVAR(ATAP_HEAT)};
+	};
 };

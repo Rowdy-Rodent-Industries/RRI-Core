@@ -112,4 +112,7 @@ class CfgVehicles
 	class 3as_saber_m1Recon;
 	class 3AS_Saber_01_Base;
 	#include "cfg\tank\saber.hpp"
+
+	class 3as_ATAP_base;
+	#include "cfg\tank\atap.hpp"
 };
