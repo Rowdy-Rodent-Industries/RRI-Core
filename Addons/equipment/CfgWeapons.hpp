@@ -95,4 +95,9 @@ class CfgWeapons
 		};
 
 		#include "cfg\Uniforms.hpp"
+
+	//Binocular
+	class JLTS_CloneBinocular;
+	class JLTS_CloneBinocular_Black;
+	#include "cfg\binoculars.hpp"
 };
