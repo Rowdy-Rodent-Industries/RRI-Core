@@ -3,7 +3,7 @@ class GUNIT(Base): lsd_gar_phase2_base
 	scope = 2;
 	scopeArsenal = 2;
     author = AUTHOR;
-    displayName = "(41st) Rifleman";
+    displayName = "[41st] Rifleman";
 
     backpack = QGBACKPACK(base);
 	uniformClass = QGUNIFORM(Base);
@@ -32,7 +32,7 @@ class GUNIT(MC): ls_gar_marshalCommander_base
 {
 	scope = 2;
     author = AUTHOR;
-    displayName = "(41st) Marshal Commander";
+    displayName = "[41st] Marshal Commander";
 
     backpack = QGBACKPACK(base);
 	uniformClass = QGUNIFORM(MC);

@@ -1,7 +1,7 @@
 class GBACKPACK(Base): ls_gar_standard_backpack
 {
 	scope = 2;
-	displayName = "(41st) Standard Backpack";
+	displayName = "[41st] Standard Backpack";
 	maximumLoad = 200;
 	mass = 40;
 
@@ -14,7 +14,7 @@ class GBACKPACK(Base): ls_gar_standard_backpack
 class GBACKPACK(Medic): ls_gar_heavyMedic_backpack
 {
 	scope = 2;
-	displayName = "(41st) Medic Backpack";
+	displayName = "[41st] Medic Backpack";
 	maximumLoad = 250;
 	mass = 40;
 
@@ -27,7 +27,7 @@ class GBACKPACK(Medic): ls_gar_heavyMedic_backpack
 class GBACKPACK(Heavy): ls_gar_heavy_backpack
 {
 	scope = 2;
-	displayName = "(41st) Heavy Backpack";
+	displayName = "[41st] Heavy Backpack";
 	maximumLoad = 250;
 	mass = 40;
 
@@ -40,7 +40,7 @@ class GBACKPACK(Heavy): ls_gar_heavy_backpack
 class GBACKPACK(Rocket): ls_gar_rocket_backpack
 {
 	scope = 2;
-	displayName = "(41st) Rocket Backpack";
+	displayName = "[41st] Rocket Backpack";
 	maximumLoad = 250;
 	mass = 40;
 
@@ -53,7 +53,7 @@ class GBACKPACK(Rocket): ls_gar_rocket_backpack
 class GBACKPACK(LR): ls_gar_mediumRadio_backpack
 {
 	scope = 2;
-	displayName = "(41st) LongRange Backpack";
+	displayName = "[41st] LongRange Backpack";
 	maximumLoad = 320;
 	mass = 40;
 	tf_dialog = "SWLB_clone_rto_radio_dialog";
@@ -72,7 +72,7 @@ class GBACKPACK(LR): ls_gar_mediumRadio_backpack
 class GBACKPACK(Mini): SWLB_CEE_Recon_RTO_Backpack
 {
 	scope = 2;
-	displayName = "(41st) Mini Backpack";
+	displayName = "[41st] Mini Backpack";
 	maximumLoad = 320;
 	mass = 40;
 	tf_dialog = "SWLB_clone_rto_radio_dialog";
@@ -91,7 +91,7 @@ class GBACKPACK(Mini): SWLB_CEE_Recon_RTO_Backpack
 class GBACKPACK(BeltBag): SWLB_clone_bag_belt
 {
 	scope = 2;
-	displayName = "(41st) Belt Bag";
+	displayName = "[41st] Belt Bag";
 	maximumLoad = 200;
 	mass = 40;
 
@@ -104,7 +104,7 @@ class GBACKPACK(BeltBag): SWLB_clone_bag_belt
 class GBACKPACK(Bags): SWLB_clone_bag
 {
 	scope = 2;
-	displayName = "(41st) Bags";
+	displayName = "[41st] Bags";
 	maximumLoad = 200;
 	mass = 40;
 

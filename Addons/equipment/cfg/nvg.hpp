@@ -3,7 +3,7 @@ class GNVG(Chip): JLTS_NVG_droid_chip_1
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) NVG Chip";
+	displayName = "[41st] NVG Chip";
 	visionMode[] = {"Normal","NVG"};
 	thermalMode[] = {};
 
@@ -18,7 +18,7 @@ class GNVG(Visor): lsd_gar_standard_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) NVG Visor";
+	displayName = "[41st] NVG Visor";
 	visionMode[] = {"Normal","NVG"};
 	thermalMode[] = {};
 	modelOptics = "-";
@@ -34,7 +34,7 @@ class GNVG(Spec_Visor): lsd_gar_standardSPC_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Specialist Visor";
+	displayName = "[41st] Specialist Visor";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -50,7 +50,7 @@ class GNVG(RangeFinder): lsd_gar_rangefinder_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) RangeFinder";
+	displayName = "[41st] RangeFinder";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -66,7 +66,7 @@ class GNVG(HeadLamp): lsd_gar_p2SingleHeadLamp_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Headlamp";
+	displayName = "[41st] Headlamp";
 
 	class XtdGearInfo {
         model = QGVAR(nvg);
@@ -79,7 +79,7 @@ class GNVG(Medic_Scanner): lsd_gar_medicalScannerSPC_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Medical Scanner";
+	displayName = "[41st] Medical Scanner";
 	visionMode[] = {"Normal","NVG"};
     modelOptics = "-";
 
@@ -94,7 +94,7 @@ class GNVG(Commander): lsd_gar_p2Commander_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Commander Visor";
+	displayName = "[41st] Commander Visor";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -110,7 +110,7 @@ class GNVG(MC): lsd_gar_p2MarshalCommander_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Marshal Commander Visor";
+	displayName = "[41st] Marshal Commander Visor";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -126,7 +126,7 @@ class GNVG(Engineer): SWLB_CEE_Engineer_Comms
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Engineer Visor";
+	displayName = "[41st] Engineer Visor";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -142,7 +142,7 @@ class GNVG(Gunner): lsd_gar_artilleryGunner_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Gunner Plating";
+	displayName = "[41st] Gunner Plating";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";
@@ -158,7 +158,7 @@ class GNVG(SpecOp): ls_memefor_splinterCell_nvg
 	author = AUTHOR;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "(41st) Spec-Ops Visor";
+	displayName = "[41st] Spec-Ops Visor";
 	visionMode[] = {"Normal","NVG","TI"};
 	thermalMode[] = {0,1};
     modelOptics = "-";

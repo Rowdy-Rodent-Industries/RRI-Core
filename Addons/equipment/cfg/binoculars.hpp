@@ -1,6 +1,7 @@
 class GVAR(Binocular): JLTS_CloneBinocular
 {
-	author = "41st Aux Mod";
+	author = AUTHOR;
+	displayName = "[41st] Macrobionculars (White)"
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "GNVG Chip";
@@ -8,7 +9,8 @@ class GVAR(Binocular): JLTS_CloneBinocular
 
 class GVAR(Binocular_Black): JLTS_CloneBinocular_Black
 {
-	author = "41st Aux Mod";
+	author = AUTHOR;
+	displayName = "[41st] Macrobionculars (Black)";
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "GNVG Chip";

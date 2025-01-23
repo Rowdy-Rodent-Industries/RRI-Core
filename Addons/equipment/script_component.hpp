@@ -230,7 +230,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	scope = ##var1##;\
 	scopeArsenal = ##var1##;\
 	author = AUTHOR;\
-	displayName = QUOTE((41st) ##var2## ##var3## Helmet);\
+	displayName = QUOTE([41st] ##var2## ##var3## Helmet);\
 	hiddenSelections[]=\
 	{\
 		"camo1","visor"\
@@ -250,7 +250,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	scope = ##var1##;\
 	scopeArsenal = ##var1##;\
 	author = AUTHOR;\
-	displayName = QUOTE((41st) ##var2## ##var3## Helmet);\
+	displayName = QUOTE([41st] ##var2## ##var3## Helmet);\
 	hiddenSelections[]=\
 	{\
 		"camo1","visor"\
@@ -266,7 +266,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	scope = 2;\
 	scopeArsenal = 2;\
 	author = AUTHOR;\
-	displayName = QUOTE((41st) ##var1## Uniform (##var2##));\
+	displayName = QUOTE([41st] ##var1## Uniform (##var2##));\
 	class ItemInfo: ItemInfo {\
 		uniformClass = QGUNIT(##var1##_##var2##);\
 	};\
@@ -281,7 +281,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 #define MACRO_RANK_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
 	scope = 2;\
 	scopeArsenal = 2;\
-	displayName = QUOTE((41st) ##var1## Trooper (##var2##));\
+	displayName = QUOTE([41st] ##var1## Trooper (##var2##));\
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
     faction = QEGVAR(faction,41st);\
@@ -301,7 +301,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 #define MACRO_CUSTOM_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
 	scope = 2;\
 	scopeArsenal = 2;\
-	displayName = QUOTE((41st) ##var1## Trooper (##var2##));\
+	displayName = QUOTE([41st] ##var1## Trooper (##var2##));\
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
     faction = QEGVAR(faction,41st);\
