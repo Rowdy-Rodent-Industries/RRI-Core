@@ -108,5 +108,8 @@ class CfgVehicles
 	class 3AS_ATTE_Base;
 	#include "cfg\tank\atte.hpp"
 
-	
+	class WM_iftx_01_Base;
+	class 3as_saber_m1Recon;
+	class 3AS_Saber_01_Base;
+	#include "cfg\tank\saber.hpp"
 };
