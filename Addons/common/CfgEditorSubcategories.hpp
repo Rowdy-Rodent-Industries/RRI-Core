@@ -11,6 +11,9 @@ class CfgEditorSubcategories {
 	class EGVAR(edsubcat,Tanks) {
 		displayName = "Tanks";
 	};
+	class EGVAR(edsubcat,leg) {
+		displayName = "Walkers";
+	};
 	class EGVAR(edsubcat,Drones) {
 		displayName = "Drones";
 	};

@@ -545,6 +545,7 @@ class CfgAmmo {
 		deflecting = 0;
 	};
 
+//ATTE Ammo
 	class GVAR(ATTE_AP_Ammo):GVAR(ATTE_Base_Ammo)
 	{
 		hit = 900;
@@ -558,8 +559,37 @@ class CfgAmmo {
 	{
 		hit = 250;
 		indirectHit = 30;
-		indirectHitRange = 10;
+		indirectHitRange = 15;
 		caliber = 20;
 		explosive = 0.7;
+	};
+
+//Saber Ammo
+	class GVAR(Saber_Base_Ammo): 3AS_Sabre_HE
+	{
+		hit = 250;
+		indirectHit = 30;
+		indirectHitRange = 10;
+		caliber = 20;
+		explosive = 1.0;
+		model = "ls_weapons_core\Effects\laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+	};
+
+	class GVAR(Saber_HEAT_Ammo): GVAR(Saber_Base_Ammo)
+	{
+		hit = 300;
+		indirectHit = 50;
+		indirectHitRange = 10;
+		caliber = 30;
+		explosive = 0.5;
+	};
+	class GVAR(Saber_AP_Ammo);
+	{
+		hit = 700;
+		indirectHit = 90;
+		indirectHitRange = 3;
+		caliber = 35;
+		explosive = 0.3;
 	};
 };

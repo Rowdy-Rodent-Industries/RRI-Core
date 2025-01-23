@@ -235,4 +235,31 @@ class CfgMagazines {
         ammo = QGVAR(ATTE_HE_Ammo);
         count = 15;
     };
+
+//Saber Mags
+    class GVAR(Saber_Base): 3AS_50Rnd_Sabre_mag
+    {
+        scope = 2;
+        displayName = "Saber Base Mag";
+        displayNameShort = "HE";
+        ammo = QGVAR(Saber_Cannon_Ammo);
+        count = 50;
+        initSpeed = 950;
+    };
+    class GVAR(Saber_HEAT): GVAR(Saber_Base)
+    {
+        displayName = "Saber HEAT Rounds";
+        displayNameShort = "HEAT";
+        ammo = QGVAR(Saber_HEAT_Ammo);
+        count 50;
+        initSpeed = 900;
+    };
+    class GVAR(Super_AP): GVAR(Saber_Base)
+    {
+        displayName = "Saber AP Rounds";
+        displayNameShort = "AP";
+        ammo = QGVAR(Saber_AP_Ammo);
+        count = 30;
+        initSpeed = 1000;
+    };
 };

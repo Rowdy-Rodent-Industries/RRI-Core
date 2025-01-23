@@ -434,6 +434,7 @@ class CfgWeapons {
 		};
 	};
 
+//ATTE Weapons
 	class GVAR(ATTE_Top_Cannon): 3AS_Mass_Driver_Cannon
 	{
 		displayName = "Heavy Mass Driver";
@@ -442,5 +443,201 @@ class CfgWeapons {
 		reloadTime = 1.5;
 
 		ballisticsComputer = "1";
+	};
+
+//Saber Weapons
+	class GVAR(Saber_Cannon): 3AS_Sabre_Cannons
+	{
+		scope = 1;
+		displayName = "Saber Cannon";
+		magazines[] = {QGVAR(Saber_HEAT)};
+		canLock = 1;
+		maxZeroing = 2000;
+		displayNameShort = "Cannon";
+		modes[] = {"manual","close","short","medium","far"};
+        class manual: MGun
+		{
+			displayName = "$STR_A3_LMG_RCWS0";
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_saber30_Shot_SoundSet"};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 0.3;
+			dispersion = 0.0016;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+		};
+		class close: manual
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.8;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.7;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.7;
+			midRange = 600;
+			midRangeProbab = 0.65;
+			maxRange = 800;
+			maxRangeProbab = 0.1;
+		};
+		class far: close
+        {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.65;
+			midRange = 800;
+			midRangeProbab = 0.4;
+			maxRange = 1200;
+			maxRangeProbab = 0.1;
+		};
+	};
+
+	class GVAR(Super_Cannon): 3AS_Sabre_Cannons
+	{
+		scope = 1;
+		displayName = "Super Cannon";
+		displayNameShort = "Cannon";
+		magazines[] = {QGVAR(Super_AP)};
+		magazineReloadTime = 1.5;
+		canLock = 1;
+		maxZeroing = 2000;
+		modes[] = {"manual","close","short","medium","far"};
+		class manual: MGun
+		{
+			displayName = "$STR_A3_LMG_RCWS0";
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"3AS_saber30_Shot_SoundSet"};
+			};
+			soundContinuous = 0;
+			soundBurst = 0;
+			reloadTime = 1.5;
+			dispersion = 0.0016;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+		};
+		class close: manual
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 8;
+			burstRangeMax = 16;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.8;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.2;
+		};
+		class short: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 6;
+			burstRangeMax = 12;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 150;
+			minRange = 20;
+			minRangeProbab = 0.7;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.2;
+		};
+		class medium: close
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 12;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 250;
+			minRange = 150;
+			minRangeProbab = 0.7;
+			midRange = 600;
+			midRangeProbab = 0.65;
+			maxRange = 800;
+			maxRangeProbab = 0.1;
+		};
+		class far: close
+        {
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burst = 3;
+			burstRangeMax = 8;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 600;
+			minRangeProbab = 0.65;
+			midRange = 800;
+			midRangeProbab = 0.4;
+			maxRange = 1200;
+			maxRangeProbab = 0.1;
+		};
 	};
 };

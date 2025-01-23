@@ -3,7 +3,7 @@ class GVAR(TX130_Base): WM_iftx_01_Base
 	author = AUTHOR;
 	displayName = "[41st] TX-130";
 	faction = QEGVAR(faction,41st);
-	editorSubCategory = "";
+	editorSubCategory = QEGVAR(edsubcat,Tanks);
 
 	side =1;
 	scope = 2;
@@ -23,23 +23,33 @@ class GVAR(TX130_Base): WM_iftx_01_Base
 		{
 			weapons[] = 
 			{
-
+				GVAR(Saber_Cannon)
 			};
 			magazines[] = 
 			{
-
+				QGVAR(Saber_HEAT),
+				QGVAR(Saber_HEAT),
+				QGVAR(Saber_HEAT)
 			};
 		};
 		class MainTurret_top: MainTurret_top
 		{
-			weapons[] = 
-			{
-
-			};
-			magazines[] = 
-			{
-
-			};
+			weapons[]=
+            {
+                "WM_KB50B",
+                "SmokeLauncher"
+            };
+            magazines[]=
+            {
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "WM_KB50B_Mag",
+                "SmokeLauncherMag"
+            };
 		};
 	};
 
@@ -147,7 +157,7 @@ class GVAR(TX130_Recon): 3as_saber_m1Recon
 	author = AUTHOR;
 	displayName = "[41st] TX-130 (Recon)";
 	faction = QEGVAR(faction,41st);
-	editorSubCategory = "";
+	editorSubCategory = QEGVAR(edsubcat,Tanks);
 
 	weapons[] = {"ls_weapon_CMFlareLauncher","TruckHorn2"};
 	Magazines[] = {"ls_mag_240rnd_CMFlare_blue"};
@@ -163,7 +173,7 @@ class GVAR(TX130_Super): 3AS_Saber_01_Base
 	author = AUTHOR;
 	displayName = "[41st] TX-130 (Super)";
 	faction = QEGVAR(faction,41st);
-	editorSubCategory = "";
+	editorSubCategory = QEGVAR(edsubcat,Tanks);
 	side = 1;
 	scope = 2;
 
@@ -184,11 +194,12 @@ class GVAR(TX130_Super): 3AS_Saber_01_Base
 		{
 			weapons[] = 
 			{
-				""
+				QGVAR(Super_Cannon)
 			};
 			magazines[] = 
 			{
-
+				QGVAR(Super_AP),
+				QGVAR(Super_AP)
 			};
 		};
 	};

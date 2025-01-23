@@ -5,7 +5,7 @@ class GVAR(ATTE): 3AS_ATTE_Base
 	displayName = "[41st] AT-TE";
 
 	faction = QEGVAR(faction,41st);
-	editorSubcategory = "";
+	editorSubcategory = QEGVAR(edsubcat,leg);
 	weapons[] = {"ls_weapon_CMFlareLauncher"};
 	Magazines[] = {"ls_mag_240rnd_CMFlare_blue"};
 
