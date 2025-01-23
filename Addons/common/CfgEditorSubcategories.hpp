@@ -20,7 +20,13 @@ class CfgEditorSubcategories {
 	class EGVAR(edsubcat,Turrets) {
 		displayName = "Turrets";
 	};
+	class EGVAR(edsubcat,static) {
+		displayName = "Statics";
+	};
 	class EGVAR(edsubcat,Supplies){
 		displayName = "Supplies";
+	};
+	class EGVAR(edsubcat,Logi) {
+		displayName = "Logistics";
 	};
 };
