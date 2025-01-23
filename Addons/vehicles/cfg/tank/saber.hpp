@@ -193,7 +193,7 @@ class GVAR(TX130_Super): 3AS_Saber_01_Base
 		};
 	};
 
-class Components: Components {
+	class Components: Components {
 		class IRSensorComponent: IRSensorComponent {
 			class AirTarget {
 				minRange = 500;
