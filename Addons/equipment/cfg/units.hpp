@@ -8,7 +8,7 @@ class GUNIT(Base): lsd_gar_phase2_base
     backpack = QGBACKPACK(base);
 	uniformClass = QGUNIFORM(Base);
 
-    faction = QEGVAR(faction,EC);
+    faction = QEGVAR(faction,41st);
     editorSubcategory = QEGVAR(edsubcat,Trooper);
 
     armor = UNIT_ARMOR;
@@ -37,7 +37,7 @@ class GUNIT(MC): ls_gar_marshalCommander_base
     backpack = QGBACKPACK(base);
 	uniformClass = QGUNIFORM(MC);
 
-    faction = QEGVAR(faction,EC);
+    faction = QEGVAR(faction,41st);
     editorSubcategory = QEGVAR(edsubcat,Trooper);
 
     armor = UNIT_ARMOR;

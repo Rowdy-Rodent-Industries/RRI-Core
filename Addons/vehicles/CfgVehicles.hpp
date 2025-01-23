@@ -65,6 +65,10 @@ class CfgVehicles
 	#include "cfg\aircraft\laati.hpp"
     #include "cfg\aircraft\laatc.hpp"
 
+	class 3AS_Nuclass_Blank;
+	class 3AS_Rho_REP_F;
+	#include "cfg\aircraft\nu.hpp"
+
 	class Plane_Fighter_03_base_F;
 	class Plane_Fighter_03_dynamicLoadout_base_F;
 	class 3as_arc_170_base: Plane_Fighter_03_dynamicLoadout_base_F
@@ -76,4 +80,22 @@ class CfgVehicles
 	};
 
 	#include "cfg\aircraft\arc.hpp"
+
+	class 3as_Z95_VTOL_Base;
+	class 3AS_Z95_VTOL_Dynamic_Base_F: 3as_Z95_VTOL_Base
+	{
+		class Components;
+		class ACE_SelfActions;
+	};
+	class 3AS_Z95_VTOL_Dynamic_Base_F_H: 3AS_Z95_VTOL_Dynamic_Base_F
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent;
+		};
+		class ACE_SelfActions: ACE_SelfActions
+		{
+		};
+	};
+	#include "cfg\aircraft\z95.hpp"
 };

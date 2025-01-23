@@ -7,7 +7,7 @@ class GVAR(ARC_170): 3as_arc_170_base {
 	crew = "3AS_Clone_P2_Pilot";
 
 	side = 1;
-	faction = QEGVAR(faction,EC);
+	faction = QEGVAR(faction,41st);
 	editorSubcategory = QGVAR(edsubcat_Fixed);
 
 	hiddenselectionstextures[]=

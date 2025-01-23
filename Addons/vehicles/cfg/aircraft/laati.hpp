@@ -7,7 +7,7 @@ class GVAR(LAAT): 3as_laat_Base
 	scopeCurator = 2;
 	side = 1;
 
-	faction = QEGVAR(faction,EC);
+	faction = QEGVAR(faction,41st);
 	crew="3AS_Clone_P2_Pilot";
 	editorSubCategory = QGVAR(edsubcat_Heli);
 

@@ -4,7 +4,7 @@ class CfgFactionClasses {
 	// 	displayName = "[RSFD] Republic Special Forces Division";
 	// };
 	class EGVAR(faction,41st) {
-		displayName = "Republic Special Forces Division";
+		displayName = "(41st) Elite Corps";
 		priority = 1;
 		side = 1;
 	};
