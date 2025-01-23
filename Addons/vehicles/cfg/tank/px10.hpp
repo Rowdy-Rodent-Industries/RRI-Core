@@ -13,7 +13,7 @@ class GVAR(PX10): 3AS_PX10_REP_F
 class GVAR(PX10_Armoured): 3AS_PX10_REP_UP
 {
 	author = AUTHOR;
-	displayName = "[41st] PX-10 Armoured"
+	displayName = "[41st] PX-10 Armoured";
 	faction = QEGVAR(faction,41st);
 	editorSubcategory = QEGVAR(edsubcat,trans);
 

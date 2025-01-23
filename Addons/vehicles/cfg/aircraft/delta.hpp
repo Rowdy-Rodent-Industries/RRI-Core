@@ -230,7 +230,7 @@ class GVAR(Delta7): 3AS_Delta7_Base_F
 
             class pylons {
                 class pylons1 {
-                    ardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QQGVAR(Stealth_Pylon)};
+                    hardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QGVAR(Stealth_Pylon)};
                     attachment = QGVAR(AA_Typhoon);
                     priority = 10;
                     maxweight = 300;
@@ -256,7 +256,7 @@ class GVAR(Delta7): 3AS_Delta7_Base_F
                 };
 
                 class pylons5: pylons1 {
-                    ardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QGVAR(Stealth_Pylon)};
+                    hardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QGVAR(Stealth_Pylon)};
                     attachment = QGVAR(AA_Typhoon);
                     priority = 7;
                     maxweight = 5000;
@@ -269,7 +269,7 @@ class GVAR(Delta7): 3AS_Delta7_Base_F
                 };
 
                 class Pylons7: pylons6 {
-                    ardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QGVAR(Stealth_Pylon)};
+                    hardpoints[] = {QGVAR(AGM_Pylon),QGVAR(AA_Heavy_Pylon),QGVAR(AA_Pylon),QGVAR(Stealth_Pylon)};
                     attachment = QGVAR(AA_Typhoon);
                     priority = 5;
                     maxweight = 4000;
@@ -297,4 +297,4 @@ class GVAR(Delta7): 3AS_Delta7_Base_F
 
     airBrake = 55;
     airBrakeFrictionCoef = 60;
-}
+};

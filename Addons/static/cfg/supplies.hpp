@@ -5,8 +5,8 @@ class GVAR(Ressuply_Base): NATO_Box_Base
 	author = AUTHOR;
 	displayName = "[41st] RessuplyCrate (Base)";
 
-	editorCategory = EGVAR(edcat,EC);
-	editorSubcategory = EGVAR(edsubcat,Supplies);
+	editorCategory = QEGVAR(edcat,EC);
+	editorSubcategory = QEGVAR(edsubcat,Supplies);
 
 	maximumLoad = "8000";
 

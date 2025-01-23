@@ -541,6 +541,7 @@ class CfgAmmo {
 	};
 
 //ATTE Ammo
+	class 3AS_Mass_Driver_Shell;
 	class GVAR(ATTE_Base_Ammo): 3AS_Mass_Driver_Shell
 	{
 		hit = 150;
@@ -580,6 +581,7 @@ class CfgAmmo {
 	};
 
 //Saber Ammo
+	class 3AS_Sabre_HE;
 	class GVAR(Saber_Base_Ammo): 3AS_Sabre_HE
 	{
 		hit = 250;
@@ -599,7 +601,7 @@ class CfgAmmo {
 		caliber = 30;
 		explosive = 0.5;
 	};
-	class GVAR(Saber_AP_Ammo);
+	class GVAR(Saber_AP_Ammo): GVAR(Saber_Base_Ammo)
 	{
 		hit = 700;
 		indirectHit = 90;

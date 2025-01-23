@@ -23,7 +23,7 @@ class GVAR(ATAP): 3as_ATAP_base
 		{
 			weapons[] = 
 			{
-				GVAR(ATAP_Cannon)
+				QGVAR(ATAP_Cannon)
 			};
 			magazines[] = 
 			{

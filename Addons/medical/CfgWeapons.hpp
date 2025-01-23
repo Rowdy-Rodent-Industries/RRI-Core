@@ -12,9 +12,5 @@ class CfgWeapons
         aceArsenalCategory = "Medical"; // compat for @Ace Arsenal Category Framework
 
 		model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d";
-
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 1;
-        };
     };
-}
+};

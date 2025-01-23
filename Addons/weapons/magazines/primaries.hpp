@@ -59,4 +59,4 @@ class GVAR(Sub_Mag): GVAR(Base_Mag)
 	descriptionShort = "Magazine used by the 41st DC-15S";
 	ammo = QGVAR(Carbine_Ammo);
 	count = 50;
-}
+};

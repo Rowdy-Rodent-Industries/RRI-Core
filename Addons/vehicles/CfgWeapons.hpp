@@ -13,6 +13,9 @@ class CfgWeapons {
 		class LowROF;
 	};
 	class Mk82BombLauncher;
+	class MGun;
+	class 3AS_Sabre_Cannons;
+	class 3AS_Mass_Driver_Cannon;
 //Precision Weapons
 
 	class GVAR(Rock_Bomb): weapon_SDBLauncher {
@@ -752,6 +755,7 @@ class CfgWeapons {
 		};
 	};
 
+	class 3AS_ATAP_AT_Turret;
 	class GVAR(ATAP_Cannon): 3AS_ATAP_AT_Turret
 	{
 		magazines[] = {QGVAR(ATAP_HEAT)};

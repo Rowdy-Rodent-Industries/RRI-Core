@@ -230,6 +230,7 @@ class CfgMagazines {
     };
 
 //ATTE Mags
+    class 3AS_30Rnd_Mass_Driver_shells;
     class GVAR(ATTE_AP): 3AS_30Rnd_Mass_Driver_shells
     {
         displayName = "10rnd AP";
@@ -247,6 +248,7 @@ class CfgMagazines {
     };
 
 //Saber Mags
+    class 3AS_50Rnd_Sabre_mag;
     class GVAR(Saber_Base): 3AS_50Rnd_Sabre_mag
     {
         scope = 2;
@@ -261,7 +263,7 @@ class CfgMagazines {
         displayName = "Saber HEAT Rounds";
         displayNameShort = "HEAT";
         ammo = QGVAR(Saber_HEAT_Ammo);
-        count 50;
+        count = 50;
         initSpeed = 900;
     };
     class GVAR(Super_AP): GVAR(Saber_Base)
@@ -274,6 +276,7 @@ class CfgMagazines {
     };
 
 //ATAP magazines 
+    class 3AS_15Rnd_ATAP_AT_Mag;
     class GVAR(ATAP_HEAT): 3AS_15Rnd_ATAP_AT_Mag
     {
         displayName = "20rnd HEAT";

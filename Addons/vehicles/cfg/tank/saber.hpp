@@ -29,7 +29,7 @@ class GVAR(TX130_Base): WM_iftx_01_Base
 		{
 			weapons[] = 
 			{
-				GVAR(Saber_Cannon)
+				QGVAR(Saber_Cannon)
 			};
 			magazines[] = 
 			{

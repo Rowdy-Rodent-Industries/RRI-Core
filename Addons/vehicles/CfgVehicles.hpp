@@ -102,7 +102,7 @@ class CfgVehicles
 	class 3AS_Delta7_Base_F;
 	#include "cfg\aircraft\delta.hpp"
 
-	class class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
+	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
         class Components;
         class TextureSources;
         class pilotCamera;

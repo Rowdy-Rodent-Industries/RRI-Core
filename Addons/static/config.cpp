@@ -5,7 +5,7 @@
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {VEHICLE_LIST};
+        units[] = {SUPPLY_LIST};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"rri_main"};
