@@ -99,7 +99,28 @@ class CfgVehicles
 	};
 	#include "cfg\aircraft\z95.hpp"
 
-	class 3AS_Delta7_Base_F;
+	class Air;
+	class Plane: Air
+	{
+		class HitPoints;
+	};
+	class Plane_Base_F: Plane
+	{
+		class AnimationSources;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+		};
+		class Components;
+		class ViewPilot;
+	};
+	class 3AS_Delta7_Base_F: Plane_Base_F
+	{
+		class Components: Components
+		{
+			class TransportPylonsComponent;
+		};
+	};
 	#include "cfg\aircraft\delta.hpp"
 
 	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {

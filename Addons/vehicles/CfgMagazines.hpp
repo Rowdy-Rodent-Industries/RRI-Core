@@ -169,7 +169,7 @@ class CfgMagazines {
     class GVAR(AA_Cannon_Mag): 3as_ARC_1000Rnd_Light_shells
     {
         count = 500;
-        ammo = QGVAR(Drag_Ammo);
+        ammo = QGVAR(AA_Cannon_Ammo);
         displayname = "AA Cannon";
         displaynameShort = "Cannon";
         tracersEvery = 1;

@@ -8,6 +8,23 @@ class GVAR(PX10): 3AS_PX10_REP_F
 	armor = 200;
 
 	maxSpeed = 120;
+
+	hiddenSelections[]=
+	{
+		"Camo",
+		"camo2",
+		"camo3",
+		"camo_Fuel",
+		"camo_repair"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\px10\px10cav_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+		QPATHTOF(data\px10\px10fuel_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
+	};
 };
 
 class GVAR(PX10_Armoured): 3AS_PX10_REP_UP
@@ -19,6 +36,23 @@ class GVAR(PX10_Armoured): 3AS_PX10_REP_UP
 
 	armor = 400;
 	maxSpeed = 100;
+
+	hiddenSelections[]=
+	{
+		"Camo",
+		"camo2",
+		"camo3",
+		"camo_Fuel",
+		"camo_repair"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\px10\px10cav_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+		QPATHTOF(data\px10\px10fuel_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
+	};
 };
 
 class GVAR(PX10_R3): 3AS_PX10_REP_R3
@@ -31,4 +65,21 @@ class GVAR(PX10_R3): 3AS_PX10_REP_R3
 	ace_repair_canRepair=1;
 	ace_rearm_defaultSupply=100000;
 	ace_refuel_fuelCargo=-10;
+
+	hiddenSelections[]=
+	{
+		"Camo",
+		"camo2",
+		"camo3",
+		"camo_Fuel",
+		"camo_repair"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\px10\px10cav_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+		"3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+		QPATHTOF(data\px10\px10fuel_co.paa),
+		"3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
+	};
 };

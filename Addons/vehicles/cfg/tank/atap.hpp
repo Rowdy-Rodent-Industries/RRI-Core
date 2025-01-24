@@ -5,6 +5,19 @@ class GVAR(ATAP): 3as_ATAP_base
 	faction = QEGVAR(faction,41st);
 	editorSubcategory = QEGVAR(edsubcat,leg);
 
+	hiddenSelections[]=
+	{
+		"camo1",
+		"camo2",
+		"camo3"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\atap\hull_co.paa),
+		QPATHTOF(data\atap\weapons_and_decals_co.paa),
+		QPATHTOF(data\atap\legs_co.paa)
+	};
+
 	class Turrets: Turrets 
 	{
 		class MainTurret1: MainTurret1

@@ -77,6 +77,25 @@ class GVAR(ATTE): 3AS_ATTE_Base
 		};
 	};
 
+	hiddenselections[]=
+	{
+		"camo1",
+		"camo2",
+		"camo3",
+		"camo4",
+		"camo5",
+		"camo11"
+	};
+	hiddenselectionstextures[]=
+	{
+		QPATHTOF(data\atte\41st_ATTE_Shell_co.paa),
+		"3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+		"3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+		QPATHTOF(data\atte\41st_ATTE_Legs_co.paa),
+		"3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+		"3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+	};
+
 	maxSpeed = 60;
 	peakTorque= 300000;
 	enginePower = 10000;

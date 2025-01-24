@@ -1,4 +1,4 @@
-class GVAR(TX130_Base): WM_iftx_01_Base
+class GVAR(TX130_Base): 3as_saber_01_Base
 {
 	author = AUTHOR;
 	displayName = "[41st] TX-130";
@@ -16,6 +16,17 @@ class GVAR(TX130_Base): WM_iftx_01_Base
     maxSpeed = 100;
     enginePower = 1850;
     peakTorque = 7000;
+
+	hiddenSelections[]=
+	{
+		"Camo1",
+		"Camo2"
+	};
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\tx130\saber_hull_co.paa),
+		QPATHTOF(data\tx130\saber_weapons_co.paa)
+	};
 
 	class ACE_Cargo {
 		class Cargo {
@@ -178,8 +189,8 @@ class GVAR(TX130_Recon): 3AS_Saber_03_Base
 	editorPreview="\3AS\3AS_Saber\images\3AS_Saber_M1Recon.jpg";
 	hiddenSelectionsTextures[]=
 	{
-		"3AS\3AS_Saber\data\Saber_hull_co.paa",
-		"3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
+		QPATHTOF(data\tx130\saber_hull_co.paa),
+		QPATHTOF(data\tx130\saber_weapons_scout_co.paa)
 	};
 	hiddenSelectionsMaterials[]=
 	{
@@ -207,6 +218,12 @@ class GVAR(TX130_Super): 3as_saber_01_Base
     magazines[] = {"ls_mag_240rnd_CMFlare_blue"};
 
 	model="3as\3as_saber\model\tcw_tx130_super.p3d";
+
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\tx130\saber_hull_co.paa),
+		QPATHTOF(data\tx130\saber_weapons_co.paa)
+	};
 
 	ace_cargo_space = 20;
 	maxSpeed = 95;
