@@ -1,5 +1,5 @@
 class CfgEditorSubcategories {
-	class EGVAR(edsubcat,EC) {
+	class EGVAR(edsubcat,Trooper) {
 		displayName = "Troopers";
 	};
 	class EGVAR(edsubcat,Heli){
