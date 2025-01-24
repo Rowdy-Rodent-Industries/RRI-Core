@@ -9,7 +9,7 @@ class GVAR(LAAT): 3as_laat_Base
 
 	faction = QEGVAR(faction,41st);
 	crew="3AS_Clone_P2_Pilot";
-	editorSubCategory = QGVAR(edsubcat_Heli);
+	editorSubCategory = QEGVAR(edsubcat,Heli);
 
 	weapons[] = {
         "Laserdesignator_pilotCamera", QGVAR(LAAT_Cannon), "ls_weapon_CMFlareLauncher"
@@ -368,6 +368,10 @@ class GVAR(LAATMK2): 3as_laat_Base
 	side = 1;
 	displayName = "(41st) LAAT/I Mk.2";
 	displayNameShort = "(41st) LAAT/I Mk.2";
+
+	faction = QEGVAR(faction,41st);
+	crew="3AS_Clone_P2_Pilot";
+	editorSubCategory = QEGVAR(edsubcat,Heli);
 
 	weapons[] = {
         "Laserdesignator_pilotCamera", QGVAR(LAAT_Cannon), "ls_weapon_CMFlareLauncher"

@@ -47,6 +47,15 @@ class CfgPatches {
         class components;
     };
 
+    class RCWSOptics;
+    class Optics_Armored;
+    class Optics_Gunner_APC_01: Optics_Armored
+    {
+        class Wide;
+        class Medium;
+        class Narrow;
+    };
+
     #include "CfgWeapons.hpp"
     #include "CfgMagazines.hpp"
     #include "CfgAmmo.hpp" 

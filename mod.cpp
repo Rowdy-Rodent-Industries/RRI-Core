@@ -1,8 +1,6 @@
 name="41st Elite Corps Aux Mod";
 author="41st Dev Team";
-picture="rri\logo.paa";
+picture="Z\rri\Addons\common\data\rri_logo.paa";
 overview="";
-actionName="Discord";
-action="https://discord.gg/fZdq6zKveP";
 hidePicture=0;
 hideName=0;

@@ -43,10 +43,17 @@ class GVAR(ATTE): 3AS_ATTE_Base
 		{
 			weapons[]=
 			{
+				"3AS_ATTE_Turret",
 				"SmokeLauncher"
 			};
 			magazines[]=
 			{
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
 				"SmokeLauncherMag"
 			};
 		};
@@ -54,10 +61,17 @@ class GVAR(ATTE): 3AS_ATTE_Base
 		{
 			weapons[]=
 			{
+				"3AS_ATTE_Turret",
 				"SmokeLauncher"
 			};
 			magazines[]=
 			{
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
+				"3AS_250Rnd_ATTE_30mm_MP_shells",
 				"SmokeLauncherMag"
 			};
 		};

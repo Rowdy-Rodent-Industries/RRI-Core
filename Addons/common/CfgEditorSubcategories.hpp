@@ -2,6 +2,12 @@ class CfgEditorSubcategories {
 	class EGVAR(edsubcat,EC) {
 		displayName = "Troopers";
 	};
+	class EGVAR(edsubcat,Heli){
+		displayName = "Helicopters";
+	};
+	class EGVAR(edsubcat,Fixed){
+		displayName = "Fixed Wing";
+	};
 	class EGVAR(edsubcat,Trans) {
 		displayName = "Transports";
 	};

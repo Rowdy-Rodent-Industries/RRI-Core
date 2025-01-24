@@ -11,7 +11,7 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
 
 	side = 1;
 	faction = QEGVAR(faction,41st);
-	editorSubcategory = QGVAR(edsubcat_Fixed);
+	editorSubcategory = QEGVAR(edsubcat,Fixed);
 
 	model = "3AS\3as_Z95\Model\Z95_Headhunter.p3d";
 	hiddenselections[]=

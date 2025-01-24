@@ -38,7 +38,7 @@ class GVAR(TX130_Base): WM_iftx_01_Base
 				QGVAR(Saber_HEAT)
 			};
 		};
-		class MainTurret_top: MainTurret_top
+		class Mainturret_top: Mainturret_top
 		{
 			weapons[]=
             {
@@ -158,12 +158,14 @@ class GVAR(TX130_Base): WM_iftx_01_Base
         };
 };
 
-class GVAR(TX130_Recon): 3as_saber_m1Recon
+class GVAR(TX130_Recon): 3AS_Saber_03_Base
 {
 	author = AUTHOR;
 	displayName = "[41st] TX-130 (Recon)";
 	faction = QEGVAR(faction,41st);
 	editorSubCategory = QEGVAR(edsubcat,Tanks);
+	side = 1;
+	scope = 2;
 
 	weapons[] = {"ls_weapon_CMFlareLauncher","TruckHorn2"};
 	Magazines[] = {"ls_mag_240rnd_CMFlare_blue"};
@@ -173,6 +175,18 @@ class GVAR(TX130_Recon): 3as_saber_m1Recon
     enginePower = 2000;
     peakTorque = 7000;
 
+	editorPreview="\3AS\3AS_Saber\images\3AS_Saber_M1Recon.jpg";
+	hiddenSelectionsTextures[]=
+	{
+		"3AS\3AS_Saber\data\Saber_hull_co.paa",
+		"3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
+	};
+	hiddenSelectionsMaterials[]=
+	{
+		"3AS\3AS_Saber\data\Saberhull.rvmat",
+		"3AS\3AS_Saber\data\Saberweapons_scout.rvmat"
+	};
+
 	class ACE_Cargo {
 		class Cargo {
 			CARGO_XX(EGVAR(static,FuelCanister),1);
@@ -180,7 +194,7 @@ class GVAR(TX130_Recon): 3as_saber_m1Recon
 	};
 };
 
-class GVAR(TX130_Super): 3AS_Saber_01_Base
+class GVAR(TX130_Super): 3as_saber_01_Base
 {
 	author = AUTHOR;
 	displayName = "[41st] TX-130 (Super)";
@@ -208,7 +222,7 @@ class GVAR(TX130_Super): 3AS_Saber_01_Base
 	class Turrets: Turrets
 	{
 		delete MainTurret_bottom;
-		class Mainturret_super: Mainturret_super
+		class Mainturret_super: Mainturret_top
 		{
 			weapons[] = 
 			{

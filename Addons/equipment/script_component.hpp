@@ -285,8 +285,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
     faction = QEGVAR(faction,41st);\
-	editorCategory = QEGVAR(edcat,41st);\
-    editorSubcategory = QEGVAR(edsubcat,##var1##);\
+    editorSubcategory = QEGVAR(edsubcat,Trooper);\
 	hiddenSelectionsTextures[]=\
 	{\
 		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor1_##var2##_CO.paa),\
@@ -305,8 +304,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
     faction = QEGVAR(faction,41st);\
-	editorCategory = QEGVAR(edcat,41st);\
-    editorSubcategory = QEGVAR(edsubcat,##var1##);\
+    editorSubcategory = QEGVAR(edsubcat,Trooper);\
 	hiddenSelectionsTextures[]=\
 	{\
 		QPATHTOF(data\uniforms\##var1##\Custom\##var2##_Armor_##var1##_Upper_CO.paa),\

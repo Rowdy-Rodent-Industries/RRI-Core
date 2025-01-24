@@ -8,7 +8,7 @@ class GVAR(BLTB): BTL_Base
 
 	side = 1;
 	faction = QEGVAR(faction,41st);
-	editorSubcategory = QGVAR(edsubcat_Fixed);
+	editorSubcategory = QEGVAR(edsubcat,Fixed);
 
 	weapons[] = {QGVAR(AG_Cannon), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
 	magazines[] = {

@@ -8,7 +8,7 @@ class GVAR(ARC_170): 3as_arc_170_base {
 
 	side = 1;
 	faction = QEGVAR(faction,41st);
-	editorSubcategory = QGVAR(edsubcat_Fixed);
+	editorSubcategory = QEGVAR(edsubcat,Fixed);
 
 	hiddenselectionstextures[]=
 	{

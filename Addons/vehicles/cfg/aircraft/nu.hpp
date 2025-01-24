@@ -7,7 +7,7 @@ class GVAR(Nuclass): 3AS_Nuclass_Blank {
 
 	faction = QEGVAR(faction,41st);
 	crew="3AS_Clone_P2_Pilot";
-	editorSubCategory = QGVAR(edsubcat_Heli);
+	editorSubCategory = QEGVAR(edsubcat,Heli);
 
 	class TransportItems
 	{
@@ -56,7 +56,7 @@ class GVAR(RhoCLass): 3AS_Rho_REP_F {
 
 	faction = QEGVAR(faction,41st);
 	crew="3AS_Clone_P2_Pilot";
-	editorSubCategory = QGVAR(edsubcat_Heli);
+	editorSubCategory = QEGVAR(edsubcat,Heli);
 
 	class TransportItems
 	{

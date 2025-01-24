@@ -112,15 +112,233 @@ class CfgVehicles
     };
 	#include "cfg\aircraft\bltb.hpp"
 
-	class 3AS_ATTE_Base;
+	class Car;
+	class Car_F: Car
+    {
+        class NewTurret;
+        class EventHandlers;
+    };
+    class Wheeled_APC_F: Car_F
+	{
+		class NewTurret;
+		class CommanderOptics;
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets
+                {
+                    class CommanderOptics;
+                };
+            };
+        };
+		class Sounds;
+		class HitPoints;
+	};
+    class APC_Wheeled_01_base_F: Wheeled_APC_F
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewGunner;
+				class Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class ViewGunner;
+					};
+				};
+			};
+		};
+    };
+	class 3AS_ATTE_Base: APC_Wheeled_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurretTop: MainTurret
+			{
+				class ViewGunner;
+			};
+			class MainTurretFront:MainTurretTop
+			{
+				class ViewGunner;
+			};
+			class MainTurretBack: MainTurretFront
+			{
+				class ViewGunner;
+			};
+		};
+	};
 	#include "cfg\tank\atte.hpp"
 
-	class WM_iftx_01_Base;
-	class 3as_saber_m1Recon;
-	class 3AS_Saber_01_Base;
+	class LandVehicle;
+	class Tank: LandVehicle
+	{
+		class NewTurret;
+		class Sounds;
+		class HitPoints;
+		class ACE_SelfActions;
+	};
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewOptics;
+				class ViewGunner;
+				class Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+		class CargoTurret;
+		class Components;
+		class AnimationSources;
+		class ACE_SelfActions: ACE_SelfActions
+		{
+		};
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitEngine;
+			class HitLTrack;
+			class HitRTrack;
+			class HitFuel;
+		};
+		class Sounds: Sounds
+		{
+			class Engine;
+			class Movement;
+		};
+	};
+	class 3as_saber_01_Base: Tank_F
+	{
+		class HitPoints:HitPoints
+        {
+            class HitHull;
+            class HitEngine;
+            class HitLTrack;
+            class HitRTrack;
+        };
+		class Turrets: Turrets
+		{
+			class MainTurret_bottom: MainTurret
+			{
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+			};
+			class Mainturret_top: MainTurret_bottom
+			{
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+			};
+		};
+	};
+	class 3AS_Saber_03_Base: 3as_saber_01_Base
+	{
+		class HitPoints:HitPoints
+        {
+            class HitHull;
+            class HitEngine;
+            class HitLTrack;
+            class HitRTrack;
+        };
+		class Turrets: Turrets
+		{
+			class MainTurret_bottom: MainTurret
+			{
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+			};
+			class MainTurret_top: MainTurret_bottom
+			{
+				class OpticsIn: Optics_Gunner_APC_01
+				{
+					class Wide: Wide
+					{
+					};
+					class Medium: Medium
+					{
+					};
+					class Narrow: Narrow
+					{
+					};
+				};
+			};
+		};
+	};
+
+	class WM_iftx_01_Base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret_bottom: MainTurret {
+                class OpticsIn: Optics_Gunner_APC_01
+                {
+                    class Wide: Wide
+                    {
+                    };
+                    class Medium: Medium
+                    {
+                    };
+                    class Narrow: Narrow
+                    {
+                    };
+                };
+            };
+            class MainTurret_top: NewTurret {};
+        };
+    };
 	#include "cfg\tank\saber.hpp"
 
-	class 3as_ATAP_base;
+	class 3as_ATAP_base: APC_Wheeled_01_base_F
+	{
+		class MainTurret1: MainTurret
+		{
+			class ViewGunner;
+		};
+		class MainTurretTop: MainTurret1
+		{
+			class ViewGunner;
+		};
+		class MainTurretBottom: MainTurretTop
+		{
+			class ViewGunner;
+		};
+	};
 	#include "cfg\tank\atap.hpp"
 
 	class 3AS_PX10_REP_F;
