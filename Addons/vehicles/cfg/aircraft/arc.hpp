@@ -95,7 +95,7 @@ class GVAR(ARC_170): 3as_arc_170_base {
 
 	class ACE_Cargo {
 		class Cargo {
-			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(supplies,FuelCanister),1);
 		};
 	};
 
