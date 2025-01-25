@@ -513,6 +513,7 @@ class CfgAmmo {
 		caliber=20;
 		explosive=0.60000002;
 		cost=1;
+		deflecting=0;
 	};
 
 	class 3as_Arc_Heavy_Energy_shell;
@@ -526,6 +527,7 @@ class CfgAmmo {
 		caliber = 30;
 		explosive = 0.1;
 		cost = 1;
+		deflecting=0;
 	};
 
 	class GVAR(Z95_Cannon_Ammo): 3as_Arc_Heavy_Energy_shell
@@ -538,6 +540,7 @@ class CfgAmmo {
 		caliber = 40;
 		explosive = 0.3;
 		cost = 1;
+		deflecting=0;
 	};
 
 //ATTE Ammo
@@ -578,6 +581,7 @@ class CfgAmmo {
 		indirectHitRange = 15;
 		caliber = 20;
 		explosive = 0.7;
+		deflecting=0;
 	};
 
 //Saber Ammo
@@ -591,6 +595,7 @@ class CfgAmmo {
 		explosive = 1.0;
 		model = "ls_weapons_core\Effects\laser_blue.p3d";
         effectfly = "ls_plasma_blue";
+		deflecting=0;
 	};
 
 	class GVAR(Saber_HEAT_Ammo): GVAR(Saber_Base_Ammo)

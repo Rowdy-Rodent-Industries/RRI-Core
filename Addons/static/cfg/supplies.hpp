@@ -1,6 +1,6 @@
 class GVAR(Ressuply_Base): NATO_Box_Base
 {
-	scope = 1;
+	scope = 2;
 	scopeCurator = 2;
 	author = AUTHOR;
 	displayName = "[41st] RessuplyCrate (Base)";

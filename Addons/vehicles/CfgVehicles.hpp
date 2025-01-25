@@ -366,4 +366,10 @@ class CfgVehicles
 	class 3AS_PX10_REP_UP;
 	class 3AS_PX10_REP_R3;
 	#include "cfg\tank\px10.hpp"
+
+	class 3AS_RX200_Base;
+	#include "cfg\tank\rx200.hpp"
+
+	class 3AS_Patrol_LAAT_Base;
+	#include "cfg\aircraft\laatle.hpp"
 };
