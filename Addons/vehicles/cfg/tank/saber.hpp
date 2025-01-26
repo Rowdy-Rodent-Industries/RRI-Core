@@ -238,9 +238,13 @@ class GVAR(TX130_Super): 3as_saber_01_Base
 
 	class Turrets: Turrets
 	{
-		delete MainTurret_bottom;
+		// delete MainTurret_bottom;
 		class Mainturret_super: Mainturret_top
 		{
+			body="MainTurret_Super";
+			gun="Maingun_Super";
+			animationSourceBody="MainTurret_Super";
+			animationSourceGun="Maingun_Super";
 			weapons[] = 
 			{
 				QGVAR(Super_Cannon)
@@ -250,6 +254,31 @@ class GVAR(TX130_Super): 3as_saber_01_Base
 				QGVAR(Super_AP),
 				QGVAR(Super_AP)
 			};
+			minTurn=-360;
+				maxTurn=360;
+				initTurn=0;
+				minElev=-10;
+				maxElev=30;
+				initElev=0;
+				proxytype="CPGunner";
+				gunnername="Gunner";
+				proxyIndex=2;
+				gunnerAction="Saber_Driver";
+				gunnerInAction="Saber_Driver";
+				forceHideGunner=1;
+				outGunnerMayFire=0;
+				inGunnerMayFire=1;
+				gunnerRightHandAnimName="konec hlavne3";
+				gunnerLeftHandAnimName="konec hlavne3";
+				soundAttenuationTurret="HeliAttenuationGunner";
+				memoryPointGun[]=
+				{
+					"usti hlavne3",
+					"usti hlavne4"
+				};
+				memoryPointGunnerOptics="SuperSabergunnerview";
+				gunnerOpticsEffect[]={};
+				gunnerHasFlares=1;
 		};
 	};
 

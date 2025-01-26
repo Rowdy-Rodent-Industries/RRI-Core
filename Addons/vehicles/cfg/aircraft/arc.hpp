@@ -20,7 +20,7 @@ class GVAR(ARC_170): 3as_arc_170_base {
 	weapons[] = {QGVAR(ARC_Cannon), QGVAR(Heavy_Cannon),"ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
 
     magazines[] = {
-        QGVAR(Rear_Cannon_Mag), QGVAR(Rear_Cannon_Mag),
+        QGVAR(ARC_Cannon_Mag), QGVAR(ARC_Cannon_Mag),
 		QGVAR(Heavy_Cannon_Mag),QGVAR(Heavy_Cannon_Mag),QGVAR(Heavy_Cannon_Mag),
         "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple", "ls_mag_240Rnd_CMFlareChaff_purple",
         "Laserbatteries"

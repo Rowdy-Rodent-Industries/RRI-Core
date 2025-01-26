@@ -289,7 +289,7 @@ class CfgVehicles
         };
 		class Turrets: Turrets
 		{
-			class MainTurret_bottom: MainTurret
+			class MainTurret_bottom: MainTurret_bottom
 			{
 				class OpticsIn: Optics_Gunner_APC_01
 				{
@@ -304,7 +304,7 @@ class CfgVehicles
 					};
 				};
 			};
-			class MainTurret_top: MainTurret_bottom
+			class MainTurret_top: MainTurret_top
 			{
 				class OpticsIn: Optics_Gunner_APC_01
 				{
@@ -321,28 +321,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class WM_iftx_01_Base: Tank_F
-    {
-        class Turrets: Turrets
-        {
-            class MainTurret_bottom: MainTurret {
-                class OpticsIn: Optics_Gunner_APC_01
-                {
-                    class Wide: Wide
-                    {
-                    };
-                    class Medium: Medium
-                    {
-                    };
-                    class Narrow: Narrow
-                    {
-                    };
-                };
-            };
-            class MainTurret_top: NewTurret {};
-        };
-    };
 	#include "cfg\tank\saber.hpp"
 
 	class 3as_ATAP_base: APC_Wheeled_01_base_F

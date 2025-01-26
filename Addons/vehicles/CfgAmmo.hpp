@@ -423,7 +423,7 @@ class CfgAmmo {
 		trackLead=800;
 		trackOversteer=500;
 		airLock=1;
-		hit=700;
+		hit=400;
 		indirectHit=250;
 		indirectHitRange=0;
 		caliber=20;
@@ -534,9 +534,9 @@ class CfgAmmo {
 	{
 		allowAgainstInfantry = 1;
 		aiAmmoUsageFlags="128 + 256 + 512";
-		hit = 300;
+		hit = 800;
 		indirectHit = 90;
-		indirectHitRange = 5;
+		indirectHitRange = 3;
 		caliber = 40;
 		explosive = 0.3;
 		cost = 1;
