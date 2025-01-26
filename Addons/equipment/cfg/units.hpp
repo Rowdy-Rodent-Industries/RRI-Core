@@ -49,7 +49,13 @@ class GUNIT(MC): ls_gar_marshalCommander_base
 	UNIT_HITPOINTS;
 };
 
+//P2 Rank
 MACRO_RANK_UNIT(P2,Recruit);
 MACRO_RANK_UNIT(P2,Enlisted);
 MACRO_RANK_UNIT(P2,Veteran);
 MACRO_RANK_UNIT(P2,NCO);
+
+//P2 Custom
+
+//Pilot Rank
+MACRO_RANK_UNIT(Pilot,Enlisted);

@@ -25,7 +25,13 @@ class GUNIFORM(MC): ls_gar_marshalCommander_uniform
 	};
 };
 
+//P2 Rank
 MACRO_UNIFORM(P2,Recruit);
 MACRO_UNIFORM(P2,Enlisted);
 MACRO_UNIFORM(P2,Veteran);
 MACRO_UNIFORM(P2,NCO);
+
+//P2 Custom
+
+//Pilot Rank
+MACRO_UNIFORM(Pilot,Enlisted);
