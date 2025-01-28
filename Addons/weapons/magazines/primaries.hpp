@@ -32,7 +32,7 @@ class GVAR(Z6_Mag): GVAR(Base_Mag)
 	displayName = "[41st] Z6 Magazines";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Z6 magazine used by the 41st EC";
-	ammo = QGVAR(Z6_Ammo);
+	ammo = QGVAR(MG_Ammo);
 };
 
 class GVAR(Sniper_Mag): GVAR(Base_Mag)
