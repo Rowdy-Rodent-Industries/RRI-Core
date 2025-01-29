@@ -58,4 +58,7 @@ MACRO_RANK_UNIT(P2,NCO);
 //P2 Custom
 
 //Pilot Rank
+MACRO_RANK_UNIT(Pilot,Recruit);
 MACRO_RANK_UNIT(Pilot,Enlisted);
+MACRO_RANK_UNIT(Pilot,Veteran);
+MACRO_RANK_UNIT(Pilot,NCO);

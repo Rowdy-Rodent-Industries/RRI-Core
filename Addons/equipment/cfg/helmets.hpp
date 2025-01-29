@@ -14,7 +14,7 @@ class GHELMET(P2): ls_gar_phase2_helmet
 	};
 };
 
-class GHELMET(Pilot): ls_gar_phase2Pilot_helmet
+class GHELMET(Pilot): 3as_P2_Pilot_helmet
 {
 	scope = 1;
 	displayName = "[41st] P2 Pilot Helmet";
@@ -38,7 +38,16 @@ class GHELMET(RTO): ls_sob_phase2SpecOp_helmet
 	displayName = "[41st] P2 RTO Helmet";
 };
 
+//P2 Rank 
 MACRO_RANK_HELMET(2,P2,Recruit);
 MACRO_RANK_HELMET(2,P2,Enlisted);
 MACRO_RANK_HELMET(2,P2,Veteran);
 MACRO_RANK_HELMET(2,P2,NCO);
+
+//P2 Custom
+
+//Pilot Rank
+MACRO_PILOT_HELMET(2,Pilot,Recruit);
+MACRO_PILOT_HELMET(2,Pilot,Enlisted);
+MACRO_PILOT_HELMET(2,Pilot,Veteran);
+MACRO_PILOT_HELMET(2,Pilot,NCO);

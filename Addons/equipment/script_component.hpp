@@ -246,7 +246,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     };\
 }
 
-#define MACRO_Custom_Helmet(var1,var2,var3) class GHELMET(##var2##): GHELMET(##var3##) {\
+#define MACRO_CUSTOM_HELMET(var1,var2,var3) class GHELMET(##var2##): GHELMET(##var3##) {\
 	scope = ##var1##;\
 	scopeArsenal = ##var1##;\
 	author = AUTHOR;\
@@ -257,8 +257,43 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	};\
 	hiddenSelectionsTextures[]=\
 	{\
-		QPATHTOF(data\helmets\##var3##\Custom\##var3##_##var2##_CO.paa)\
+		QPATHTOF(data\helmets\##var3##\Custom\##var3##_##var2##_CO.paa),"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"\
 	};\
+	class XtdGearInfo {\
+        model = QGVAR(helmet_custom);\
+        Type = QUOTE(##var2##);\
+		Rank = QUOTE(##var3##);\
+    };\
+}
+
+#define MACRO_PILOT_HELMET(var1,var2,var3) class GHELMET(##var2##_##var3##): GHELMET(##var2##) {\
+	scope = ##var1##;\
+	scopeArsenal = ##var1##;\
+	author = AUTHOR;\
+	displayName = QUOTE([41st] ##var2## ##var3## Helmet);\
+	hiddenSelections[]=\
+	{\
+		"Camo",\
+		"Camo1",\
+		"Camo2",\
+		"Camo3",\
+		"Camo4",\
+		"Camo5"\
+	};\
+	hiddenSelectionsTextures[]=\
+	{\
+		QPATHTOF(data\Helmets\##var2##\Rank\##var2##_##var3##_CO.paa),\
+		QPATHTOF(data\Helmets\##var2##\Rank\##var2##_##var3##_CO.paa),\
+		"",\
+		"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase_2_Pilot_Tubes_co.paa",\
+		"3AS\3AS_Characters\Clones\Headgear\Textures\PilotP2\Phase2_Pilot_Standard_co.paa",\
+		""\
+	};\
+	class XtdGearInfo {\
+        model = QGVAR(helmet);\
+        Type = QUOTE(##var2##);\
+		Rank = QUOTE(##var3##);\
+    };\
 }
 
 // Uniforms

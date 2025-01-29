@@ -76,7 +76,7 @@ class CfgWeapons
 
 	//Helemts
 		class ls_gar_phase2_helmet;
-		class ls_gar_phase2Pilot_helmet;
+		class 3as_P2_Pilot_helmet;
 		class ls_gar_phase1Arf_helmet;
 		class ls_gar_barc_helmet;
 		class ls_sob_phase2SpecOp_helmet;

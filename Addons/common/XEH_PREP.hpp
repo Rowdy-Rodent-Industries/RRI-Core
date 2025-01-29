@@ -1,1 +1,1 @@
-PREP(UpdateRespawn);
+PREP(updateRespawn);

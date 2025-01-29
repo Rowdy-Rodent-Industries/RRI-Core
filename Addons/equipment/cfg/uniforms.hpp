@@ -34,4 +34,7 @@ MACRO_UNIFORM(P2,NCO);
 //P2 Custom
 
 //Pilot Rank
+MACRO_UNIFORM(Pilot,Recruit);
 MACRO_UNIFORM(Pilot,Enlisted);
+MACRO_UNIFORM(Pilot,Veteran);
+MACRO_UNIFORM(Pilot,NCO);
