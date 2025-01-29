@@ -25,5 +25,5 @@ class GVAR(PLX_AA): 3AS_JLTS_MK39_AA
     displayName = "[41st] PLX AA Rocket";
     displayNameShort = "AA";
     descriptionShort = "Anti-Air rocket used by the PLX Launcher Platform";
-    // ammo = QGVAR(PLX_AA_Rocket); //tpdp
+    // ammo = QGVAR(PLX_AA_Rocket); //todo
 };

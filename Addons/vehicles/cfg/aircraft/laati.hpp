@@ -338,26 +338,26 @@ class GVAR(LAAT): 3as_laat_Base
 	};
 
 	class AnimationSources: AnimationSources
+	{
+		class Doors
 		{
-			class Doors
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Lamps
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Turrets
-			{
-				source="user";
-				initPhase=1;
-				animPeriod=1;
-			};
+			source="user";
+			animPeriod=1;
+			initPhase=0;
 		};
+		class Lamps
+		{
+			source="user";
+			animPeriod=1;
+			initPhase=0;
+		};
+		class Turrets
+		{
+			source="user";
+			initPhase=1;
+			animPeriod=1;
+		};
+	};
 };
 
 class GVAR(LAATMK2): 3as_laat_Base
@@ -700,24 +700,24 @@ class GVAR(LAATMK2): 3as_laat_Base
 	};
 
 	class AnimationSources: AnimationSources
+	{
+		class Doors
 		{
-			class Doors
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=1;
-			};
-			class Lamps
-			{
-				source="user";
-				animPeriod=1;
-				initPhase=0;
-			};
-			class Turrets
-			{
-				source="user";
-				initPhase=0;
-				animPeriod=0.001;
-			};
+			source="user";
+			animPeriod=1;
+			initPhase=1;
 		};
+		class Lamps
+		{
+			source="user";
+			animPeriod=1;
+			initPhase=0;
+		};
+		class Turrets
+		{
+			source="user";
+			initPhase=0;
+			animPeriod=0.001;
+		};
+	};
 };

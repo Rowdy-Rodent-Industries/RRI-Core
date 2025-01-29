@@ -191,6 +191,8 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class 3AS_ATJT_Base;
 	#include "cfg\tank\atte.hpp"
 
 	class LandVehicle;
