@@ -49,14 +49,14 @@ class GVAR(Rho_Barracks): 3AS_Rho_Crate_REP_Barracks //Make Respawn Vehicle
 			displayName = "Crate Intereactions";
 			condition = "true";
 			class GVAR(Crate_Controls) {
-				displayName = "FOB Options";
+				displayName = "Crate Options";
 				statement = "";
 				exceptions[] = {};
 				showDisabled = 0;
 				priority = 1;
 
 				class updateRespawn {
-					displayName = "<t color='#006da3'>Update Respawn Position</t>";
+					displayName = "Update Respawn Position";
 					condition = QEGVAR(common,respawnUpdateEnabled);
 					statement = QUOTE([position _target] call EFUNC(common,updateRespawn));
 				};
