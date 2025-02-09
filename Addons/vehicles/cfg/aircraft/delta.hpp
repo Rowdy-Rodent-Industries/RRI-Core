@@ -31,9 +31,11 @@ class GVAR(Delta7): 3AS_Delta7_Base_F
 		150
 	};
 
+	ace_cargo_space = 15;
+	ace_cargo_hasCargo = 1;
 	class ACE_Cargo {
 		class Cargo {
-			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(supplies,FuelCanister),1);
 		};
 	};
 

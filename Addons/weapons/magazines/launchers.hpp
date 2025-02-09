@@ -8,6 +8,16 @@ class GVAR(RPS6_Mag): JLTS_RPS6_mag
     ammo = QGVAR(Rocket_Base);
 };
 
+class GVAR(RPS6D_Mag): 3AS_MK40_AT
+{
+    scope = 2;
+    author = AUTHOR;
+    displayName = "[41st] RPS-6 AT Rocket";
+    displayNameShort = "AT";
+    descriptionShort = "Anti-Tank rocket used by the RPS-6 launcher platform";
+    ammo = QGVAR(Rocket_Base);
+};
+
 class GVAR(PLX_AT): 3AS_JLTS_MK43_AT
 {
     scope = 2;

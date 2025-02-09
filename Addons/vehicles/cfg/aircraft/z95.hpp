@@ -36,9 +36,11 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
         "Laserbatteries"
     };
 
-    class ACE_Cargo {
+    ace_cargo_space = 15;
+	ace_cargo_hasCargo = 1;
+	class ACE_Cargo {
 		class Cargo {
-			CARGO_XX(EGVAR(static,FuelCanister),1);
+			CARGO_XX(EGVAR(supplies,FuelCanister),1);
 		};
 	};
 

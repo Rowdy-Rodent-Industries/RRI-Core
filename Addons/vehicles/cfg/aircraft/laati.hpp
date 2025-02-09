@@ -23,6 +23,7 @@ class GVAR(LAAT): 3as_laat_Base
 
 	maximumLoad = 2500;
 	ace_cargo_space = 25;
+	ace_cargo_hasCargo = 1;
 
 	class ACE_Cargo {
 		class Cargo {
@@ -385,6 +386,7 @@ class GVAR(LAATMK2): 3as_laat_Base
 
 	maximumLoad = 2500;
 	ace_cargo_space = 25;
+	ace_cargo_hasCargo = 1;
 
 	class ACE_Cargo {
 		class Cargo {

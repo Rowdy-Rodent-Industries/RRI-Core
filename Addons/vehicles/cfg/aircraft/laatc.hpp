@@ -23,6 +23,7 @@ class GVAR(LAATC): 3as_laat_Base
 
 	maximumLoad = 2500;
 	ace_cargo_space = 25;
+	ace_cargo_hasCargo = 1;
 
 	model="3AS\3AS_LAATC\3AS_LAAT_C.p3d";
 	hiddenSelectionsTextures[]=

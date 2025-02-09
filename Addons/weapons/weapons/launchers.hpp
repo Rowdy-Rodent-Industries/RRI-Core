@@ -17,7 +17,7 @@ class GVAR(RPS6_D) : 3AS_RPS6_Base {
 	author = AUTHOR;
     displayName = "[41st] RPS-6 (Disposable)";
 	baseWeapon = QGVAR(RPS6_D);
-	magazines[] = {QGVAR(RPS6_Mag)};
+	magazines[] = {QGVAR(RPS6D_Mag)};
 };
 
 class GVAR(RPS6_D_Loaded) : GVAR(RPS6_D) {

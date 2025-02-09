@@ -77,8 +77,8 @@ class CfgMagazines {
         ammo = QGVAR(AA_Ammo_Long);
         count = 3;
         scope = 2;
-        displayName = "Hurricane 2x";
-        displayNameShort = "Hurricane 2x";
+        displayName = "Hurricane";
+        displayNameShort = "Hurricane";
         descriptionShort = "Hurricanes are long range anti-air missiles with a max range of 8 kilometers, meant for sniping out air targets from a far";
         hardpoints[] = {QGVAR(AA_Heavy_Pylon)};
         pylonWeapon = QGVAR(AA_Hurrican_Pylon);
@@ -144,8 +144,8 @@ class CfgMagazines {
         ammo = QGVAR(Dummy_Bomb_Ammo);
         count = 5;
         scope = 2;
-        displayName = "Shinies 5x";
-        displayNameShort = "Shinies 5x";
+        displayName = "Shinies";
+        displayNameShort = "Shinies";
         descriptionShort = "Shinies are dumb bombs, which do not lock on in any way and can only be dumb dropped.";
         hardpoints[] = {QGVAR(Bomb_Pylon)};
         pylonWeapon = QGVAR(Bomb_Shinies_Pylon);
@@ -156,8 +156,8 @@ class CfgMagazines {
         ammo = QGVAR(LGB_ammo);
         count = 6;
         scope = 2;
-        displayName = "BMTB 6x";
-        displayNameShort = "BMTB 6x";
+        displayName = "BMTB";
+        displayNameShort = "BMTB";
         descriptionShort = "BMTB bombs are smart bombs, which can lock on via laser, and will glide to the target if need be";
         hardpoints[] = {QGVAR(Bomb_Pylon)};
         pylonWeapon = QGVAR(Bomb_BMTB_Pylon); 
