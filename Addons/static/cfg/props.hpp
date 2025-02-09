@@ -43,3 +43,41 @@ class GVAR(FuelCanister): Items_base_F
 	ace_dragging_dragPosition[] = {0, 1.5, 0};
 	ace_dragging_carryPosition[] = {0, 1.5, 0};
 };
+
+class GVAR(Arsenal): NATO_Box_Base
+{
+	scope = 2;
+	scopeCurator = 2;
+
+	author = AUTHOR;
+	displayName = "[41st] Arsenal Box";
+
+	editorCategory = QEGVAR(edcat,EC);
+	editorSubCategory = QEGVAR(edsubcat,Supplies);
+
+	disableInventory = 1;
+
+	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";//todo
+	model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";//todo
+	icon = "iconObject_5x2";//todo
+	hiddenSelections[] = {"camo"};//todo
+	hiddenSelectionsTextures[] = {"a3\structures_f\items\vessels\data\canisterfuel_co.paa"};//todo
+
+	ace_cargo_canLoad = 1;
+	ace_cargo_size = 5;
+
+	class UserActions
+	{
+		class Arsenal
+		{
+			displayName = "ACE Arsenal";
+			position = "camera";
+			radius = 5;
+			priority = 1;
+			condition = "True";
+			statement="[player, player, true] call ace_arsenal_fnc_openBox;";
+			onlyForPlayer=1;
+			hideOnUse=1;
+		};
+	};
+};
