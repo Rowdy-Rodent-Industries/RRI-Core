@@ -42,6 +42,9 @@ class GVAR(Z95): 3AS_Z95_VTOL_Dynamic_Base_F
 		};
 	};
 
+    maxSpeed=900;
+    acceleration=350;
+
 	class pilotCamera
     {
         class OpticsIn

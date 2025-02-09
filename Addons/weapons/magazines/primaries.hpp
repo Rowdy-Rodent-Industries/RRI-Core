@@ -60,3 +60,19 @@ class GVAR(Sub_Mag): GVAR(Base_Mag)
 	descriptionShort = "Magazine used by the 41st DC-15S";
 	ammo = QGVAR(Carbine_Ammo);
 };
+
+class GVAR(Shotgun_Buck): GVAR(Base_Mag)
+{
+	count = 12;
+	displayName = "[41st] DP-23 Buckshot Magazine";
+	descriptionShort = "The 12rnd Buckshot Magazine used by the 41st EC";
+	ammo = QGVAR(Buckshot_Ammo);
+};
+
+class GVAR(Shotgun_Slug): GVAR(Base_Mag)
+{
+	count = 12;
+	displayName = "[41st] DP-23 Slug Magazine";
+	descriptionShort = "the 12rnd Slug magazine used by the 41st EC";
+	ammo = QGVAR(Slug_Ammo);
+};

@@ -71,7 +71,7 @@ class GVAR(DP23): JLTS_DP23
 	scopeArsenal = 2;
 	displayName = "[41st] DP-23";
 	descriptionShort = "Base Shotgun of the 41st Elite Corp";
-	// magazines[] = {QGVAR(Shotgun_Mag)}; //todo
+	magazines[] = {QGVAR(Shotgun_Buck),QGVAR(Shotgun_Slug)}; 
 	baseweapon = QGVAR(DP23);
 };
 

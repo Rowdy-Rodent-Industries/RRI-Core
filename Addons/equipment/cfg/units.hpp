@@ -1,7 +1,7 @@
 class GUNIT(Base): lsd_gar_phase2_base
 {
-	scope = 2;
-	scopeArsenal = 2;
+	scope = 1;
+	scopeArsenal = 1;
     author = AUTHOR;
     displayName = "[41st] Rifleman";
 
@@ -30,7 +30,7 @@ class GUNIT(Base): lsd_gar_phase2_base
 
 class GUNIT(MC): ls_gar_marshalCommander_base
 {
-	scope = 2;
+	scope = 1;
     author = AUTHOR;
     displayName = "[41st] Marshal Commander";
 
