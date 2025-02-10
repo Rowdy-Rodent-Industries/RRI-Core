@@ -1,1 +1,2 @@
 PREP(updateRespawn);
+PREP(initDefaultLoadouts);

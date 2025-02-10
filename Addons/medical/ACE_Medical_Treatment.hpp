@@ -18,7 +18,7 @@ class ace_medical_treatment {
             singleDose = 400;
         };
 
-        class PainKiller {
+        class PainKiller: Morphine{
             painReduce = 0.7;
             hrIncreaseLow[] = {0, 0};
             hrIncreaseNormal[] = {0, 0};

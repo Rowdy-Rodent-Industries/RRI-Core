@@ -39,6 +39,9 @@
 #define GET_TEXT(config,default) (if (isText (config)) then {getText (config)} else {default})
 #define GET_ARRAY(config,default) (if (isArray (config)) then {getArray (config)} else {default})
 
+#define PATHTOF_COMP(var1) PATHTOF2_SYS(PREFIX,COMPONENT,var1)
+#define QPATHTOF_COMP(var1) QUOTE(PATHTOF_COMP(var1))
+
 #define ARR_9(ARG1,ARG2,ARG3,ARG4,ARG5,ARG6,ARG7,ARG8,ARG9) ARG1, ARG2, ARG3, ARG4, ARG5, ARG6, ARG7, ARG8, ARG9
 
 // Macros for Arsenal Whitelists

@@ -29,3 +29,4 @@ class CfgRespawnTemplates
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "Cfg3den.hpp"
+#include "CfgMainMenuSpotlight.hpp"
