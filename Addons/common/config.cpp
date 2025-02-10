@@ -28,3 +28,4 @@ class CfgRespawnTemplates
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "Cfg3den.hpp"

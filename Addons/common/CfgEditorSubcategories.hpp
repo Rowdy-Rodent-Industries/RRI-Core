@@ -35,4 +35,7 @@ class CfgEditorSubcategories {
 	class EGVAR(edsubcat,Logi) {
 		displayName = "Logistics";
 	};
+	class EGVAR(edsubcat,Spawns) {
+		displayName = "Spawns";
+	};
 };
