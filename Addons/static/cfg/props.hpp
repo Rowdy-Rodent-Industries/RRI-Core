@@ -81,3 +81,45 @@ class GVAR(Arsenal): NATO_Box_Base
 		};
 	};
 };
+
+class GVAR(Banner_Base): 3AS_FOB_Banner_Prop
+{
+	model="3AS\3AS_structures\FOB\Banner.p3d";
+	displayName="[41st] Banner";
+
+	editorCategory = QEGVAR(edcat,EC);
+	editorSubCategory = QEGVAR(edsubcat,Props);
+
+	hiddenSelections[]=
+	{
+		"Camo1"
+	};
+	scope=1;
+	scopeCurator=1;
+	hiddenSelectionsTextures[]=
+	{
+		"3AS\3AS_structures\FOB\data\Rep_Banner_CO.paa"
+	};
+};
+
+class GVAR(Banner_Sarlacc): GVAR(Banner_Base)
+{
+	displayName = "[41st] Sarlacc Banner";
+	scope = 2;
+
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\banner\Sarlacc_banner_co.paa)
+	};
+};
+
+class GVAR(Banner_Mykal): GVAR(Banner_Base)
+{
+	displayName = "[41st] Mykal Banner";
+	scope = 2;
+
+	hiddenSelectionsTextures[]=
+	{
+		QPATHTOF(data\banner\Mykal_banner_co.paa)
+	};
+};

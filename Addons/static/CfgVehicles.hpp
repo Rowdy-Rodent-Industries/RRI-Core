@@ -19,6 +19,7 @@ class CfgVehicles
 	#include "cfg\rhocrate.hpp"
 
 	class Items_base_F;
+	class 3AS_FOB_Banner_Prop;
 	#include "cfg\props.hpp"
 };
 
