@@ -20,7 +20,7 @@ class GUNIT(Base): lsd_gar_phase2_base
 	UNIT_HITPOINTS;
 
 	hiddenSelections[] = {"camo1","camo2","undersuit","insignia"};
-	// hiddenselectionsmaterials[]= {QPATHTOF(data\Uniform\Base\p2uniform.rvmat)};
+	// hiddenselectionsmaterials[]= {QPATHTOF(data\Uniform\Base\p2uniform.rvmat)}; //todo
 	hiddenSelectionsTextures[] = {
 		QPATHTOF(data\Uniforms\Base\p2Armor_unmarked_upper_co.paa),
 		QPATHTOF(data\Uniforms\Base\p2Armor_unmarked_lower_co.paa),
