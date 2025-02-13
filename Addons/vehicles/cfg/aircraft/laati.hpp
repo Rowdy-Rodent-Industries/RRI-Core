@@ -11,6 +11,12 @@ class GVAR(LAAT): 3as_laat_Base
 	crew="3AS_Clone_P2_Pilot";
 	editorSubCategory = QEGVAR(edsubcat,Heli);
 
+	ls_impulsor_fuelDrain_1 = 0.0001;
+	ls_impulsor_fuelDrain_2 = 0.0003;
+	ls_impulsor_boostSpeed_1 = 400;
+	ls_impulsor_boostSpeed_2 = 600;
+	ls_hasImpulse = 1;
+
 	weapons[] = {
         "Laserdesignator_pilotCamera", QGVAR(LAAT_Cannon), "ls_weapon_CMFlareLauncher"
     };
@@ -373,6 +379,12 @@ class GVAR(LAATMK2): 3as_laat_Base
 	faction = QEGVAR(faction,41st);
 	crew="3AS_Clone_P2_Pilot";
 	editorSubCategory = QEGVAR(edsubcat,Heli);
+
+	ls_impulsor_fuelDrain_1 = 0.0001;
+	ls_impulsor_fuelDrain_2 = 0.0003;
+	ls_impulsor_boostSpeed_1 = 400;
+	ls_impulsor_boostSpeed_2 = 600;
+	ls_hasImpulse = 1;
 
 	weapons[] = {
         "Laserdesignator_pilotCamera", QGVAR(LAAT_Cannon), "ls_weapon_CMFlareLauncher"

@@ -151,6 +151,12 @@ class CfgWeapons {
     class GVAR(Bomb_BMTB_Pylon): weapon_SDBLauncher
     {
         magazines[] = {QGVAR(Bomb_BMTB)};
+		minRange = 100;
+		minRangeProbab = 0.4;
+		midRange = 1000;
+		midRangeProbab = 0.95;
+		maxRange = 10000;
+		maxRangeProbab = 0.9;
     };
 
     //Cannon

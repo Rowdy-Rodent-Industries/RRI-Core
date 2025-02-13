@@ -1,7 +1,7 @@
 class GUNIFORM(Base): ls_gar_phase2_uniform
 {
-	scope = 2;
-	scopeArsenal = 2;
+	scope = 1;
+	scopeArsenal = 1;
 	displayName = "[41st] P2 Uniform";
 
 	class ItemInfo: ItemInfo {
@@ -14,7 +14,7 @@ class GUNIFORM(Base): ls_gar_phase2_uniform
 
 class GUNIFORM(MC): ls_gar_marshalCommander_uniform
 {
-	scope = 2;
+	scope = 1;
 	displayName = "[41st] Marshal Commander Uniform";
 
 	class ItemInfo: ItemInfo {

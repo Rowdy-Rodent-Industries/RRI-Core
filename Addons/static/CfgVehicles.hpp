@@ -1,6 +1,7 @@
 class CfgVehicles
 {
 	class NATO_Box_Base;
+	class 3AS_Small_Terminal_Black_Prop;
 	#include "cfg\supplies.hpp"
 
 	class StaticMGWeapon;

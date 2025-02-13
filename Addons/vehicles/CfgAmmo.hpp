@@ -394,7 +394,7 @@ class CfgAmmo {
 	{
 		displayName = "BMTB";
 		displayNameShort = "BMTB";
-		hit=650;
+		hit=4000;
 		indirectHit=650;
 		indirectHitRange=25;
 		canLock = 2;
@@ -402,6 +402,9 @@ class CfgAmmo {
 		IRLock = 1;
 		model="3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
 		proxyShape="3as\3AS_VehicleWeapons\model\3AS_Proton_Torpedo.p3d";
+		soundFly[] = {"SWLB_core\data\sounds\vehicles\mortar\weapon\mortar_fly.wss",3,1,250};
+		whistleDist = 200;
+		whistleOnFire = 1;
 	};
 
 	class GVAR(Drag_Ammo): GVAR(Dummy_Bomb_Ammo)

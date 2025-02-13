@@ -56,6 +56,38 @@ class CfgPatches {
         class Narrow;
     };
 
+    class Extended_init_EventHandlers
+    {
+        class GVAR(LAAT)
+        {
+            class laat_init_eh
+            {
+                init="(_this) spawn ls_vehicle_fnc_ImpulsorMonitor";
+            };
+        };
+        class GVAR(LAATMK2)
+        {
+            class laat_init_eh
+            {
+                init="(_this) spawn ls_vehicle_fnc_ImpulsorMonitor";
+            };
+        };
+        class GVAR(LAAT_LE)
+        {
+            class laat_init_eh
+            {
+                init="(_this) spawn ls_vehicle_fnc_ImpulsorMonitor";
+            };
+        };
+        class GVAR(LAATC)
+        {
+            class laat_init_eh
+            {
+                init="(_this) spawn ls_vehicle_fnc_ImpulsorMonitor";
+            };
+        };
+    };
+
     #include "CfgWeapons.hpp"
     #include "CfgMagazines.hpp"
     #include "CfgAmmo.hpp" 
