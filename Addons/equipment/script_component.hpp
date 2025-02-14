@@ -320,7 +320,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
     faction = QEGVAR(faction,41st);\
-    editorSubcategory = QEGVAR(edsubcat,Trooper);\
+    editorSubcategory = QEGVAR(edsubcat,##var1##);\
 	hiddenSelectionsTextures[]=\
 	{\
 		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor1_##var2##_CO.paa),\

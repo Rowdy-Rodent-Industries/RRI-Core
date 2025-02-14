@@ -327,17 +327,20 @@ class CfgVehicles
 
 	class 3as_ATAP_base: APC_Wheeled_01_base_F
 	{
-		class MainTurret1: MainTurret
+		class Turrets: Turrets
 		{
-			class ViewGunner;
-		};
-		class MainTurretTop: MainTurret1
-		{
-			class ViewGunner;
-		};
-		class MainTurretBottom: MainTurretTop
-		{
-			class ViewGunner;
+			class MainTurret1: MainTurret
+			{
+				class ViewGunner;
+			};
+			class MainTurretTop: MainTurret1
+			{
+				class ViewGunner;
+			};
+			class MainTurretBottom: MainTurret1
+			{
+				class ViewGunner;
+			};
 		};
 	};
 	#include "cfg\tank\atap.hpp"

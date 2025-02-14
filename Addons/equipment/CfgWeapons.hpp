@@ -56,6 +56,10 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
+	class SWLB_CEE_Force_Recon: SWLB_clone_airborne_armor
+	{
+		class ItemInfo;
+	};
 	
 	#include "cfg\vests.hpp"
 

@@ -18,7 +18,7 @@ class GVEST(Base_Chest): SWLB_CEE_ARF_Vest
     };
 };
 
-class GVEST(Enlisted_Chest): SWLB_CEE_Force_Recon_NCO
+class GVEST(Enlisted_Chest): SWLB_CEE_Force_Recon
 {
 	scope = 2;
 	displayName = "[41st] Enlisted Vest";
