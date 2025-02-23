@@ -14,4 +14,6 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_STATIC
 #endif
 
+#define SUPPLIES_MAXLOAD 8000
+
 #include "\z\rri\addons\main\script_macros.hpp"

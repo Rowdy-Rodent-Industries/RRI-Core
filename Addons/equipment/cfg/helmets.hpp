@@ -14,7 +14,6 @@ class GHELMET(P2): ls_gar_phase2_helmet
 	};
 
 	HELMET_PROTECTION;
-	HELMET_ACE_HEARING;
 };
 
 class GHELMET(Pilot): 3as_P2_Pilot_helmet
@@ -23,7 +22,6 @@ class GHELMET(Pilot): 3as_P2_Pilot_helmet
 	displayName = "[41st] P2 Pilot Helmet";
 
 	HELMET_PROTECTION;
-	HELMET_ACE_HEARING;
 };
 
 class GHELMET(ARF): ls_gar_phase1Arf_helmet
@@ -32,7 +30,6 @@ class GHELMET(ARF): ls_gar_phase1Arf_helmet
 	displayName = "[41st] P1 ARF Helmet";
 
 	HELMET_PROTECTION;
-	HELMET_ACE_HEARING;
 };
 
 class GHELMET(BARC): ls_gar_barc_helmet
@@ -41,7 +38,6 @@ class GHELMET(BARC): ls_gar_barc_helmet
 	displayName = "[41st] BARC Helmet";
 
 	HELMET_PROTECTION;
-	HELMET_ACE_HEARING;
 };
 
 class GHELMET(RTO): ls_sob_phase2SpecOp_helmet
@@ -50,7 +46,6 @@ class GHELMET(RTO): ls_sob_phase2SpecOp_helmet
 	displayName = "[41st] P2 RTO Helmet";
 
 	HELMET_PROTECTION;
-	HELMET_ACE_HEARING;
 };
 
 //P2 Rank 

@@ -2,7 +2,7 @@ class GVAR(Base_Mag): JLTS_DC15A_mag
 {
 	author = AUTHOR;
 	count = 60;
-	displayName = "[41st] Base Magazines";
+	displayName = "[41st] Base Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Base magazine used by the 41st EC";
 	ammo = QGVAR(Base_Ammo);
@@ -11,7 +11,7 @@ class GVAR(Base_Mag): JLTS_DC15A_mag
 
 class GVAR(Rifle_Mag): GVAR(Base_Mag)
 {
-	displayName = "[41st] Rifle Magazines";
+	displayName = "[41st] Rifle Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Rifle magazine used by the 41st EC";
 	ammo = QGVAR(Rifle_Ammo);
@@ -20,7 +20,7 @@ class GVAR(Rifle_Mag): GVAR(Base_Mag)
 class GVAR(MG_Mag): GVAR(Base_Mag)
 {
 	count = 120;
-	displayName = "[41st] MG Magazines";
+	displayName = "[41st] MG Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "MG magazine used by the 41st EC";
 	ammo = QGVAR(MG_Ammo);
@@ -29,7 +29,7 @@ class GVAR(MG_Mag): GVAR(Base_Mag)
 class GVAR(Z6_Mag): GVAR(Base_Mag)
 {
 	count = 250;
-	displayName = "[41st] Z6 Magazines";
+	displayName = "[41st] Z6 Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Z6 magazine used by the 41st EC";
 	ammo = QGVAR(MG_Ammo);
@@ -38,7 +38,7 @@ class GVAR(Z6_Mag): GVAR(Base_Mag)
 class GVAR(Sniper_Mag): GVAR(Base_Mag)
 {
 	count = 20;
-	displayName = "[41st] Sniper Magazines";
+	displayName = "[41st] Sniper Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Sniper magazine used by the 41st EC";
 	ammo = QGVAR(Sniper_Ammo);
@@ -47,7 +47,7 @@ class GVAR(Sniper_Mag): GVAR(Base_Mag)
 class GVAR(Carbine_Mag): GVAR(Base_Mag)
 {
 	count = 30;
-	displayName = "[41st] Carbine Magazines";
+	displayName = "[41st] Carbine Magazine";
 	displayNameShort = "Energy Cell";
 	descriptionShort = "Carbine magazine used by the 41st EC";
 	ammo = QGVAR(Carbine_Ammo);

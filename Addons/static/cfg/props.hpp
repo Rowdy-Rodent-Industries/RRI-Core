@@ -44,7 +44,7 @@ class GVAR(FuelCanister): Items_base_F
 	ace_dragging_carryPosition[] = {0, 1.5, 0};
 };
 
-class GVAR(Arsenal): NATO_Box_Base
+class GVAR(Arsenal): RRI_Crate
 {
 	scope = 2;
 	scopeCurator = 2;
@@ -57,11 +57,8 @@ class GVAR(Arsenal): NATO_Box_Base
 
 	disableInventory = 1;
 
-	editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";//todo
-	model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";//todo
-	icon = "iconObject_5x2";//todo
 	hiddenSelections[] = {"camo"};//todo
-	hiddenSelectionsTextures[] = {"a3\structures_f\items\vessels\data\canisterfuel_co.paa"};//todo
+	hiddenSelectionsTextures[] = {QPATHTOF(data\crate\Crate_arsenal_co.paa)};
 
 	ace_cargo_canLoad = 1;
 	ace_cargo_size = 5;

@@ -1,7 +1,29 @@
 class CfgVehicles
 {
-	class NATO_Box_Base;
+	class ThingX;
+    class ReammoBox_F;
+    class NATO_Box_Base;
 	class 3AS_Small_Terminal_Black_Prop;
+
+	class RRI_Crate: NATO_Box_Base {
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[41st] ResuplyCrate (Empty)";
+		model = QPATHTOF(data\crate\RRI_crate.p3d);
+
+		ace_cargo_canLoad = 1;
+		ace_cargo_size = 2;
+
+		editorCategory = QEGVAR(edcat,EC);
+		editorSubcategory = QEGVAR(edsubcat,Supplies);
+
+		maximumLoad = SUPPLIES_MAXLOAD;
+        accuracy = 1000;
+
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsMaterials[] = {QPATHTOF(data\crate\crate.rvmat)};
+		hiddenSelectionsTextures[] = {QPATHTOF(data\crate\Crate_co.paa)};
+	};
 	#include "cfg\supplies.hpp"
 
 	class StaticMGWeapon;

@@ -14,8 +14,8 @@ class GVAR(ATTE): 3AS_ATTE_Base
 	class ACE_Cargo {
 		class Cargo {
 			CARGO_XX(EGVAR(static,FuelCanister),1);
-			CARGO_XX(EGVAR(static,Ressuply_Base),2);
-			CARGO_XX(EGVAR(static,Ressuply_Ammo),2);
+			CARGO_XX(EGVAR(static,Resuply_Medical),2);
+			CARGO_XX(EGVAR(static,Resuply_Ammo),2);
 		};
 	};
 
