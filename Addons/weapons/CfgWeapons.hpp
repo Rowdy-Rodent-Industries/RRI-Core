@@ -13,6 +13,7 @@ class CfgWeapons
 	class JLTS_Z6;
 	class JLTS_DC17SA;
 	class 3AS_PLX1_F;
+	class launch_NLAW_F;
 
 	#include "weapons/launchers.hpp"
 	#include "weapons/primaries.hpp"

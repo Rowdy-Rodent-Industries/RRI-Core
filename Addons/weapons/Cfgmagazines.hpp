@@ -5,6 +5,7 @@ class CfgMagazines
 	class 3AS_JLTS_MK39_AA;
 	class 3AS_JLTS_MK43_AT;
 	class 3AS_MK40_AT;
+	class NLAW_F;
 
 	#include "magazines/primaries.hpp"
 	#include "magazines/secondaries.hpp"

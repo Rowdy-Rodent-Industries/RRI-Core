@@ -96,3 +96,45 @@ class GVAR(PLX): 3AS_PLX1_F {
 	weaponLockSystem=6;
 	cmImmunity=0.80000001;
 };
+
+class GVAR(HH12): launch_NLAW_F {
+	author = AUTHOR;
+	displayName = "[41st] HH-12 Rocket Launcher";
+	baseWeapon = QGVAR(HH12);
+	magazines[] = {QGVAR(HH12_Mag),QGVAR(HH12_Cluster_Mag)};
+
+	model="3as\3AS_Weapons\Imperial\3AS_HH12.p3d";
+	picture="3as\3AS_Weapons\Data\UI\3as_hh12.paa";
+	UiPicture="3as\3AS_Weapons\Data\UI\3as_hh12.paa";
+	modelOptics="\A3\Weapons_F\acc\reticle_NLAW";
+	handAnim[]=
+	{
+		"OFP2_ManSkeleton",
+		"3as\3AS_Weapons\Imperial\anims\HH12hand.rtm"
+	};
+	shotPos = "usti hlavne";
+	shotEnd = "konec hlavne";
+
+    cameraDir = "look";
+
+    class GunParticles {
+        class effect1 {
+            positionName = "konec hlavne";
+            directionName = "usti hlavne";
+            effectName = "RocketBackEffectsNLAWNT";
+        };
+    };
+
+	recoil="Empty";
+    maxZeroing = 3000;
+
+	canLock = 2;
+    weaponLockDelay = 1.5;
+    weaponLockSystem = 4;
+    maxrange = 4000;
+
+    ace_overpressure_angle = 0;
+    ace_overpressure_damage = 0.7;
+    ace_overpressure_priority = 1;
+    ace_overpressure_range = 15;
+};
