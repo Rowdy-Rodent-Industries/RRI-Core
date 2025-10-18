@@ -3,8 +3,8 @@
 #define MAINPREFIX z
 #define PREFIX rri
 
-#define AUTHOR QUOTE(41st Aux Team)
-#define MOD_NAME_BEAUTIFIED QUOTE(41st Aux Mod)
+#define AUTHOR QUOTE(RRI Mod Team)
+#define MOD_NAME_BEAUTIFIED QUOTE(Rowdy Rodent Industries)
 
 #include "script_version.hpp"
 

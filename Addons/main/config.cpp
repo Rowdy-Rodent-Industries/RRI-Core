@@ -16,8 +16,8 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@41st Elite Corps Aux Mod";
-        name = "41st Elite Corps Aux Mod";
+        dir = "@Rowdy Rodent Industries";
+        name = "Rowdy Rodent Industries";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";

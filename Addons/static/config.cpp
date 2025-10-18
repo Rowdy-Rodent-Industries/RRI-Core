@@ -1,14 +1,12 @@
 #include "script_component.hpp"
 
-#include "config_lists.hpp"
-
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
-        units[] = {SUPPLY_LIST};
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"rri_main"};
+        requiredAddons[] = {"cba_main", "ace_main"};
         author = AUTHOR;
         authors[] = {""};
         url = CSTRING(URL);
@@ -16,4 +14,16 @@ class CfgPatches {
     };
 };
 
-    #include "CfgVehicles.hpp"
+class CfgMods {
+    class PREFIX {
+        dir = "@Rowdy Rodent Industries";
+        name = "Rowdy Rodent Industries";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        hidePicture = "true";
+        hideName = "true";
+        actionName = "Website";
+        action = CSTRING(URL);
+        description = "";
+    };
+};
+
