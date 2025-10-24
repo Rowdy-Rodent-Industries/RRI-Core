@@ -1,2 +1,0 @@
-PREP(updateRespawn);
-PREP(initDefaultLoadouts);
