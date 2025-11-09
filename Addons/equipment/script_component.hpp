@@ -1,6 +1,6 @@
 #define COMPONENT equipment
 #define COMPONENT_BEAUTIFIED equipment
-#include "\z\rri\addons\main\script_mod.hpp"
+#include "\z\RRI\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -14,7 +14,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_EQUIPMENT
 #endif
 
-#include "\z\rri\addons\main\script_macros.hpp"
+#include "\z\RRI\addons\main\script_macros.hpp"
 
 #define HELMET_PROTECTION \
         class HitpointsProtectionInfo {\
@@ -228,23 +228,22 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 }
 
 //Helmets
-#define MACRO_RANK_HELMET(var1,var2,var3) class GHELMET(##var2##_##var3##): GHELMET(##var2##) {\
+#define MACRO_RANK_HELMET(var1,var2) class rri_havoc_helmet_##var2##: rri_havoc_helmet_base {\
 	scope = ##var1##;\
 	scopeArsenal = ##var1##;\
 	author = AUTHOR;\
-	displayName = QUOTE([rsfd] ##var2## ##var3## Helmet);\
+	displayName = QUOTE([RRI] Havoc ##var2## Helmet);\
 	hiddenSelections[]=\
 	{\
-		"camo1","visor"\
+		"camo1"\
 	};\
 	hiddenSelectionsTextures[]=\
 	{\
-		QPATHTOF(data\Helmets\##var2##\Rank\##var2##_##var3##_CO.paa),"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"\
+		QPATHTOF(data\Helmets\Rank\base_##var2##_CO.paa)\
 	};\
 	class XtdGearInfo {\
-        model = QGVAR(helmet);\
-        Type = QUOTE(##var2##);\
-		Rank = QUOTE(##var3##);\
+        model = QUOTE(rri_rank_helmets_xtd);\
+		Rank = QUOTE(##var2##);\
     };\
 }
 
@@ -252,7 +251,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 	scope = ##var1##;\
 	scopeArsenal = ##var1##;\
 	author = AUTHOR;\
-	displayName = QUOTE([rsfd] ##var2## ##var3## Helmet);\
+	displayName = QUOTE([RRI] ##var2## ##var3## Helmet);\
 	hiddenSelections[]=\
 	{\
 		"camo1","visor"\
@@ -269,48 +268,45 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 }
 
 // Uniforms
-#define MACRO_UNIFORM(var1,var2)class GUNIFORM(##var1##_##var2##): GUNIFORM(Base){\
+#define MACRO_UNIFORM(var1,var2)class rri_##var1##_uniform_##var2##: rri_##var1##_uniform_base{\
 	scope = 2;\
 	scopeArsenal = 2;\
 	author = AUTHOR;\
-	displayName = QUOTE([rsfd] ##var1## Uniform (##var2##));\
+	displayName = QUOTE([RRI] ##var1## Uniform (##var2##));\
 	class ItemInfo: ItemInfo {\
-		uniformClass = QGUNIT(##var1##_##var2##);\
+		uniformClass = QUOTE(rri_##var1##_unit_##var2##);\
 	};\
 	class XtdGearInfo {\
-        model = QGVAR(Uniforms);\
-        Type = QUOTE(##var1##);\
+        model = QUOTE(rrri_rank_uniforms_xtd);\
 		Rank = QUOTE(##var2##);\
     };\
 }
 
 // Units
-#define MACRO_RANK_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
+#define MACRO_RANK_UNIT(var1,var2) class rri_##var1##_unit_##var2##: rri_##var1##_unit_base{\
 	scope = 2;\
 	scopeArsenal = 2;\
-	displayName = QUOTE([rsfd] ##var1## Trooper (##var2##));\
-	uniformClass = QGUNIFORM(##var1##_##var2##);\
+	displayName = QUOTE([RRI] ##var1## Trooper (##var2##));\
+	uniformClass = QUOTE(rri_##var1##_uniform_##var2##);\
 	side = 1;\
-    faction = QEGVAR(faction,rsfd);\
+    faction = QEGVAR(faction,RRI);\
     editorSubcategory = QEGVAR(edsubcat,##var1##);\
 	hiddenSelectionsTextures[]=\
 	{\
 		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor1_##var2##_CO.paa),\
 		QPATHTOF(data\uniforms\##var1##\Rank\##var2##\Armor2_##var2##_CO.paa),\
-		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"\
+		QUOTE(SFA_Main\SFA_Equipment_R\Uniform\Havoc\data\Havoc_Undersuit_co.paa)\
 	};\
-	linkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
-	respawnLinkedItems[] = {QGHELMET(##var1##_##var2##),"JLTS_clone_comlink","ItemMap","ItemCompass","ItemWatch","ItemGPS"};\
 	UNIT_HITPOINTS;\
 }
 
 #define MACRO_CUSTOM_UNIT(var1,var2) class GUNIT(##var1##_##var2##): GUNIT(Base){\
 	scope = 2;\
 	scopeArsenal = 2;\
-	displayName = QUOTE([rsfd] ##var1## Trooper (##var2##));\
+	displayName = QUOTE([RRI] ##var1## Trooper (##var2##));\
 	uniformClass = QGUNIFORM(##var1##_##var2##);\
 	side = 1;\
-    faction = QEGVAR(faction,rsfd);\
+    faction = QEGVAR(faction,RRI);\
     editorSubcategory = QEGVAR(edsubcat,Trooper);\
 	hiddenSelectionsTextures[]=\
 	{\

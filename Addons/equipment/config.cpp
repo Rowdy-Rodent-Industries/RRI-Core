@@ -16,4 +16,5 @@ class CfgPatches {
 
 #include "cfgvehicles.hpp"
 #include "cfgweapons.hpp"
-
+#include "cfgglasses.hpp"
+#include "xtdgearmodels.hpp"

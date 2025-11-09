@@ -8,6 +8,8 @@ class rri_havoc_backpack_base: SFA_Havoc_backpack
     tf_hasLRradio = 0;
 
 	maximumLoad = BACKPACK_MAXLOAD;
+
+	hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\infantry_backpack_co.paa)};
 };
 
 class rri_havoc_backpack_lr: SFA_Havoc_RTO_backpack {
@@ -21,6 +23,8 @@ class rri_havoc_backpack_lr: SFA_Havoc_RTO_backpack {
 	tf_subtype = "digital_lr";
 
 	maximumLoad = BACKPACK_MAXLOAD;
+
+	hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\rto_backpack_co.paa)};
 };
 
 class rri_havoc_backpack_at: SFA_Havoc_AT_backpack
@@ -31,6 +35,8 @@ class rri_havoc_backpack_at: SFA_Havoc_AT_backpack
 	tf_hasLRradio = 0;
 
 	maximumLoad = BACKPACK_MAXLOAD;
+
+	hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\at_backpack_co.paa)};
 };
 
 class rri_havoc_backpack_belt: rri_havoc_backpack_base
