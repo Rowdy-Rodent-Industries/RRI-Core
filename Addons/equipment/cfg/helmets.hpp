@@ -36,5 +36,3 @@ class rri_spec_helmet_base: SFA_blank_Havoc_Helmet_S {
 
     HELMET_ACE_HEARING;
 };
-
-ff
