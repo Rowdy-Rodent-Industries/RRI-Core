@@ -16,7 +16,7 @@ class CfgAmmo {
     class GAMMO(Base): B_338_Ball
     {
         author = AUTHOR;
-        model = QPATHTOF(data\effects\laser\blue\mti_laser_blue.p3d);
+        model = QPATHTOF(data\effects\laser\blue\rri_laser_blue.p3d);
         cartridge = "";
         lightcolor[] = {0.25,0.25,0.5};
         flaresize = 3;
@@ -77,7 +77,7 @@ class CfgAmmo {
     class GAMMO(HP_Base): B_338_Ball
     {
         author = AUTHOR;
-        model = QPATHTOF(data\effects\laser\yellow\mti_laser_yellow.p3d);
+        model = QPATHTOF(data\effects\laser\yellow\rri_laser_yellow.p3d);
         cartridge = "";
         lightcolor[] = {0.25,0.25,0.5};
         flaresize = 5;
@@ -177,25 +177,25 @@ class CfgAmmo {
 
     class GAMMO(Orange): GAMMO(Base)
     {
-        model = QPATHTOF(data\effects\laser\orange\mti_laser_orange.p3d);
+        model = QPATHTOF(data\effects\laser\orange\rri_laser_orange.p3d);
         effectfly = QGVAR(Rifle_Orange_Tracer);
     };
 
     class GAMMO(Red): GAMMO(Base)
     {
-        model = QPATHTOF(data\effects\laser\red\mti_laser_red.p3d);
+        model = QPATHTOF(data\effects\laser\red\rri_laser_red.p3d);
         effectfly = QGVAR(Rifle_Red_Tracer);
     };
 
     class GAMMO(Yellow): GAMMO(Base)
     {
-        model = QPATHTOF(data\effects\laser\yellow\mti_laser_yellow.p3d);
+        model = QPATHTOF(data\effects\laser\yellow\rri_laser_yellow.p3d);
         effectfly = QGVAR(Rifle_Yellow_Tracer);
     };
 
     class GAMMO(Green): GAMMO(Base)
     {
-        model = QPATHTOF(data\effects\laser\Green\mti_laser_Green.p3d);
+        model = QPATHTOF(data\effects\laser\Green\rri_laser_Green.p3d);
         effectfly = QGVAR(Rifle_Green_Tracer);
     };
 
@@ -245,7 +245,7 @@ class CfgAmmo {
 		CraterEffects="ATMissileCrater";
 		explosionEffects="ATMissileExplosion";
 		effectsMissileInit="";
-        model = QPATHTOEF(props,munitions\mti_heat_missile.p3d);
+        model = QPATHTOEF(props,munitions\rri_heat_missile.p3d);
 		effectsMissile=QGVAR(Missle_Trail_Blue);
 		simulationStep=0.02;
 		airLock=0;

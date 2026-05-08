@@ -24,7 +24,6 @@ class CfgAmmo
         airLock = 1;
         typicalSpeed = 270;
         timeToLive = 6;
-        model = QPATHTOF(verpine_projectile.p3d);
         tracerStartTime = 0.075;
         tracerEndTime = 1;
         airFriction = -0.00019568;

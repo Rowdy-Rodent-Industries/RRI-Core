@@ -5,7 +5,7 @@ class CfgAmmo
         hit = 45;
         indirectHit = 3;
         indirectHitRange = 0;
-        model = QPATHTOEF(weapons,core\data\effects\laser\green\mti_laser_green.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\green\rri_laser_green.p3d);
         lightcolor[] = {0.25, 0.5, 0.25};
         effectfly = QEGVAR(weapons_core,Rifle_Green_Tracer);
         cartridge = "";
@@ -73,7 +73,7 @@ class CfgAmmo
         explosive = 0.6;
         caliber = 2.4;
 
-        model = QPATHTOEF(weapons,core\data\effects\laser\red\mti_laser_red.p3d); 
+        model = QPATHTOEF(weapons,core\data\effects\laser\red\rri_laser_red.p3d); 
         lightcolor[] = {0.5, 0.25, 0.25};
         effectfly = QEGVAR(weapons_core,Rifle_Red_Tracer);
 

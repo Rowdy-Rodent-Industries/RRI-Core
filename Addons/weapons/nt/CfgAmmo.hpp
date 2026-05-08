@@ -40,7 +40,7 @@ class CfgAmmo
 
         deflecting = 0;
 
-        model = QPATHTOEF(weapons,core\data\effects\laser\red\mti_laser_red.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\red\rri_laser_red.p3d);
         effectfly = QEGVAR(weapons_core,Rifle_red_Tracer); 
 
         SoundSetExplosion[] = {QGVAR(NTExp_SoundSet)};
@@ -93,7 +93,7 @@ class CfgAmmo
 
         deflecting = 0;
 
-        model = QPATHTOEF(weapons,core\data\effects\laser\green\mti_laser_green.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\green\rri_laser_green.p3d);
         effectfly = QEGVAR(weapons_core,Rifle_Green_Tracer); 
         SoundSetExplosion[] = {QGVAR(NTExp_SoundSet)};
     };
@@ -136,7 +136,7 @@ class CfgAmmo
 
         deflecting = 0;
 
-        model = QPATHTOEF(weapons,core\data\effects\laser\blue\mti_laser_blue.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\blue\rri_laser_blue.p3d);
         effectfly = QEGVAR(weapons_core,Rifle_Blue_Tracer);
         // ExplosionEffects = QEGVAR(weapons_core,Plasma_Impact);
         // cratereffects = QEGVAR(weapons_core,Plasma_Impact);
@@ -146,7 +146,7 @@ class CfgAmmo
         author = AUTHOR;
         indirectHitRange = 20;
         coefgravity = 0;
-        model = QPATHTOEF(weapons,core\data\effects\laser\blue\mti_laser_blue.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\blue\rri_laser_blue.p3d);
         effectfly = QEGVAR(weapons_core,Rifle_Blue_Tracer);
     };
 };

@@ -41,7 +41,7 @@ class CfgWeapons {
 		UiPicture = QPATHTOF(data\ui\Causality_Base_ca.paa);
 
 		hiddenSelectionsTextures[] = {QPATHTOF(data\Causilty_CO.paa),QPATHTOF(data\Causilty_CO.paa)};
-		model = QPATHTOF(mti_causality.p3d);
+		model = QPATHTOF(rri_causality.p3d);
 
 		class EventHandlers
 		{
@@ -156,7 +156,7 @@ class CfgWeapons {
 	class GWEAPON(causaility_sidearm): hgun_P07_F {
 		scope = 2;
 		displayName = "[SOB] Causality Sidearm";
-		model = QPATHTOF(mti_causality_sidearm.p3d);
+		model = QPATHTOF(rri_causality_sidearm.p3d);
 		hiddenSelections[] = {"camo1","emissive"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\Sidearm_CO.paa),QPATHTOF(data\Sidearm_CO.paa)};
 		baseWeapon = QGWEAPON(causaility_sidearm);
@@ -223,13 +223,13 @@ class CfgWeapons {
 		author = AUTHOR;
 		displayName = "[SOB] Causality Scope";
 
-		model = QPATHTOF(mti_causality_scope.p3d);
+		model = QPATHTOF(rri_causality_scope.p3d);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"Commando","FieldSupport"};
 
         class ItemInfo: ItemInfo {
 
-			modelOptics=QPATHTOF(mti_reticle_causality.p3d);
+			modelOptics=QPATHTOF(rri_reticle_causality.p3d);
 
             class OpticsModes {
 				class NCTALKEP {

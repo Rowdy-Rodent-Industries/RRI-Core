@@ -132,13 +132,7 @@ class CfgWeapons {
     };
 
     class GWEAPON(Bowcaster): GWEAPON(Bowcaster_base) {
-        scope = 2;
-
-        model = QPATHTOF(mti_Bowcaster.p3d);
-
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\Bowcaster_co.paa)};
-
+        scope = 0;
         picture = QPATHTOF(data\icon\Bowcaster_base_ca.paa);
 
         muzzles[] = {"this", "Heavy"};
@@ -167,7 +161,7 @@ class CfgWeapons {
 	class optic_Nightstalker: ItemCore {
 		class ItemInfo;
 	};
-	class GVAR(Bowcaster_Scope_Base): optic_Nightstalker {
+	class GVAR(Bowcaster_Scope): optic_Nightstalker {
 		scope=1;
 		author=AUTHOR;
 		displayName="[SOB] Bowcaster Scope";
@@ -225,14 +219,6 @@ class CfgWeapons {
 		};
 		inertia=0.2;
 	};
-
-	class GVAR(Bowcaster_Scope) : GVAR(Bowcaster_Scope_Base) {
-		scope = 2;
-
-		model=QPATHTOF(mti_bowcaster_scope.p3d);
-		picture=QPATHTOF(data\ui\bowcaster_scope_ui_ca.paa);
-	};
-
 	WEAPON_BCSEWPN_HEADER;
 	WEAPON_BCSEWPN_MUZZLEFLASH_MACRO(Bowcaster);
 };

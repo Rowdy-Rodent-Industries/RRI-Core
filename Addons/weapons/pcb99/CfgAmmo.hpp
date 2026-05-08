@@ -9,7 +9,7 @@ class CfgAmmo
         caliber = 25;
         typicalSpeed = 1500;
         effectfly = QEGVAR(weapons_core,Rifle_White_Tracer);
-        model = QPATHTOEF(weapons,core\data\effects\laser\white\mti_laser_white.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\white\rri_laser_white.p3d);
         explosionEffects = "ExploAmmoExplosionPlaneCAS";
         craterEffects = "ExploAmmoCrater";
         soundSetSonicCrack[] = {"BulletSonicCrack_Gatling_SoundSet"};

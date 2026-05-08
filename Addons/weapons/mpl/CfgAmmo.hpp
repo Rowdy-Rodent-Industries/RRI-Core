@@ -10,7 +10,7 @@ class CfgAmmo
         airfriction = 0;
         coefgravity = 0;
         deflecting = 0;
-        model = QPATHTOEF(weapons,core\data\effects\laser\yellow\mti_laser_yellow.p3d);
+        model = QPATHTOEF(weapons,core\data\effects\laser\yellow\rri_laser_yellow.p3d);
         effectfly = QGVAR(Rifle_Yellow_Tracer);
         triggerOnImpact = 1;
     };
