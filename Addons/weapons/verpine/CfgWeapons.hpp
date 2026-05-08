@@ -11,15 +11,15 @@ class PointerSlot;
 class UnderBarrelSlot;
 
 class CfgWeapons {
-    class Rifle_Base_F;
-    class arifle_MX_Base_F: Rifle_Base_F {
+    class 3AS_DC15X_Base_F;
+    class 3AS_DC15X_F: 3AS_DC15X_Base_F {
         class WeaponSlotsInfo;
 		class GunClouds;
         class GunParticles;
 		class Single;
     };
 
-    class GWEAPON(Verpine_Base): arifle_MX_Base_F {
+    class GWEAPON(Verpine): 3AS_DC15X_F {
         scope = 1;
         author = AUTHOR;
         displayName = "[SOB] Verpine Shatter Rifle";
@@ -29,9 +29,10 @@ class CfgWeapons {
 
         magazines[] = {QGMAG(Verpine_Improv),QGMAG(Verpine),QGMAG(Verpine_APDS_1rnd),QGMAG(Verpine_APDS),QGMAG(Verpine_Deraformine),QGMAG(Verpine_Latheniol),QGMAG(Verpine_Tracking),QGMAG(Verpine_Ion),QGMAG(Verpine_Acid)};
         magazineWell[] = {QGMAGWELL(Verpine)};
+		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
+        picture = QPATHTOF(data\ui\Verpine_Base_ca.paa);
         reloadAction = "GestureReload_JLTS_DC15S";
-        handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(anims\Verpine_handAnim.rtm)};
 
 		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10}; //todo
 
@@ -124,19 +125,6 @@ class CfgWeapons {
 		MACRO_GUNSMOKE_EFFECT;
     };
 
-    class GWEAPON(Verpine): GWEAPON(Verpine_Base) {
-        scope = 2;
-
-        model = QPATHTOF(Verpine_Shatter_Rifle.p3d);
-
-        hiddenSelections[] = {"camo","illum"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\camo_co.paa),QPATHTOF(data\illum_co.paa)};
-		hiddenSelectionsMaterials[] = {QPATHTOF(data\camo.rvmat),"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
-
-        picture = QPATHTOF(data\ui\Verpine_Base_ca.paa);
-    };
-
 	WEAPON_BCSEWPN_HEADER;
 	WEAPON_BCSEWPN_MUZZLEFLASH_MACRO(Verpine);
 
@@ -151,7 +139,7 @@ class CfgWeapons {
 		picture = QPATHTOF(data\ui\verpine_scope_ui_ca.paa);
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
-		model=QPATHTOF(verpine_scope.p3d);
+		model = "\3AS\3AS_Weapons\Republic\ACC\3AS_acco_DC15X_Scope_F.p3d";
 
         class CBA_ScriptedOptic {
             bodyTexture = "\z\ace\addons\xm157\data\ace_vector_body_co.paa";

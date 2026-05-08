@@ -10,8 +10,8 @@ class CfgMagazines {
         ammo = QGAMMO(zh73);
         count = 30;
         mass = 12;
-        model = QPATHTOF(mti_zh_mag_small.p3d);
-        modelSpecial = QPATHTOF(mti_zh_mag_small.p3d);
+        model = QPATHTOF(rri_zh_mag_small.p3d);
+        modelSpecial = QPATHTOF(rri_zh_mag_small.p3d);
         modelSpecialIsProxy = 1;
         picture = QPATHTOF(data\ui\ZHMAG.paa);
     };
@@ -26,8 +26,8 @@ class CfgMagazines {
         ammo = QGAMMO(zh73_lr);
         count = 15;
         mass = 12;
-        model = QPATHTOF(mti_zh_mag_small.p3d);
-        modelSpecial = QPATHTOF(mti_zh_mag_small.p3d);
+        model = QPATHTOF(rri_zh_mag_small.p3d);
+        modelSpecial = QPATHTOF(rri_zh_mag_small.p3d);
         modelSpecialIsProxy = 1;
         picture = QPATHTOF(data\ui\ZHMAG.paa);
     };

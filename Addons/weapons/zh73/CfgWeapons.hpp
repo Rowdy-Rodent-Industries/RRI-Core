@@ -48,7 +48,7 @@ class CfgWeapons {
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC","JumpTrooper","Commando"};
 
 		hiddenSelections[] = {"camo2","camo3"};
-		model = QPATHTOF(mti_zh_short.p3d);
+		model = QPATHTOF(rri_zh_short.p3d);
 
 		handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(data\anim\zh_small_hand.rtm)};
 
@@ -169,7 +169,7 @@ class CfgWeapons {
 		UiPicture = QPATHTOF(data\ui\ZHLONG.paa);
 
 		hiddenSelections[] = {"camo2"};
-		model = QPATHTOF(mti_zh_long.p3d);
+		model = QPATHTOF(rri_zh_long.p3d);
 
 		handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(data\anim\zh_small_hand.rtm)};
 
@@ -268,7 +268,7 @@ class CfgWeapons {
 
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC","JumpTrooper","Commando"};
 
-		model = QPATHTOF(mti_zh_long.p3d);
+		model = QPATHTOF(rri_zh_long.p3d);
 
 		handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(data\anim\zh_small_hand.rtm)};
 
@@ -389,7 +389,7 @@ class CfgWeapons {
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		displayName = "[SOB] ZH-73 Torch";
-		model = QPATHTOF(mti_zh_torch.p3d);
+		model = QPATHTOF(rri_zh_torch.p3d);
 		picture = QPATHTOF(data\ui\Flashlight.paa);
 		descriptionShort = "Torch for the ZH-73 Weapon Platform";
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC","JumpTrooper","Commando"};
@@ -399,7 +399,7 @@ class CfgWeapons {
 	{
 		scope = 2;
 		displayName	= "[SOB] ZH-73 Foregrip";
-		model = QPATHTOF(mti_zh_foregrip.p3d);
+		model = QPATHTOF(rri_zh_foregrip.p3d);
 		picture = QPATHTOF(data\ui\Foregrip.paa);
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC","JumpTrooper","Commando"};
         GVAR_CORE(weapons_core,isForegrip) = 1;
@@ -419,7 +419,7 @@ class CfgWeapons {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[SOB] ZH Suppressor";
-		model = QPATHTOF(mti_zh_silencer.p3d);
+		model = QPATHTOF(rri_zh_silencer.p3d);
 		picture = QPATHTOF(data\ui\Suppressor.paa);
 		descriptionShort = "Suppressor for the ZH-73 Weapon Platform";
 		soundTypeIndex = 1;
@@ -432,12 +432,12 @@ class CfgWeapons {
 		displayName = "[SOB] ZH-73 Scope";
 		picture = QPATHTOF(data\ui\Scope.paa);
 
-		model = QPATHTOF(mti_zh_scope.p3d);
+		model = QPATHTOF(rri_zh_scope.p3d);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC","JumpTrooper","Commando"};
 
         class ItemInfo: ItemInfo {
-			modelOptics=QPATHTOF(mti_reticle_zh.p3d);
+			modelOptics=QPATHTOF(rri_reticle_zh.p3d);
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;
