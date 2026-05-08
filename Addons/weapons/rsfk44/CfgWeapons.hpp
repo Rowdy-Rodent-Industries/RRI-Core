@@ -14,12 +14,10 @@ class CfgWeapons {
 		class Single;
 		class WeaponSlotsInfo;
 	};
-	class GWEAPON(rsfk44_base): hgun_P07_F {
-		scope = 1;
-		displayName = "[SOB] RSKF-44 (Single Barrel)";
-		model = QPATHTOF(RSKF44.p3d);
-		hiddenSelections[] = {"camo", "magazine"};
-		baseWeapon = QGWEAPON(rsfk44);
+	class GWEAPON(rskf44): hgun_P07_F {
+		scope = 2;
+		displayName = "[SOB] RSKF-44";
+		baseWeapon = QGWEAPON(rskf44);
 		magazines[] = {QGMAG(RSKF44)};
 		magazineWell[] = {QGMAGWELL(rsfk)};
 		muzzles[] = {"this", "Stun"};
@@ -83,10 +81,5 @@ class CfgWeapons {
 				positionName = "Usti hlavne";
 			};
 		};
-	};
-	class GWEAPON(rsfk44): GWEAPON(rsfk44_base) {
-		scope = 2;
-		hiddenSelectionsTextures[] = {QPATHTOF(data\camo_co.paa),QPATHTOF(data\magazine_co.paa)};
-		hiddenSelectionsMaterials[] = {"", ""};
 	};
 };

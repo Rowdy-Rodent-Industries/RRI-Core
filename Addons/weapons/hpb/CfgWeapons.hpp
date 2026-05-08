@@ -41,7 +41,7 @@ class CfgWeapons {
 		UiPicture = QPATHTOF(data\ui\hpb_ca.paa);
 
 		hiddenSelectionsTextures[] = {QPATHTOF(data\Gun_CO.paa)};
-		model = QPATHTOF(mti_hpb.p3d);
+		model = QPATHTOF(rri_hpb.p3d);
 
 		modes[] = {"Single","FullAuto"};
 
@@ -140,7 +140,7 @@ class CfgWeapons {
 	{
 		scope = 2;
 
-		model = QPATHTOF(mti_hpb.p3d);
+		model = QPATHTOF(rri_hpb.p3d);
 
 		muzzles[] = {"Standard","Heavy"};
 
@@ -326,7 +326,7 @@ class CfgWeapons {
 		author = AUTHOR;
 		displayName = "[SOB] HPB Scope";
 
-		model = QPATHTOF(mti_hpb_scope.p3d);
+		model = QPATHTOF(rri_hpb_scope.p3d);
 
 		picture = QPATHTOF(data\ui\hpb_scope_ca.paa);
 		UiPicture = QPATHTOF(data\ui\hpb_scope_ca.paa);
@@ -335,13 +335,13 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
 
-			modelOptics=QPATHTOF(mti_reticle_hpb.p3d);
+			modelOptics=QPATHTOF(rri_reticle_hpb.p3d);
 
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;
                     useModelOptics=1;
-					modelOptics[] = {QPATHTOF(mti_reticle_hpb.p3d),QPATHTOF(mti_reticle_hpb.p3d)};
+					modelOptics[] = {QPATHTOF(rri_reticle_hpb.p3d),QPATHTOF(rri_reticle_hpb.p3d)};
                     opticsPPEffects[]={ "OpticsCHAbera1", "OpticsBlur1" };
                     opticsZoomMin = ZOOM_FACTOR(8);
 					opticsZoomMax = ZOOM_FACTOR(1);

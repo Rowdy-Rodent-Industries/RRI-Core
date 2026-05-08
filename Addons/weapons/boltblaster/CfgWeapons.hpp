@@ -23,7 +23,7 @@ class CfgWeapons {
 		descriptionShort = "Boltblaster used by Assault Specialist of the Special Operations Brigade";
 		baseWeapon = QGWEAPON(boltblaster);
 
-		model = QPATHTOF(mti_boltblaster.p3d);
+		model = QPATHTOF(rri_boltblaster.p3d);
 		hiddenSelections[] = {"Camo1","Emissive"};
 		hiddenselectionsmaterials[] = {QPATHTOF(data\Shotty.rvmat),"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\Shotty_CO.paa),QPATHTOF(data\Shotty_CO.paa)};

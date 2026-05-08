@@ -7,7 +7,6 @@ class CfgMagazines
         displayNameShort = "High Power";
         GVAR_CORE(arsenal,whitelists)[] = {"ARC","Trooper","Commando","JumpTrooper","Fieldsupport"};
 
-        model = QPATHTOF(rskf44_mag.p3d);
 
         count = 8;
         initSpeed = 800;
