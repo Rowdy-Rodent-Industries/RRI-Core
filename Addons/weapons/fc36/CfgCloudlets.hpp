@@ -1,0 +1,142 @@
+class CfgCloudlets
+{
+	class Default;
+	
+	// Bright core - hot white/yellow center
+	class GVAR(fc36_fire_core): Default
+	{
+		interval=0.0008;
+		circleRadius=0;
+		circleVelocity[]={0,0,0};
+		particleShape="\A3\data_f\proxies\muzzle_flash\muzzle_flash_silencer.p3d";
+		particleFSNtieth=1;
+		particleFSIndex=0;
+		particleFSFrameCount=1;
+		particleFSLoop=0;
+		angleVar=1;
+		animationName="";
+		particleType="SpaceObject";
+		timerPeriod=1;
+		lifeTime=0.8;
+		moveVelocity[]=
+		{
+			"8*directionX",
+			"8*directionY",
+			"8*directionZ"
+		};
+		rotationVelocity=0;
+		weight=7.9;
+		volume=25;
+		rubbing=0;
+		size[]={0.08,0.12,0.03};
+		color[]=
+		{
+			{1,1,0.8,1},
+			{1,0.6,0.2,0.7},
+			{1,0.3,0,0}
+		};
+		animationSpeed[]={0.1};
+		randomDirectionPeriod=0.003;
+		randomDirectionIntensity=0.1;
+		onTimerScript="";
+		beforeDestroyScript="";
+		destroyOnWaterSurface=0;
+		blockAIVisibility=0;
+		sizeCoef=1;
+		colorCoef[]={1,1,1,0.5};
+		animationSpeedCoef=1;
+		position[]=
+		{
+			"positionX",
+			"positionY",
+			"positionZ"
+		};
+		positionVar[]={0.02,0.02,0.03};
+		moveVelocityVar[]={1,1,1.5};
+		rotationVelocityVar=0;
+		sizeVar=0.02;
+		colorVar[]={0,0,0,0};
+		randomDirectionPeriodVar=0.001;
+		randomDirectionIntensityVar=0.03;
+	};
+
+	class GVAR(fc36_fire_flames): Default
+	{
+		interval=0.002;
+		circleRadius=0;
+		circleVelocity[]={0,0,0};
+		particleShape = "\A3\Data_F\ParticleEffects\Universal\Refract";
+		particleFSNtieth=16;
+		particleFSIndex=7;
+		particleFSFrameCount=8;
+		particleFSLoop=1;
+		angleVar=2;
+		animationName="";
+		particleType="Billboard";
+		timerPeriod=1;
+		lifeTime=1.5;
+		moveVelocity[]=
+		{
+			"7*directionX",
+			"7*directionY",
+			"7*directionZ"
+		};
+		rotationVelocity=1;
+		weight=1.2;
+		volume=1;
+		rubbing=0.05;
+		size[]={0.15,0.20,0.10};
+		color[]=
+		{
+			{1,0.5,0.1,0.8},
+			{1,0.35,0.05,0.6},
+			{0.8,0.2,0,0.3},
+			{0.5,0.1,0,0}
+		};
+		animationSpeed[]={1.5,0.8};
+		randomDirectionPeriod=0.15;
+		randomDirectionIntensity=0.2;
+		onTimerScript="";
+		beforeDestroyScript="";
+		destroyOnWaterSurface=0;
+		blockAIVisibility=0;
+		sizeCoef=1;
+		colorCoef[]={1,1,1,1};
+		animationSpeedCoef=1;
+		position[]=
+		{
+			"positionX",
+			"positionY",
+			"positionZ"
+		};
+		positionVar[]={0.04,0.04,0.06};
+		moveVelocityVar[]={1.5,1.5,2};
+		rotationVelocityVar=1;
+		sizeVar=0.05;
+		colorVar[]={0,0,0,0};
+		randomDirectionPeriodVar=0.05;
+		randomDirectionIntensityVar=0.1;
+	};
+};
+
+class GVAR(fc36_fire)
+{
+	class GVAR(fc36_fire_core)
+	{
+		simulation="particles";
+		type=QGVAR(fc36_fire_core);
+		position[]={0,0,0};
+		intensity=1;
+		interval=1;
+		lifeTime=1;
+	};
+	class GVAR(fc36_fire_flames)
+	{
+		simulation="particles";
+		type=QGVAR(fc36_fire_flames);
+		position[]={0,0,0};
+		intensity=0.4;
+		interval=1;
+		lifeTime=0.3;
+	};
+};

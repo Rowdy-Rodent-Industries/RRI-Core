@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: JLTS_R_core\data\penetration\energy_shield.rvmat
+//Produced from mikero's Dos Tools Dll version 8.35
+//https://mikero.bytex.digital/Downloads
+//'now' is Thu Aug 25 18:13:38 2022 : 'file' last modified on Thu Jan 01 01:00:01 1970
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+surfaceInfo = "MRC\JLTS\Core_mod\data\penetration\energy_shield.bisurf";
+ambient[] = {0.317647,0.345098,0.54902,1};
+diffuse[] = {0.317647,0.345098,0.54902,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
