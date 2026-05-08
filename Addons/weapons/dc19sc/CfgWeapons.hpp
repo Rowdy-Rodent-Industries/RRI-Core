@@ -15,28 +15,26 @@ class CfgWeapons {
     class EGVAR(weapons_core,Stun_Muzzle);
     class EGVAR(weapons_core,Stealth_Muzzle);
 
-    class Rifle_Base_F;
-    class arifle_MX_Base_F: Rifle_Base_F {
+    class 3AS_DC15S_Base_F;
+    class 3AS_DC15S_F: 3AS_DC15S_Base_F {
         class WeaponSlotsInfo;
 		class GunClouds;
         class GunParticles;
     };
 
-    class GWEAPON(DC19SC_Base): arifle_MX_Base_F {
-        scope = 1;
+    class GWEAPON(DC19SC): 3AS_DC15S_F {
+        scope = 2;
         author = AUTHOR;
         displayName = "[SOB] DC-19SC";
         descriptionShort = "Customized DC-19SC weapon platform used by the Covert-Ops detachment.";
 
         baseWeapon = QGWEAPON(DC19SC);
-
+        picture = QPATHTOF(data\ui\DC19S_Base_ca.paa);
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
         magazines[] = {QGMAG(DC19SC), QGMAG(DC19SC_Hack)};
         magazineWell[] = {QGMAGWELL(DC19SC)};
 
-        reloadAction = "GestureReload_JLTS_DC15S";
-        handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(anims\DC19SC_handAnim.rtm)};
 		MACRO_GUNSMOKE_EFFECT;
 		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10}; //todo
 
@@ -198,16 +196,5 @@ class CfgWeapons {
 				compatibleItems[] = {};
 			};
 		};
-    };
-
-    class GWEAPON(DC19SC): GWEAPON(DC19SC_Base) {
-        scope = 2;
-
-        model = QPATHTOF(DC19SC.p3d);
-
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\DC19SC_co.paa)};
-
-        picture = QPATHTOF(data\ui\DC19S_Base_ca.paa);
     };
 };
