@@ -17,7 +17,7 @@ class CfgAmmo
     class GAMMO(cyclone_antimat): GAMMO(Base) {
         hit = 650;
         indirectHit = 20;
-        model = QPATHTOF(mti_cyclone_microrocket.p3d);
+        model = QPATHTOF(rri_cyclone_microrocket.p3d);
     };
 
     class GAMMO(cyclone_Thermal): GAMMO(Orange) {

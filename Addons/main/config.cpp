@@ -18,7 +18,7 @@ class CfgMods {
     class PREFIX {
         dir = "@Rowdy Rodent Industries";
         name = "Rowdy Rodent Industries";
-        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca.paa";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";

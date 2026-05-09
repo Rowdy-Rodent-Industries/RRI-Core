@@ -162,7 +162,7 @@ class CfgWeapons
 	class GWEAPON(cyclone): GWEAPON(cyclone_base) {
 		scope = 2;
 
-		model = QPATHTOF(mti_cyclone.p3d);
+		model = QPATHTOF(rri_cyclone.p3d);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"Commando"};
 
@@ -340,12 +340,12 @@ class CfgWeapons
 		author = AUTHOR;
 		displayName = "[SOB] Cyclone Scope";
 
-		model = QPATHTOF(mti_cyclone_scope.p3d);
+		model = QPATHTOF(rri_cyclone_scope.p3d);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"Commando"};
 
         class ItemInfo: ItemInfo {
-			modelOptics=QPATHTOF(mti_reticle_cyclone.p3d);
+			modelOptics=QPATHTOF(rri_reticle_cyclone.p3d);
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;
@@ -396,7 +396,7 @@ class CfgWeapons
 		scope = 2;																	
 		displayName	= "[SOB] Cyclone Bipod";													
 		picture	= "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";			
-		model = QPATHTOF(mti_cyclone_bipod.p3d);		
+		model = QPATHTOF(rri_cyclone_bipod.p3d);		
 		GVAR_CORE(arsenal,whitelists)[] = {"Commando"};				
 		class ItemInfo: InventoryUnderItem_Base_F
         {

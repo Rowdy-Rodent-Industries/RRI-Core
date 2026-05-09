@@ -4,7 +4,6 @@
 #define ITEM_LIST \
 "rri_weapon_Bowcaster_base",\
 "rri_weapon_Bowcaster",\
-"rri_weapons_bowcaster_Bowcaster_Scope_Base",\
 "rri_weapons_bowcaster_Bowcaster_Scope",\
 "rri_weapon_Bowcaster_bcsewpn"
 

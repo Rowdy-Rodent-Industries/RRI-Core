@@ -39,7 +39,7 @@ class CfgWeapons
 
 		baseWeapon = QGWEAPON(br_77_base);
 
-		model = QPATHTOF(mti_br77.p3d);
+		model = QPATHTOF(rri_br77.p3d);
 
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenselectionsmaterials[]={QPATHTOF(data\woodgun\gun.rvmat)};
@@ -213,13 +213,13 @@ class CfgWeapons
 		author = AUTHOR;
 		displayName = "[SOB] BR-77 Scope";
 
-		model = QPATHTOF(mti_br77_scope.p3d);
+		model = QPATHTOF(rri_br77_scope.p3d);
 		picture = QPATHTOF(data\icon\BR-77SCOPE.paa);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"JumpTrooper"};
 
         class ItemInfo: ItemInfo {
-			modelOptics=QPATHTOF(mti_reticle_br77.p3d);
+			modelOptics=QPATHTOF(rri_reticle_br77.p3d);
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;
@@ -271,7 +271,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		displayName = "[SOB] BR-77 Bayonet";
-		model = QPATHTOF(mti_br77_bayonet.p3d);
+		model = QPATHTOF(rri_br77_bayonet.p3d);
 		descriptionShort = "Bayonet for the BR-77 Weapon Platform";
 		IMS_Bayonet_Item = "true";
 		GVAR_CORE(arsenal,whitelists)[] = {"JumpTrooper"};
@@ -284,7 +284,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[SOB] BR-77 Supressor";
-		model = QPATHTOF(mti_br77_silencer.p3d);
+		model = QPATHTOF(rri_br77_silencer.p3d);
 		descriptionShort = "Supressor for the BR-77 Weapon Platform";
 		soundTypeIndex = 1;
 		GVAR_CORE(arsenal,whitelists)[] = {"JumpTrooper"};

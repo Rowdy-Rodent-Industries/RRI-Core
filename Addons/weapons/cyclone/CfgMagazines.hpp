@@ -6,14 +6,14 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Cyclone Magazine";
         displayNameShort = "Base Cyclone";
-        descriptionShort = "Base Cyclone magazine for MTI weapons";
+        descriptionShort = "Base Cyclone magazine";
         GVAR_CORE(arsenal,whitelists)[] = {"Commando"};
         ammo = QGAMMO(Cyclone_Base);
         count = 500;
         initSpeed = 1000;
         mass = 17;
         // picture = QPATHTOF(data\Icons\NT_Base_ca.paa);
-        modelSpecial = QPATHTOF(mti_cyclone_magazine1.p3d);
+        modelSpecial = QPATHTOF(rri_cyclone_magazine1.p3d);
         modelSpecialIsProxy = 1;
     };
 
@@ -38,8 +38,8 @@ class CfgMagazines
         scope = 2;
         ammo = QGAMMO(cyclone_antimat);
         count = 1;
-        model = QPATHTOF(mti_cyclone_microrocket.p3d);
-        modelSpecial = QPATHTOF(mti_cyclone_microrocket.p3d);
+        model = QPATHTOF(rri_cyclone_microrocket.p3d);
+        modelSpecial = QPATHTOF(rri_cyclone_microrocket.p3d);
     };
     class GMAG(cyclone_thermal): GMAG(Cyclone_Base) {
         displayName = "[SOB] Cyclone 250rnd Thermal Magazine";
@@ -47,7 +47,7 @@ class CfgMagazines
         descriptionShort = "Thermal Cyclone magazine capable of setting targets on fire";
         scope = 2;
         ammo = QGAMMO(cyclone_thermal);
-        modelSpecial = QPATHTOF(mti_cyclone_magazine2.p3d);
+        modelSpecial = QPATHTOF(rri_cyclone_magazine2.p3d);
         count = 250;
     };
 };

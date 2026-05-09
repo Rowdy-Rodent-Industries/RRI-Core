@@ -35,7 +35,7 @@ class CfgWeapons {
 		picture = QPATHTOF(data\ui\Railgun_ca.paa);
 		UiPicture = QPATHTOF(data\ui\Railgun_ca.paa);
 
-		model = QPATHTOF(mti_pcb.p3d);
+		model = QPATHTOF(rri_pcb.p3d);
 		hiddenSelections[] = {""};
 
 		drySound[] = {QPATHTOEF(weapons,core\data\sounds\empty.wss),5,1,10};
@@ -51,7 +51,7 @@ class CfgWeapons {
 		ace_overheating_mrbs = 100000;
 
 		handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(data\anims\pcb_hand.rtm)};
-		reloadAction = "GestureReload_mti_pcb";
+		reloadAction = "GestureReload_rri_pcb";
 		reloadMagazineSound[] = {QPATHTOEF(weapons,pcb99\data\sounds\pcb_reload.ogg),1,1};
 		modes[] = {"Single"};
 		class GunParticles {
@@ -146,12 +146,12 @@ class CfgWeapons {
 		picture = QPATHTOF(data\ui\Railgunscope_ca.paa);
 		UiPicture = QPATHTOF(data\ui\Railgunscope_ca.paa);
 
-		model = QPATHTOF(mti_pcb_scope.p3d);
+		model = QPATHTOF(rri_pcb_scope.p3d);
 
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
         class ItemInfo: ItemInfo {
-			modelOptics=QPATHTOF(mti_reticle_pcb.p3d);
+			modelOptics=QPATHTOF(rri_reticle_pcb.p3d);
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;
