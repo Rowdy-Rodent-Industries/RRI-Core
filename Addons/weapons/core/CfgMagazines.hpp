@@ -7,13 +7,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Magazine";
         displayNameShort = "Base";
-        descriptionShort = "Base magazine for MTI weapons";
+        descriptionShort = "Base magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 10;
         tracersEvery = 1;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
-        model = QPATHTOF(data\magazine\colors\blue\mti_blue_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\blue\rri_blue_magazine.p3d);
         ammo = QGAMMO(Base);
     };
 
@@ -22,7 +22,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Pistol Magazine";
         displayNameShort = "Base";
-        descriptionShort = "Base magazine for MTI weapons";
+        descriptionShort = "Base magazine for rri weapons";
         ammo = QGAMMO(Base);
         count = 10;
         initSpeed = 700;
@@ -35,13 +35,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base HP Magazine";
         displayNameShort = "Base HP";
-        descriptionShort = "Base HP magazine for MTI weapons";
+        descriptionShort = "Base HP magazine for rri weapons";
         count = 30;
         initSpeed = 900;
         mass = 10;
         tracersEvery = 1;
         picture = QPATHTOF(data\icons\misc\Rifle_HP_ca.paa);
-        model = QPATHTOF(data\magazine\colors\yellow\mti_yellow_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\yellow\rri_yellow_magazine.p3d);
         ammo = QGAMMO(HP_Base);
     };
 
@@ -50,13 +50,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Green Magazine";
         displayNameShort = "Green";
-        descriptionShort = "Green magazine for MTI weapons";
+        descriptionShort = "Green magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 10;
         tracersEvery = 1;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
-        model = QPATHTOF(data\magazine\colors\green\mti_green_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\green\rri_green_magazine.p3d);
         ammo = QGAMMO(Green);
     };
 
@@ -65,13 +65,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Orange Magazine";
         displayNameShort = "Orange";
-        descriptionShort = "Orange magazine for MTI weapons";
+        descriptionShort = "Orange magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 10;
         tracersEvery = 1;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
-        model = QPATHTOF(data\magazine\colors\orange\mti_orange_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\orange\rri_orange_magazine.p3d);
         ammo = QGAMMO(Orange);
     };
 
@@ -80,13 +80,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Red Magazine";
         displayNameShort = "Red";
-        descriptionShort = "Red magazine for MTI weapons";
+        descriptionShort = "Red magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 10;
         tracersEvery = 1;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
-        model = QPATHTOF(data\magazine\colors\red\mti_red_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\red\rri_red_magazine.p3d);
         ammo = QGAMMO(Red);
     };
 
@@ -95,7 +95,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Marksman Magazine";
         displayNameShort = "Base Marksman";
-        descriptionShort = "Base Marksman magazine for MTI weapons";
+        descriptionShort = "Base Marksman magazine for rri weapons";
         count = 20;
         initSpeed = 800;
         mass = 10;
@@ -108,7 +108,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Marksman Magazine";
         displayNameShort = "Base Marksman";
-        descriptionShort = "Base Marksman magazine for MTI weapons";
+        descriptionShort = "Base Marksman magazine for rri weapons";
         count = 20;
         initSpeed = 800;
         mass = 10;
@@ -120,7 +120,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Scattershot Magazine";
         displayNameShort = "Base Scattershot";
-        descriptionShort = "Base Scattershot magazine for MTI weapons";
+        descriptionShort = "Base Scattershot magazine for rri weapons";
         ammo = "";
         count = 5;
         initSpeed = 1000;
@@ -133,7 +133,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Slug Magazine";
         displayNameShort = "Base Slug";
-        descriptionShort = "Base Slug magazine for MTI weapons";
+        descriptionShort = "Base Slug magazine for rri weapons";
         ammo = "";
         count = 5;
         initSpeed = 1000;
@@ -159,13 +159,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Stun Magazine";
         displayNameShort = "Stun";
-        descriptionShort = "Stun magazine for MTI weapons";
+        descriptionShort = "Stun magazine for rri weapons";
         count = 2;
         initSpeed = 700;
         mass = 10;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
         ammo = QGAMMO(Stun);
-        model = QPATHTOF(data\magazine\colors\stuns\mti_stun_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\stuns\rri_stun_magazine.p3d);
         GVAR_CORE(weapons_core,recharge) = 1;
     };
 
@@ -174,13 +174,13 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Ion Magazine";
         displayNameShort = "Ion";
-        descriptionShort = "Ion magazine for MTI weapons";
+        descriptionShort = "Ion magazine for rri weapons";
         count = 2;
         initSpeed = 700;
         mass = 10;
         picture = QPATHTOF(data\icons\misc\Rifle_Base_ca.paa);
         ammo = QGAMMO(Ion);
-        model = QPATHTOF(data\magazine\colors\stuns\mti_stun_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\stuns\rri_stun_magazine.p3d);
         GVAR_CORE(weapons_core,recharge) = 1;
     };
 
@@ -201,12 +201,12 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Magazine";
         displayNameShort = "Base";
-        descriptionShort = "Base Rocket magazine for MTI weapons";
+        descriptionShort = "Base Rocket magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 20;
         picture = QPATHTOF(data\icons\misc\Rocket_AT_ca.paa);
-        model = QPATHTOF(data\magazine\colors\blue\mti_blue_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\blue\rri_blue_magazine.p3d);
         ammo = QGAMMO(Rocket_Base);
     };
 
@@ -215,12 +215,12 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base Magazine";
         displayNameShort = "Base";
-        descriptionShort = "Base Rocket magazine for MTI weapons";
+        descriptionShort = "Base Rocket magazine for rri weapons";
         count = 30;
         initSpeed = 700;
         mass = 10;
         picture = QPATHTOF(data\icons\misc\Rocket_AA_ca.paa);
-        model = QPATHTOF(data\magazine\colors\blue\mti_blue_magazine.p3d);
+        model = QPATHTOF(data\magazine\colors\blue\rri_blue_magazine.p3d);
         ammo = QGAMMO(Rocket_Base);
     };
 };

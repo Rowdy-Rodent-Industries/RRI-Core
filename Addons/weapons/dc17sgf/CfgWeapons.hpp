@@ -8,8 +8,6 @@ class CfgWeapons {
 	class GWEAPON(DC17Sgf_base): GWEAPON(DC17S) {
 		scope = 1;
 		displayName = "[SOB] DC-17s/gf";
-		model = QPATHTOF(dc17sgf.p3d);
-		hiddenSelections[] = {"camo", "magazine", "illum"};
 		baseWeapon = QGWEAPON(DC17Sgf);
 		magazines[] = {QGMAG(DC17S_GF)};
 		magazineWell[] = {QGMAGWELL(DC17SGF)};
@@ -25,7 +23,6 @@ class CfgWeapons {
 	};
 	class GWEAPON(DC17Sgf): GWEAPON(DC17Sgf_base) {
 		scope = 2;
-		hiddenSelectionsTextures[] = {QPATHTOF(data\camo_co.paa),QPATHTOF(data\magazine_co.paa),QPATHTOF(data\magazine_co.paa)};
 		hiddenSelectionsMaterials[] = {"", "", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		GVAR_CORE(arsenal,whitelists)[] = {"Trooper","Fieldsupport"};
 	};

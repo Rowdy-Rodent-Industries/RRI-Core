@@ -13,8 +13,8 @@ class CfgMagazines
         mass = 10;
         count = 15;
         hiddenSelections[] = {"Camo1","Camo2"};
-        model = QPATHTOF(mti_br77_mag.p3d);
-        modelSpecial = QPATHTOF(mti_br77_mag.p3d);
+        model = QPATHTOF(rri_br77_mag.p3d);
+        modelSpecial = QPATHTOF(rri_br77_mag.p3d);
         picture = QPATHTOF(data\icon\BR77_mag.paa);
         modelSpecialIsProxy=1;
     };
@@ -31,8 +31,8 @@ class CfgMagazines
         mass = 12;
         count = 1;
         hiddenSelections[] = {"Camo1","Camo2"};
-        model = QPATHTOF(mti_br77_mag.p3d);
-        modelSpecial = QPATHTOF(mti_br77_mag.p3d);
+        model = QPATHTOF(rri_br77_mag.p3d);
+        modelSpecial = QPATHTOF(rri_br77_mag.p3d);
         picture = QPATHTOF(data\icon\BR77_mag.paa);
         modelSpecialIsProxy=1;
     };
