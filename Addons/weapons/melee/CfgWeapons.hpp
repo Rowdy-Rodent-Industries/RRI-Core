@@ -129,7 +129,7 @@ class CfgWeapons {
 		author = AUTHOR;
 		displayname = "[SOB] Clone Hammer";
 
-		model = QPATHTOF(mti_hammer.p3d);
+		model = QPATHTOF(rri_hammer.p3d);
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\hammer\shaft\grip_CO.paa),QPATHTOF(data\hammer\head\head_CO.paa)};
 		// picture = QPATHTOF(data\ui\Knife_ca.paa); //todo
@@ -150,7 +150,7 @@ class CfgWeapons {
         author = AUTHOR;
 		displayname = "[SOB] Clone Shovel";
 
-		model = QPATHTOF(mti_shovel.p3d);
+		model = QPATHTOF(rri_shovel.p3d);
         hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\shovel\camo_CO.paa)};
 		// picture = QPATHTOF(data\ui\Knife_ca.paa);
