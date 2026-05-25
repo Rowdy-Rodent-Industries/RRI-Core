@@ -1,4 +1,9 @@
 rri_weapons
 ===================
 
-Weapons template feature.
+- Fix scope icons that aren't ours from moktech
+- Fix DC-17M Scopes
+- Make verpine model
+- make DC19sc model 
+- Make RSFK model 
+- Fix up models
