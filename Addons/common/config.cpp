@@ -14,7 +14,11 @@ class CfgPatches {
     };
 };
 
-#include "CfgFactionClasses.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgGesturesMale.hpp"
+#include "CfgSounds.hpp"
+#include "CfgMovesBasic.hpp"
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
-#include "Cfg3den.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgMods.hpp"

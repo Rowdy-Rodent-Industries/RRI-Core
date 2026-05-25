@@ -1,7 +1,6 @@
 class CfgFactionClasses {
-	class NO_CATEGORY;
-	class EGVAR(faction,41st) {
-		displayName = "[41st] Elite Corps";
+	class EGVAR(faction,sob) {
+		displayName = "[SOB] Special Operations Brigade";
 		priority = 1;
 		side = 1;
 	};
