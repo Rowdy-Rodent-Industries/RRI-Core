@@ -19,7 +19,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: build-output
-        path: .hemttout/*
+        path: .hemttout/**
         include-hidden-files: true
         retention-days: 1
         if-no-files-found: 'error'
