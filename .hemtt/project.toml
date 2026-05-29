@@ -7,4 +7,7 @@ mainprefix = "z"
 archive = false # Default: true
 
 [version]
-path = "addons/main/script_version.hpp"
+major = 1
+minor = 0
+patch = 0
+build = 0
