@@ -73,14 +73,13 @@ jobs:
       run: python ./tools/check_classes.py
 
   cleanup_artifacts:
-  needs: [check_paths, check_classes]
-  if: always()
-  runs-on: ubuntu-latest
-  permissions:
-    contents: read
-    actions: write
-
-  steps:
+    needs: [check_paths, check_classes]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
     - name: Call workflow to delete artifacts
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
