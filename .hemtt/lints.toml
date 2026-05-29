@@ -1,0 +1,8 @@
+[config]
+math_could_be_unquoted = false
+file_type = false
+
+[sqf]
+format_args = false
+extra_not = false
+var_all_caps = false
