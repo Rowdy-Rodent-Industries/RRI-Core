@@ -73,13 +73,21 @@ jobs:
       run: python ./tools/check_classes.py
 
   cleanup_artifacts:
-    needs: [check_paths, check_classes]
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-    - name: Call webhook to delete artifacts
+  needs: [check_paths, check_classes]
+  if: always()
+  runs-on: ubuntu-latest
+  permissions:
+    contents: read
+    actions: write
+
+  steps:
+    - name: Call workflow to delete artifacts
       env:
-        ARTIFACT_DELETION_WEBHOOK: ${{ secrets.ARTIFACT_DELETION_WEBHOOK }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo "::add-mask::$ARTIFACT_DELETION_WEBHOOK"
-        curl --verbose --fail --show-error --location --request POST "https://api.github.com/repos/$GITHUB_REPOSITORY/dispatches" --header "Authorization: token $ARTIFACT_DELETION_WEBHOOK" --header 'Content-Type: application/json' --header 'Accept: application/vnd.github.everest-preview+json' --data-raw "{ \"event_type\": \"delete_all_artifacts\", \"client_payload\": {\"parent_runid\": \"$GITHUB_RUN_ID\", \"parent_repo\": \"$GITHUB_REPOSITORY\"} }"
+        curl --fail --show-error --location \
+          --request POST "https://api.github.com/repos/$GITHUB_REPOSITORY/dispatches" \
+          --header "Authorization: Bearer $GH_TOKEN" \
+          --header "Content-Type: application/json" \
+          --header "Accept: application/vnd.github+json" \
+          --data-raw "{ \"event_type\": \"delete_all_artifacts\", \"client_payload\": {\"parent_runid\": \"$GITHUB_RUN_ID\", \"parent_repo\": \"$GITHUB_REPOSITORY\"} }"
