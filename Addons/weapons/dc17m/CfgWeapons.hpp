@@ -37,9 +37,9 @@ class CfgWeapons {
 		maxZeroing = 400;
 
 		modelOptics[]= {
-			QPATHTOF(data\sights\mti_reticle_dc17m_z0.p3d),
-			QPATHTOF(data\sights\mti_reticle_dc17m_z1.p3d),
-			QPATHTOF(data\sights\mti_reticle_dc17m_z2.p3d)
+			QPATHTOF(data\sights\rri_reticle_dc17m_z0.p3d),
+			QPATHTOF(data\sights\rri_reticle_dc17m_z1.p3d),
+			QPATHTOF(data\sights\rri_reticle_dc17m_z2.p3d)
 		};
 
 		muzzles[] = {"this", "Stun"};
@@ -124,9 +124,9 @@ class CfgWeapons {
 				discreteInitIndex=0;
 				memoryPointCamera="opticView";
 				modelOptics[]= {
-					QPATHTOF(data\sights\mti_reticle_dc17m_z0.p3d),
-					QPATHTOF(data\sights\mti_reticle_dc17m_z1.p3d),
-					QPATHTOF(data\sights\mti_reticle_dc17m_z2.p3d)
+					QPATHTOF(data\sights\rri_reticle_dc17m_z0.p3d),
+					QPATHTOF(data\sights\rri_reticle_dc17m_z1.p3d),
+					QPATHTOF(data\sights\rri_reticle_dc17m_z2.p3d)
 				};
 				opticsFlare = "true";
 				cameraDir = "";

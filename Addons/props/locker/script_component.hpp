@@ -11,4 +11,4 @@
 #define ARMOURY_TYPE_JUMPTROOPER 7
 #define ARMOURY_TYPE_COMMAND 99
 
-#include "\z\mti_armoury\addons\props\script_component.hpp"
+#include "\z\rri\addons\props\script_component.hpp"

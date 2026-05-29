@@ -14,7 +14,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "[SOB] Banner Double (Spin)";
 
-        model = QPATHTOF(mti_banner_double_spin.p3d);
+        model = QPATHTOF(rri_banner_double_spin.p3d);
         hiddenSelections[] = {"Camo1","Camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\double\base\Camo1_CO.paa),QPATHTOF(data\double\base\Camo2_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\bannerdoublebase.jpg);
@@ -34,7 +34,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "[SOB] Banner Single (Spin)";
 
-        model = QPATHTOF(mti_banner_single_spin.p3d);
+        model = QPATHTOF(rri_banner_single_spin.p3d);
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\single\base\Camo1_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\bannersinglebase.jpg);
@@ -54,7 +54,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "[SOB] Banner Double";
 
-        model = QPATHTOF(mti_banner_double.p3d);
+        model = QPATHTOF(rri_banner_double.p3d);
         hiddenSelections[] = {"Camo1","Camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\double\base\Camo1_CO.paa),QPATHTOF(data\double\base\Camo2_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\bannerdoublebase.jpg);
@@ -74,7 +74,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "[SOB] Banner Single";
 
-        model = QPATHTOF(mti_banner_Single.p3d);
+        model = QPATHTOF(rri_banner_Single.p3d);
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\single\base\Camo1_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\bannersinglebase.jpg);
@@ -374,7 +374,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "[SOB] Banner FOB Core";
 
-        model = QPATHTOF(mti_banner_Single.p3d);
+        model = QPATHTOF(rri_banner_Single.p3d);
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\single\Camo1_fs_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\bannersinglefs.jpg);
@@ -403,20 +403,20 @@ class CfgVehicles {
 
                     class createMarker {
                         displayName = "<t color='#FFA500'>Create FOB Marker</t>";
-                        condition = QUOTE([ARR_2(_player,_target)] call mti_fortify_fnc_canCreateFOBMarker);
-                        statement = QUOTE([ARR_2(_player,_target)] call mti_fortify_fnc_createFOBMarker);
+                        condition = QUOTE([ARR_2(_player,_target)] call rri_fortify_fnc_canCreateFOBMarker);
+                        statement = QUOTE([ARR_2(_player,_target)] call rri_fortify_fnc_createFOBMarker);
                     };
 
                     class deleteMarker {
                         displayName = "<t color='#FFFF66'>Delete FOB Marker</t>";
-                        condition = QUOTE(!(isNil {_target getVariable 'mti_fortify_FOBMarker'}));
-                        statement = QUOTE([ARR_2(_player,_target)] call mti_fortify_fnc_deleteFOBMarker);
+                        condition = QUOTE(!(isNil {_target getVariable 'rri_fortify_FOBMarker'}));
+                        statement = QUOTE([ARR_2(_player,_target)] call rri_fortify_fnc_deleteFOBMarker);
                     };
 
                     class updateRespawn {
                         displayName = "<t color='#006da3'>Update Respawn Position</t>";
-                        condition = QUOTE(mti_common_respawnUpdateEnabled);
-                        statement = QUOTE([position _target] call mti_common_fnc_updateRespawn);
+                        condition = QUOTE(rri_common_respawnUpdateEnabled);
+                        statement = QUOTE([position _target] call rri_common_fnc_updateRespawn);
                     };
                 };
             };

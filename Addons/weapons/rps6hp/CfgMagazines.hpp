@@ -9,7 +9,7 @@ class CfgMagazines {
         GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
         modelSpecial = "";
-        model = QPATHTOEF(props,munitions\mti_heat_missile.p3d);
+        model = QPATHTOEF(props,munitions\rri_heat_missile.p3d);
         picture = QPATHTOEF(weapons,core\data\icons\misc\Rocket_AT_ca.paa);
         initSpeed = 200;
         maxLeadSpeed = 27.7778;

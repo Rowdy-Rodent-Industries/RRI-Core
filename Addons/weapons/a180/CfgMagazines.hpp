@@ -7,7 +7,7 @@ class CfgMagazines {
         displayNameShort = "High Power";
         descriptionShort = "High-power energy cell used by the A-180 side-arm platform";
 
-        mti_arsenal_whitelist[] = {"FieldSupport"};
+        rri_arsenal_whitelist[] = {"FieldSupport"};
 
         count = 18;
         initSpeed = 800;

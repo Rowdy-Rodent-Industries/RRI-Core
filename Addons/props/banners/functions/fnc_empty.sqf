@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 
 /*
-Function: mti_armoury_blank_sub_fnc_
+Function: rri_blank_sub_fnc_
 
 Description:
     Description...
@@ -14,7 +14,7 @@ Return Value:
 
 Example:
     (begin example)
-        [] call mti_blank_sub_fnc_;
+        [] call rri_blank_sub_fnc_;
     (end)
 
 Author:

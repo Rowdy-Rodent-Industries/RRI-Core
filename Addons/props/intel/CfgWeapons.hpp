@@ -9,7 +9,7 @@ class CfgWeapons {
 		descriptionshort = "Technician's Datapad";
 		descriptionuse = "Datapad used by Technicians of the Special Operations Brigade";
 		picture = QPATHTOF(data\ui\datapad_ui_ca.paa);
-        model = QPATHTOF(mti_datapad);
+        model = QPATHTOF(rri_datapad.p3d);
         GVAR_CORE(tech,isTechpad) = 1;
 		class ItemInfo: CBA_MiscItem_ItemInfo {
 			mass = 20;
@@ -23,7 +23,7 @@ class CfgWeapons {
 		descriptionshort = "Antenna";
 		descriptionuse = "Portable antenna used by Technicians of the Special Operations Brigade";
 		picture = QPATHTOF(data\ui\Antenna.paa);
-        model = QPATHTOF(mti_antenna);
+        model = QPATHTOF(rri_antenna.p3d);
 		GVAR_CORE(tech,vehicle) = QGVAR(antenna);
 		GVAR_CORE(tech,isAntennaItem) = 1;
 		GVAR_CORE(arsenal,whitelists)[] = {"ARC"};

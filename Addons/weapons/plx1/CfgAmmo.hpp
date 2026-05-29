@@ -7,7 +7,7 @@ class CfgAmmo {
     class M_Titan_AA;
     class GAMMO(Penetrator_Base);
     class GAMMO(plx_at): M_NLAW_AT_F {
-        // model=QPATHTOEF(props,munitions\mti_cluster_missile.p3d);
+        // model=QPATHTOEF(props,munitions\rri_cluster_missile.p3d);
 		hit=1500;
 		indirectHit=20;
 		indirectHitRange=2;

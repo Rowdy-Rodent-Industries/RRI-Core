@@ -20,7 +20,7 @@ class CfgPatches {
     };
 };
 
-class Mode_MTI_Fake;
+class Mode_rri_Fake;
 // Contains LS dependancy for sounds right now, but when we replace model we will do sounds too
 #include "CfgMagazineWells.hpp"
 #include "CfgMagazines.hpp"

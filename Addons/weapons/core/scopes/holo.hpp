@@ -2,8 +2,8 @@ class GVAR(Holo_Blue) : optic_Holosight {
     author=AUTHOR;
     scope=2;
     displayName="[SOB] MokTech Holosight (Blue)";
-    picture=QPATHTOF(data\acc\sights\ui\Holo\MTI_icon_holo_blu_ca.paa);
-    model=QPATHTOF(data\acc\sights\Holo\MTI_sight_holo_blu.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\Holo\rri_icon_holo_blu_ca.paa);
+    model=QPATHTOF(data\acc\sights\Holo\rri_sight_holo_blu.p3d);
     descriptionShort="MokTech Industries 1x Holosight Scope";
     weaponInfoType="RscWeaponZeroing";
 
@@ -37,12 +37,12 @@ class GVAR(Holo_Blue) : optic_Holosight {
 
 class GVAR(Holo_Green) : GVAR(Holo_Blue) {
     displayName="[SOB] MokTech Holosight (Green)";
-    picture=QPATHTOF(data\acc\sights\ui\Holo\MTI_icon_holo_grn_ca.paa);
-    model=QPATHTOF(data\acc\sights\Holo\MTI_sight_holo_grn.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\Holo\rri_icon_holo_grn_ca.paa);
+    model=QPATHTOF(data\acc\sights\Holo\rri_sight_holo_grn.p3d);
 };
 
 class GVAR(Holo_Red) : GVAR(Holo_Blue) {
     displayName="[SOB] MokTech Holosight (Red)";
-    picture=QPATHTOF(data\acc\sights\ui\Holo\MTI_icon_holo_red_ca.paa);
-    model=QPATHTOF(data\acc\sights\Holo\MTI_sight_holo_red.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\Holo\rri_icon_holo_red_ca.paa);
+    model=QPATHTOF(data\acc\sights\Holo\rri_sight_holo_red.p3d);
 };

@@ -18,7 +18,7 @@ class GWEAPON(##var1##_bcsewpn): GWEAPON(var1) { \
     scope = 2; \
     scopeArsenal = 2; \
     handAnim[] = {}; \
-    class Fake: Mode_MTI_Fake{}; \
+    class Fake: Mode_rri_Fake{}; \
     modes[] = {"Fake"}; \
     class Fake_GL: EGVAR(weapons_core,Fake_GL){}; \
     muzzles[] = {"this","Fake_GL"}; \
@@ -35,7 +35,7 @@ class GWEAPON(##var1##_bcsewpn): GWEAPON(var1) { \
     scope = 2; \
     scopeArsenal = 2; \
     handAnim[] = {}; \
-    class Fake: Mode_MTI_Fake{}; \
+    class Fake: Mode_rri_Fake{}; \
     modes[] = {"Fake"}; \
     class Fake_GL: EGVAR(weapons_core,Fake_GL){}; \
     muzzles[] = {"this","Fake_GL"}; \

@@ -22,7 +22,7 @@ if (_openMap) then {
 
     ace_player switchGesture _animation;
 
-    private _projector = createSimpleObject [QPATHTOEF(props,intel\mti_holoprojector_nogeo.p3d), [0, 0, 0]];
+    private _projector = createSimpleObject [QPATHTOEF(props,intel\rri_holoprojector_nogeo.p3d), [0, 0, 0]];
     _projector attachTo [ace_player, [0, 0, 0], "LeftHand", true]; // Can adjust as desired
     [_projector, [180, 270, 190]] call BIS_fnc_setObjectRotation; 
     ace_player setVariable [QGVAR(mapProjector), _projector];

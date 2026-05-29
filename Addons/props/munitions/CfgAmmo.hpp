@@ -7,7 +7,7 @@ class CfgAmmo
     //class GAMMO(mm9_AT): GAMMO(40mm_AP) {
     class MissileBase;
     class GAMMO(mm9_AT): MissileBase {
-        model = QPATHTOF(mti_mm9_missile.p3d);
+        model = QPATHTOF(rri_mm9_missile.p3d);
 
         CraterEffects="ExploAmmoCrater";
         explosionEffects="ExploAmmoExplosion";
@@ -15,10 +15,10 @@ class CfgAmmo
         effectsMissile=QEGVAR(weapons_core,Missle_Trail_Blue);
 
         SoundSetExplosion[] = {"GrenadeHe_Exp_SoundSet", "GrenadeHe_Tail_SoundSet", "Explosion_Debris_SoundSet"};
-        soundHit1[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_01", 3.1622777, 1, 1500};
-        soundHit2[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_02", 3.1622777, 1, 1500};
-        soundHit3[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_03", 3.1622777, 1, 1500};
-        soundHit4[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_04", 3.1622777, 1, 1500};
+        soundHit1[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_01.wav", 3.1622777, 1, 1500};
+        soundHit2[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_02.wav", 3.1622777, 1, 1500};
+        soundHit3[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_03.wav", 3.1622777, 1, 1500};
+        soundHit4[] = { "A3\Sounds_F\arsenal\explosives\Grenades\Explosion_gng_grenades_04.wav", 3.1622777, 1, 1500};
         multiSoundHit[] = {"soundHit1", 0.25, "soundHit2", 0.25, "soundHit3", 0.25, "soundHit4", 0.25};
         whistleDist=16;
 
@@ -126,7 +126,7 @@ class CfgAmmo
 
     class GAMMO(mm9_smoke_deploy): GAMMO(40mm_Smoke_Base_Impact)
     {
-        model = QPATHTOF(mti_mm9_missile.p3d);
+        model = QPATHTOF(rri_mm9_missile.p3d);
     };
 
     class GAMMO(mm9_dumb): GAMMO(mm9_AT) {
@@ -146,6 +146,6 @@ class CfgAmmo
 
     class GAMMO(mm9_dumb_deploy): GAMMO(40mm_Inert_Base)
     {
-        model = QPATHTOF(mti_mm9_missile.p3d);
+        model = QPATHTOF(rri_mm9_missile.p3d);
     };
 };

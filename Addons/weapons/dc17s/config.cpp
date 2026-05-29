@@ -24,7 +24,7 @@ class CfgPatches {
     };
 };
 
-class Mode_MTI_Fake;
+class Mode_rri_Fake;
 
 #include "CfgMagazineWells.hpp"
 #include "CfgMagazines.hpp"

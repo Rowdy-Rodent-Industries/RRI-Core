@@ -1,5 +1,5 @@
 class CfgMods {
-	class mti_armoury {
+	class rri {
 		dir = "@Rowdy Rodent Industries - Core";
 		name = "Rowdy Rodent Industries - Core";
 

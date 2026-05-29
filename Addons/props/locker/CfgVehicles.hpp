@@ -14,7 +14,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Locker";
 
-        model = QPATHTOF(mti_locker.p3d);
+        model = QPATHTOF(rri_locker.p3d);
         vehicleClass = "Cargo";
         editorCategory = QEGVAR(edcat,Props);
         editorSubcategory = QEGVAR(edsubcat,lockers);
@@ -29,7 +29,7 @@ class CfgVehicles {
         editorPreview = QPATHTOF(locker\data\editorpreviews\locker_base.jpg);
 
         // class EventHandlers {
-        //     init = QUOTE([(_this select 0)] call mti_arsenal_fnc_postinit);
+        //     init = QUOTE([(_this select 0)] call rri_arsenal_fnc_postinit);
         // };
 
         class ACE_Actions:ACE_Actions {
@@ -44,7 +44,7 @@ class CfgVehicles {
                     condition = "true";
                     statement = "";
                     showDisabled = 1;
-                    insertChildren = QUOTE([ARR_2(_target,_player)] call mti_arsenal_fnc_insertArmouryActions);
+                    insertChildren = QUOTE([ARR_2(_target,_player)] call rri_arsenal_fnc_insertArmouryActions);
                 };
             };
         };

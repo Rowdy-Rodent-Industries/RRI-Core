@@ -118,8 +118,8 @@ class CfgWeapons
         picture = "\A3\weapons_F\Data\UI\gear_accv_pointer_CA.paa";
         model = QPATHTOF(data\acc\side\side_noModel.p3d);
 
-        MRT_SwitchItemNextClass = "MTI_pointer_noModel";
-        MRT_SwitchItemPrevClass = "MTI_pointer_noModel";
+        MRT_SwitchItemNextClass = "rri_pointer_noModel";
+        MRT_SwitchItemPrevClass = "rri_pointer_noModel";
         MRT_switchItemHintText = "IR Laser";
 
         class ItemInfo: ItemInfo {
@@ -302,6 +302,6 @@ class CfgWeapons
 		modes[] = {"Fake"};
 		enableAttack = 0;
 		showToPlayer = 0;
-		class Fake: Mode_MTI_Fake{};
+		class Fake: Mode_rri_Fake{};
 	};
 };

@@ -22,7 +22,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Cluster Rocket";
 
-        model = QPATHTOF(mti_cluster_missile.p3d);
+        model = QPATHTOF(rri_cluster_missile.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\clustermunition.jpg);
 
         class SimpleObject
@@ -37,7 +37,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] AA Missile";
 
-        model = QPATHTOF(mti_aa_missile.p3d);
+        model = QPATHTOF(rri_aa_missile.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\aamunition.jpg);
 
         class SimpleObject
@@ -52,7 +52,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] HEAT Missile";
 
-        model = QPATHTOF(mti_heat_missile.p3d);
+        model = QPATHTOF(rri_heat_missile.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\heatmunition.jpg);
 
         class SimpleObject
@@ -67,7 +67,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Mortar Round";
 
-        model = QPATHTOF(mti_mortar_round.p3d);
+        model = QPATHTOF(rri_mortar_round.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\mortarmunition.jpg);
         class SimpleObject
         {
@@ -82,7 +82,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Missile";
 
-        model = QPATHTOF(mti_missile1.p3d);
+        model = QPATHTOF(rri_missile1.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\missile1.jpg);
         class SimpleObject
         {
@@ -97,7 +97,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Carbonite Missile";
 
-        model = QPATHTOF(mti_missile2.p3d);
+        model = QPATHTOF(rri_missile2.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\missile2.jpg);
         class SimpleObject
         {
@@ -112,7 +112,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Cruise Missile";
 
-        model = QPATHTOF(mti_missile3.p3d);
+        model = QPATHTOF(rri_missile3.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\missile3.jpg);
         class SimpleObject
         {
@@ -127,7 +127,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] MM9";
 
-        model = QPATHTOF(mti_mm9_missile.p3d);
+        model = QPATHTOF(rri_mm9_missile.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\mm9.jpg);
         class SimpleObject
         {
@@ -141,7 +141,7 @@ class CfgVehicles {
         scopecurator = 2;
         displayName = "[SOB] Smoke Grenade";
 
-        model = QPATHTOF(mti_smoke_grenade.p3d);
+        model = QPATHTOF(rri_smoke_grenade.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\smoke_grenade_base.jpg);
 
         hiddenSelections[] = {"camo1"};

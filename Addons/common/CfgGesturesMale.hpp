@@ -9,7 +9,7 @@ class CfgGesturesMale {
             interpolationSpeed = 5;
             leftHandIKCurve[] = {0};
             rightHandIKCurve[] = {0};
-            mask = "mti_map_arm";
+            mask = "rri_map_arm";
             disableWeapons = 1;
             disableWeaponsLong = 1;
             canPullTrigger = 0;
@@ -21,13 +21,13 @@ class CfgGesturesMale {
             leftHandIKBeg = 0;
 			leftHandIKEnd = 0;
         };
-        class GVAR(map_arm_stand_rifle): GVAR(map_arm_stand_unarmed) {leftHandIKCurve[] = {0}; mask = "mti_map_arm_rifle";};
-        class GVAR(map_arm_stand_pistol): GVAR(map_arm_stand_rifle) {mask = "mti_map_arm_pistol";};
-        class GVAR(map_arm_stand_launcher): GVAR(map_arm_stand_rifle) {mask = "mti_map_arm_launcher";};
+        class GVAR(map_arm_stand_rifle): GVAR(map_arm_stand_unarmed) {leftHandIKCurve[] = {0}; mask = "rri_map_arm_rifle";};
+        class GVAR(map_arm_stand_pistol): GVAR(map_arm_stand_rifle) {mask = "rri_map_arm_pistol";};
+        class GVAR(map_arm_stand_launcher): GVAR(map_arm_stand_rifle) {mask = "rri_map_arm_launcher";};
     };
 
     class BlendAnims {
-        mti_map_arm[] = {
+        rri_map_arm[] = {
             "neck", 0.5,
             "RightShoulder", 1,
             "RightArm", 1,
@@ -52,7 +52,7 @@ class CfgGesturesMale {
             "RightHandThumb2", 1,
             "RightHandThumb3", 1
         };
-        mti_map_arm_rifle[] =  {
+        rri_map_arm_rifle[] =  {
             "neck", 0.5,
             "weapon", 1,
             "RightShoulder", 1,
@@ -100,7 +100,7 @@ class CfgGesturesMale {
             "leftHandThumb2", 1,
             "leftHandThumb3", 1
         };
-        mti_map_arm_pistol[] = {
+        rri_map_arm_pistol[] = {
             "neck", 0.5,
             "RightShoulder", 1,
             "RightArm", 1,
@@ -147,7 +147,7 @@ class CfgGesturesMale {
             "leftHandThumb2", 1,
             "leftHandThumb3", 1
         };
-        mti_map_arm_launcher[] =  {
+        rri_map_arm_launcher[] =  {
             "neck", 0.5,
             "launcher", 1,
             "RightShoulder", 1,

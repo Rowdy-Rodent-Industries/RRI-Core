@@ -1,4 +1,4 @@
-mti_armoury_weapons_s195
+rri_weapons_s195
 ===================
 
 Blank template weapon subaddon.

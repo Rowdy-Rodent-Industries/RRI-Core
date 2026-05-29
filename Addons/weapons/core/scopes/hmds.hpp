@@ -2,8 +2,8 @@ class GVAR(HDMS_Blue) : optic_DMS {
     author=AUTHOR;
     scope=2;
     displayName="[SOB] MokTech Holo-DMS (Blue)";
-    picture=QPATHTOF(data\acc\sights\ui\H-DMS\MTI_icon_dms_blu_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-DMS\MTI_sight_dms_blu.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-DMS\rri_icon_dms_blu_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-DMS\rri_sight_dms_blu.p3d);
     descriptionShort="MokTech Industries LR 6-12x Marksman Scope";
     weaponInfoType="RscOptics_sos";
 
@@ -11,7 +11,7 @@ class GVAR(HDMS_Blue) : optic_DMS {
         mass=SCOPE_MASS;
         opticType=2;
         optics=1;
-        modelOptics=QPATHTOF(data\acc\sights\H-DMS\MTI_reticle_dms_blu.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-DMS\rri_reticle_dms_blu.p3d);
 
         class OpticsModes {
             class Snip {
@@ -68,20 +68,20 @@ class GVAR(HDMS_Blue) : optic_DMS {
 
 class GVAR(HDMS_Green) : GVAR(HDMS_Blue) {
     displayName="[SOB] MokTech Holo-DMS (Green)";
-    picture=QPATHTOF(data\acc\sights\ui\H-DMS\MTI_icon_dms_grn_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-DMS\MTI_sight_dms_grn.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-DMS\rri_icon_dms_grn_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-DMS\rri_sight_dms_grn.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-DMS\MTI_reticle_dms_grn.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-DMS\rri_reticle_dms_grn.p3d);
     };
 };
 
 class GVAR(HDMS_Red) : GVAR(HDMS_Blue) {
     displayName="[SOB] MokTech Holo-DMS (Red)";
-    picture=QPATHTOF(data\acc\sights\ui\H-DMS\MTI_icon_dms_red_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-DMS\MTI_sight_dms_red.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-DMS\rri_icon_dms_red_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-DMS\rri_sight_dms_red.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-DMS\MTI_reticle_dms_red.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-DMS\rri_reticle_dms_red.p3d);
     };
 };

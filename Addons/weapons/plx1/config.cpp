@@ -31,7 +31,7 @@ class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
 
-class Mode_MTI_Fake;
+class Mode_rri_Fake;
 
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"

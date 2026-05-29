@@ -9,7 +9,7 @@ class CfgWeapons
 		displayname = "[SOB] Computer Spike";
 		descriptionshort = "Computer Spike";
 		descriptionuse = "<t color='#9cf953'>Use: </t>Hacks locked Intel and Doors";
-		model = QPATHTOF(mti_dataspike);
+		model = QPATHTOF(rri_dataspike.p3d);
 		hiddenSelections[] = { "camo" };
 		hiddenSelectionsTextures[] = { QPATHTOF(data\dataspike\camo_co.paa) };
         picture = QPATHTOF(data\ui\ComputerSpike.paa);
@@ -27,7 +27,7 @@ class CfgWeapons
 
 		GVAR_CORE(doors,isLockpick) = 1;
 
-		model = QPATHTOF(mti_lockpick);
+		model = QPATHTOF(rri_lockpick.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\lockpick\camo1_CO.paa)
@@ -53,7 +53,7 @@ class CfgWeapons
         ace_explosives_triggerType = QGVAR_CORE(explosives,clacker);
 		GVAR_CORE(explosives,isClacker) = 1;
 
-		model = QPATHTOF(mti_clacker);
+		model = QPATHTOF(rri_clacker.p3d);
 		// picture = QPATHTOF(); // todo: picture
 
         class ItemInfo: ItemInfo {
@@ -67,7 +67,7 @@ class CfgWeapons
         displayName = "[SOB] Toolkit";
         descriptionShort = "Toolkit used by the Special Operations Bridage to repair vehicles";
 
-        model = QPATHTOF(mti_toolbox.p3d);
+        model = QPATHTOF(rri_toolbox.p3d);
 
         GVAR_CORE(arsenal,whitelists)[] = {"FieldSupport","ARC","Commando","Command","Jumptrooper","Trooper"};
     };

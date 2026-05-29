@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 
 /*
-Function: mti_weapons_DC17SGF_fnc_
+Function: rri_weapons_DC17SGF_fnc_
 
 Description:
     Description...
@@ -14,7 +14,7 @@ Return Value:
 
 Example:
     (begin example)
-        [] call mti_weapons_DC17SGF_fnc_;
+        [] call rri_weapons_DC17SGF_fnc_;
     (end)
 
 Author:

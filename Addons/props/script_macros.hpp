@@ -11,7 +11,7 @@ class GVAR(##var_prefix##) : GVAR(base) { \
         QPATHTOF(data\##var_prefix##\locker_CO.paa) \
         }; \
     editorPreview = QPATHTOF(data\editorpreviews\##var_prefix##.jpg);\
-    mti_armoury_type = ##var_type##;\
+    rri_type = ##var_type##;\
 }
 
 #define INJECTOR_MACRO(var_name,var_prefix) \

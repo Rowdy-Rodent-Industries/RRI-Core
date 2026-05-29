@@ -66,7 +66,7 @@ class GWEAPON(DC17S_ARC): GWEAPON(DC17S) {
             };
         };
         class PointerSlot: PointerSlot {
-            compatibleItems[] = {"MTI_flashlight_noModel","JLTS_DC17SA_flashlight"};
+            compatibleItems[] = {"rri_flashlight_noModel","JLTS_DC17SA_flashlight"};
         };
         class MuzzleSlot : MuzzleSlot {
             compatibleItems[] = {"3AS_muzzle_DC17S_F"};

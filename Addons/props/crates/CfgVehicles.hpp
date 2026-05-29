@@ -104,7 +104,7 @@ class CfgVehicles {
         scopeCurator = 2;
         author = AUTHOR;
         displayName = "[SOB] Resupply Crate (Closed)";
-        model = QPATHTOF(mti_resupply_crate.p3d);
+        model = QPATHTOF(rri_resupply_crate.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\resupplycrate\Box_CO.paa),QPATHTOF(data\resupplycrate\Round_CO.paa)};
 
@@ -140,7 +140,7 @@ class CfgVehicles {
         scopeCurator = 2;
         author = AUTHOR;
         displayName = "[SOB] Resupply Crate (Open)";
-        model = QPATHTOF(mti_resupply_crate.p3d);
+        model = QPATHTOF(rri_resupply_crate.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\resupplycrate\Box_CO.paa),QPATHTOF(data\resupplycrate\Round_CO.paa)};
         class AnimationSources: AnimationSources {
@@ -165,7 +165,7 @@ MACRO_CRATE_ALL(White);
         scope = 2;
         scopeCurator = 2;
         displayName = "[SOB] Fortify Crate (Small)";
-        model = QPATHTOF(mti_fortify_small.p3d);
+        model = QPATHTOF(rri_fortify_small.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\fortifysmall.jpg);
         ace_cargo_size = 5;
 
@@ -187,7 +187,7 @@ MACRO_CRATE_ALL(White);
         scopeCurator = 2;
         ace_cargo_size = 10;
         displayName = "[SOB] Fortify Crate (Medium)";
-        model = QPATHTOF(mti_fortify_medium.p3d);
+        model = QPATHTOF(rri_fortify_medium.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\fortifymedium.jpg);
 
         hiddenSelections[] = {"Camo1"};
@@ -204,7 +204,7 @@ MACRO_CRATE_ALL(White);
         scopeCurator = 2;
         ace_cargo_size = 20;
         displayName = "[SOB] Fortify Crate (FOB)";
-        model = QPATHTOF(mti_fortify_large.p3d);
+        model = QPATHTOF(rri_fortify_large.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\fortifylarge.jpg);
 
         hiddenSelections[] = {"Camo1"};
@@ -219,7 +219,7 @@ MACRO_CRATE_ALL(White);
     class GVAR(Droppod_closed): EGVAR(props,Cargo_Base) {
         scope = 2;
         displayName = "[SOB] Droppod (Closed)";
-        model = QPATHTOF(mti_droppod.p3d);
+        model = QPATHTOF(rri_droppod.p3d);
         editorPreview = QPATHTOF(data\editorpreviews\droppod.jpg);
 
         author = AUTHOR;
@@ -264,7 +264,7 @@ MACRO_CRATE_ALL(White);
         scopeCurator = 2;
         author = AUTHOR;
         displayName = "[SOB] Fuel Canister";
-        model = QPATHTOF(mti_fueltank.p3d);
+        model = QPATHTOF(rri_fueltank.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\fuelcrate\fuelcanister_CO.paa)};
 

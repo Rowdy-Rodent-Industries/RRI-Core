@@ -2,7 +2,7 @@ class CfgSoundSets {
     class Pistol_Shot_Base_SoundSet;
     class GVAR(Bowcaster_Shot_SoundSet): Pistol_Shot_Base_SoundSet {
         soundShaders[] = {
-            //"MTI_Bowcaster_Closure_SoundShader",
+            //"rri_Bowcaster_Closure_SoundShader",
             QGVAR(Bowcaster_closeShot_SoundShader),
             QGVAR(Bowcaster_midShot_SoundShader),
             QGVAR(Bowcaster_distShot_SoundShader)
@@ -20,7 +20,7 @@ class CfgSoundSets {
 
     class GVAR(Bowcaster_Heavy_Shot_SoundSet): Pistol_Shot_Base_SoundSet {
         soundShaders[] = {
-            //"MTI_Bowcaster_Heavy_Closure_SoundShader",
+            //"rri_Bowcaster_Heavy_Closure_SoundShader",
             QGVAR(Bowcaster_Heavy_closeShot_SoundShader),
             QGVAR(Bowcaster_Heavy_midShot_SoundShader),
             QGVAR(Bowcaster_Heavy_distShot_SoundShader)

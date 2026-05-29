@@ -31,10 +31,10 @@ class CfgWeapons {
 
 		GVAR_CORE(arsenal,whitelists)[] = {"Trooper","Arc","Fieldsupport"};
 
-		// model = QPATHTOF(mti_dc15a.p3d);
+		// model = QPATHTOF(rri_dc15a.p3d);
 
 		// handAnim[] = {"OFP2_ManSkeleton",QPATHTOF(data\anim\dc15a_hand.rtm)};
-		// reloadAction = "GestureReload_mti_dc15a";
+		// reloadAction = "GestureReload_rri_dc15a";
 
 		JLTS_friedItem = "";
 		JLTS_hasElectronics = 0;

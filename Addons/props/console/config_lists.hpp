@@ -4,5 +4,5 @@
 #define ITEM_LIST \
 
 #define UNIT_LIST \
-"mti_armoury_props_Console_console1",\
-"mti_armoury_props_Console_console2"
+"rri_props_Console_console1",\
+"rri_props_Console_console2"

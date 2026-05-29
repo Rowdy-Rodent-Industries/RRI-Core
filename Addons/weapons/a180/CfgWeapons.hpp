@@ -15,7 +15,7 @@ class CfgWeapons {
 	{
 		author = AUTHOR;
 		displayname = "[SOB] A-180";
-		baseWeapon = "MTI_A180";
+		baseWeapon = "rri_A180";
 		scope = 2;
 		magazines[] = {QGMAG(a180)};
 		magazineWell[] = {QGMAGWELL(a180)};

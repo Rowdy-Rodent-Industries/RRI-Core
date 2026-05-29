@@ -14,7 +14,7 @@ Return Value:
 
 Example:
     (begin example)
-        [] call mti_weapons_core_fnc_;
+        [] call rri_weapons_core_fnc_;
     (end)
 
 Author:

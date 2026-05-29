@@ -1,7 +1,7 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
 #define MAINPREFIX z
-#define PREFIX mti
+#define PREFIX rri
 
 #define AUTHOR QUOTE(MokTech Industries)
 #define MOD_NAME_BEAUTIFIED QUOTE(MokTech Industries - Core)

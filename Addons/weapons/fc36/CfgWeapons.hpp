@@ -35,7 +35,7 @@ class CfgWeapons {
 			};
 		};
 
-		model = QPATHTOF(mti_fc36.p3d);
+		model = QPATHTOF(rri_fc36.p3d);
 		hiddenSelections[] = {"Camo1"};
 		hiddenselectionsmaterials[] = {QPATHTOF(data\gun.rvmat)};
 		hiddenSelectionsTextures[] = {QPATHTOF(data\MainGun_CO.paa)};
@@ -138,7 +138,7 @@ class CfgWeapons {
 		author = AUTHOR;
 		displayName = "[SOB] fc36 Scope";
 
-		model = QPATHTOF(mti_fc36_scope.p3d);
+		model = QPATHTOF(rri_fc36_scope.p3d);
 
 		picture = QPATHTOF(data\ui\fc36_scope_ca.paa);
 		UiPicture = QPATHTOF(data\ui\fc36_scope_ca.paa);
@@ -146,7 +146,7 @@ class CfgWeapons {
 		GVAR_CORE(arsenal,whitelists)[] = {"Commando"};
 
         class ItemInfo: ItemInfo {
-			modelOptics=QPATHTOF(mti_reticle_fc36.p3d);
+			modelOptics=QPATHTOF(rri_reticle_fc36.p3d);
             class OpticsModes {
 				class NCTALKEP {
                     opticsID=1;

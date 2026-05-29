@@ -4,7 +4,7 @@ class CfgGesturesMale
     class States
     {
         class GestureReloadBase;
-		class GestureReload_mti_pcb: GestureReloadBase
+		class GestureReload_rri_pcb: GestureReloadBase
 		{
 			file = QPATHTOF(data\anims\pcb_reload.rtm);
 			speed = 0.3;
@@ -16,11 +16,11 @@ class CfgGesturesMale
 			leftHandIKCurve[]  = {0,1, 0.1,0, 0.9,0, 1,1};
 			rightHandIKCurve[] = {0,1,0.05,0,0.95,0,1,1};
 		};
-		class GestureReload_mti_pcbContext: GestureReload_mti_pcb
+		class GestureReload_rri_pcbContext: GestureReload_rri_pcb
 		{
 			mask = "handsWeapon_context";
 		};
-		class GestureReload_mti_pcbContextAnimDrive: GestureReload_mti_pcbContext
+		class GestureReload_rri_pcbContextAnimDrive: GestureReload_rri_pcbContext
 		{
 			mask = "handsWeapon_contextAnimDrive";
 		};

@@ -1,4 +1,4 @@
-mti_armoury_props_crates
+rri_props_crates
 ===================
 
 Blank (sub) template feature.

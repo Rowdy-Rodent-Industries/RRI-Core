@@ -13,8 +13,8 @@ class GVAR(SOS) : optic_MRCO {
         bodyTextureSize = 1.55;
         hideMagnification = 1;
         opticsPPEffects[] = {"CBA_OpticsRadBlur3"};
-        reticleTexture = QPATHTOF(data\acc\sights\misc\MTI_mos_noholo_ca.paa);
-        reticleTextureNight = QPATHTOF(data\acc\sights\misc\MTI_mos_noholo_ca.paa);
+        reticleTexture = QPATHTOF(data\acc\sights\misc\rri_mos_noholo_ca.paa);
+        reticleTextureNight = QPATHTOF(data\acc\sights\misc\rri_mos_noholo_ca.paa);
         reticleTextureSize = 1.024;
     };
 

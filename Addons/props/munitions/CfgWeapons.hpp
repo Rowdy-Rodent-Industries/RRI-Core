@@ -10,7 +10,7 @@ class CfgWeapons
         GVAR_CORE(mm9,isReloadItem) = 1;
         GVAR_CORE(mm9,ammo) = QGAMMO(mm9_AT);
 
-        model = QPATHTOF(mti_mm9_missile.p3d);
+        model = QPATHTOF(rri_mm9_missile.p3d);
 		picture = QPATHTOF(data\ui\MM9.paa);
 
         class ItemInfo: CBA_MiscItem_ItemInfo {

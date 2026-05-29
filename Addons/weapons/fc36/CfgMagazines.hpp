@@ -11,7 +11,7 @@ class CfgMagazines {
         GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
 
         ammo = QGAMMO(thermal_ammo);
-        modelSpecial = QPATHTOF(mti_fc36_mag.p3d);
+        modelSpecial = QPATHTOF(rri_fc36_mag.p3d);
         modelSpecialIsProxy = 1;
         count = 20;
         mass = 10;

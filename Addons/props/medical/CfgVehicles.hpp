@@ -6,7 +6,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Injector";
         descriptionShort = "Basic Injector used by the Special Operations Brigade";
-        model = QPATHTOF(mti_injector.p3d);
+        model = QPATHTOF(rri_injector.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\injector\base\injector.rvmat)};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\base\injector_CO.paa)};
@@ -28,7 +28,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Bacta Tank";
         descriptionShort = "Mobile Bacta tank used by field medics in the Special Operations Brigade";
-        model = QPATHTOF(mti_bacta_tank.p3d);
+        model = QPATHTOF(rri_bacta_tank.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bacta\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bacta\Base_CO.paa),QPATHTOF(data\bacta\Bacta_blue_CA.paa)};
@@ -59,7 +59,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Bacta Spray";
         descriptionShort = "Mobile Bacta Sprayused by field medics in the Special Operations Brigade";
-        model = QPATHTOF(mti_bacta_spray.p3d);
+        model = QPATHTOF(rri_bacta_spray.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactaspray\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactaspray\base_CO.paa),QPATHTOF(data\bactaspray\bacta_blue_CA.paa)};
@@ -90,7 +90,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Anti-Chemical Inhaler";
         descriptionShort = "This inhaler clears your lungs of all chemicals taken in during combat. Only one is needed to cure yourself.";
-        model = QPATHTOF(mti_inhaler.p3d);
+        model = QPATHTOF(rri_inhaler.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\inhaler\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\inhaler\base_CO.paa),QPATHTOF(data\inhaler\glass_ca.paa)};
@@ -112,7 +112,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Bacta Patch";
         descriptionShort = "A large Bacta-infused patch to deal with large trauma.";
-        model = QPATHTOF(mti_bacta_patch.p3d);
+        model = QPATHTOF(rri_bacta_patch.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactapatch\bacta.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactapatch\bacta_CO.paa)};
@@ -133,7 +133,7 @@ class CfgVehicles {
         scope = 2;
         author = AUTHOR;
         displayName = "[SOB] Medical Scanner";
-        model = QPATHTOF(mti_medical_scanner.p3d);
+        model = QPATHTOF(rri_medical_scanner.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\medisensor\camo1.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\medisensor\camo1_CO.paa)};
@@ -154,7 +154,7 @@ class CfgVehicles {
         scope = 2;
         author = AUTHOR;
         displayName = "[SOB] Coffin";
-        model = QPATHTOF(mti_coffin.p3d);
+        model = QPATHTOF(rri_coffin.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\coffin\coffin.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\coffin\coffin_CO.paa)};
@@ -197,7 +197,7 @@ class CfgVehicles {
     class GVAR(litter_injector): GVAR(litter_base) {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_injector.p3d);
+        model = QPATHTOF(rri_injector.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\injector\base\injector.rvmat)};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\base\injector_CO.paa)};
@@ -217,7 +217,7 @@ class CfgVehicles {
     class GVAR(litter_inhaler): GVAR(litter_base) {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_inhaler.p3d);
+        model = QPATHTOF(rri_inhaler.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\inhaler\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\inhaler\base_CO.paa),QPATHTOF(data\inhaler\glass_ca.paa)};
@@ -226,7 +226,7 @@ class CfgVehicles {
     class GVAR(litter_bacta_patch): GVAR(litter_base) {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_bacta_patch.p3d);
+        model = QPATHTOF(rri_bacta_patch.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactapatch\bacta.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactapatch\bacta_CO.paa)};
@@ -235,7 +235,7 @@ class CfgVehicles {
     class GVAR(litter_bacta_spray): GVAR(litter_base) {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_bacta_spray.p3d);
+        model = QPATHTOF(rri_bacta_spray.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactaspray\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactaspray\base_CO.paa),QPATHTOF(data\bactaspray\bacta_blue_CA.paa)};
@@ -244,7 +244,7 @@ class CfgVehicles {
     class GVAR(litter_bacta_tank): GVAR(litter_base) {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_bacta_tank.p3d);
+        model = QPATHTOF(rri_bacta_tank.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bacta\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bacta\Base_CO.paa),QPATHTOF(data\bacta\Bacta_red_CA.paa)};

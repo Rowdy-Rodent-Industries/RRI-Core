@@ -311,7 +311,7 @@ class GVAR(Missile_Trail_Blue_nolight)
 };
 
 //40mm stuff
-class MTI_40mm_cluster_effect {
+class rri_40mm_cluster_effect {
 	class ExploAmmoFlash {
 		intensity = 1;
 		interval = 1;
@@ -327,7 +327,7 @@ class MTI_40mm_cluster_effect {
 		lifeTime = 1;
 		position[] = {0,0,0};
 		simulation = "particles";
-		type = "MTI_40mm_cluster_ExploSmoke";
+		type = "rri_40mm_cluster_ExploSmoke";
 	};
 
     class FiredLightMed {

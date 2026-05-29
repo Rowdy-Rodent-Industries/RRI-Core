@@ -2,8 +2,8 @@ class GVAR(HMRCO_Blue) : optic_MRCO {
     author=AUTHOR;
     scope=2;
     displayName="[SOB] MokTech Holo-MRCO (Blue)";
-    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\MTI_icon_mrco_blu_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-MRCO\MTI_sight_mrco_blu.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\rri_icon_mrco_blu_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-MRCO\rri_sight_mrco_blu.p3d);
     descriptionShort="MokTech Industries MR 2-6x RCO Scope";
     weaponInfoType="RscOptics_sos";
 
@@ -11,7 +11,7 @@ class GVAR(HMRCO_Blue) : optic_MRCO {
         mass=SCOPE_MASS;
         opticType=1;
         optics=1;
-        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\MTI_reticle_mrco_blu.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\rri_reticle_mrco_blu.p3d);
 
         class OpticsModes {
             class MRCOcq {
@@ -58,20 +58,20 @@ class GVAR(HMRCO_Blue) : optic_MRCO {
 
 class GVAR(HMRCO_Green) : GVAR(HMRCO_Blue) {
     displayName="[SOB] MokTech Holo-MRCO (Green)";
-    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\MTI_icon_mrco_grn_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-MRCO\MTI_sight_mrco_grn.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\rri_icon_mrco_grn_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-MRCO\rri_sight_mrco_grn.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\MTI_reticle_mrco_grn.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\rri_reticle_mrco_grn.p3d);
     };
 };
 
 class GVAR(HMRCO_Red) : GVAR(HMRCO_Blue) {
     displayName="[SOB] MokTech Holo-MRCO (Red)";
-    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\MTI_icon_mrco_red_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-MRCO\MTI_sight_mrco_red.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-MRCO\rri_icon_mrco_red_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-MRCO\rri_sight_mrco_red.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\MTI_reticle_mrco_red.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-MRCO\rri_reticle_mrco_red.p3d);
     };
 };

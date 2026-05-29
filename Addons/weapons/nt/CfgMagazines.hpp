@@ -6,7 +6,7 @@ class CfgMagazines
         author = AUTHOR;
         displayName = "[SOB] Base NT Magazine";
         displayNameShort = "Base NT";
-        descriptionShort = "Base NT magazine for MTI weapons";
+        descriptionShort = "Base NT magazine for rri weapons";
         GVAR_CORE(arsenal,whitelists)[] = {"ARC"};
         ammo = "";
         count = 5;

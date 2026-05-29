@@ -11,7 +11,7 @@ class CfgMagazines {
         count = 1;
         picture = QPATHTOEF(weapons,core\data\icons\misc\Rocket_AT_ca.paa);
         modelSpecial = "";
-        model = QPATHTOEF(props,munitions\mti_heat_missile.p3d);
+        model = QPATHTOEF(props,munitions\rri_heat_missile.p3d);
         initSpeed=140;
         mass = 60;
     };
@@ -25,7 +25,7 @@ class CfgMagazines {
         GVAR_CORE(arsenal,whitelists)[] = {"Trooper","JumpTrooper","ARC"};
         ammo = QGAMMO(RPS6_Rocket);
         modelSpecial = "";
-        model = QPATHTOEF(props,munitions\mti_heat_missile.p3d);
+        model = QPATHTOEF(props,munitions\rri_heat_missile.p3d);
         initSpeed=140;
         count = 1;
         mass = 60;

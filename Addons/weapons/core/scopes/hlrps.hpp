@@ -2,8 +2,8 @@ class GVAR(HLRPS_Blue) : optic_DMS {
     author=AUTHOR;
     scope=2;
     displayName="[SOB] MokTech Holo-LRPS (Blue)";
-    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\MTI_icon_lrps_blu_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-LRPS\MTI_sight_lrps_blu.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\rri_icon_lrps_blu_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-LRPS\rri_sight_lrps_blu.p3d);
     descriptionShort="MokTech Industries LR 6-25x Sniper Scope";
     weaponInfoType="RscOptics_sos";
 
@@ -12,7 +12,7 @@ class GVAR(HLRPS_Blue) : optic_DMS {
         opticType=2;
         weaponInfoType="RscWeaponRangeZeroingFOV";
         optics=1;
-        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_blu.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_blu.p3d);
         class OpticsModes {
             class Snip {
                 opticsID=1;
@@ -33,8 +33,8 @@ class GVAR(HLRPS_Blue) : optic_DMS {
                 discreteInitIndex=0;
                 memoryPointCamera="opticView";
                 modelOptics[]= {
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_blu.p3d),
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_z_blu.p3d)
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_blu.p3d),
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_z_blu.p3d)
                 };
                 visionMode[]= {
                     "Normal",
@@ -73,11 +73,11 @@ class GVAR(HLRPS_Blue) : optic_DMS {
 
 class GVAR(HLRPS_Green) : GVAR(HLRPS_Blue) {
     displayName="[SOB] MokTech Holo-LRPS (Green)";
-    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\MTI_icon_lrps_grn_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-LRPS\MTI_sight_lrps_grn.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\rri_icon_lrps_grn_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-LRPS\rri_sight_lrps_grn.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_grn.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_grn.p3d);
         class OpticsModes {
             class Snip {
                 opticsID=1;
@@ -98,8 +98,8 @@ class GVAR(HLRPS_Green) : GVAR(HLRPS_Blue) {
                 discreteInitIndex=0;
                 memoryPointCamera="opticView";
                 modelOptics[]= {
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_grn.p3d),
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_z_grn.p3d)
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_grn.p3d),
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_z_grn.p3d)
                 };
                 visionMode[]= {
                     "Normal",
@@ -138,11 +138,11 @@ class GVAR(HLRPS_Green) : GVAR(HLRPS_Blue) {
 
 class GVAR(HLRPS_Red) : GVAR(HLRPS_Blue) {
     displayName="[SOB] MokTech Holo-LRPS (Red)";
-    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\MTI_icon_lrps_red_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-LRPS\MTI_sight_lrps_red.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-LRPS\rri_icon_lrps_red_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-LRPS\rri_sight_lrps_red.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_red.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_red.p3d);
         class OpticsModes {
             class Snip {
                 opticsID=1;
@@ -163,8 +163,8 @@ class GVAR(HLRPS_Red) : GVAR(HLRPS_Blue) {
                 discreteInitIndex=0;
                 memoryPointCamera="opticView";
                 modelOptics[]= {
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_red.p3d),
-                    QPATHTOF(data\acc\sights\H-LRPS\MTI_reticle_lrps_z_red.p3d)
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_red.p3d),
+                    QPATHTOF(data\acc\sights\H-LRPS\rri_reticle_lrps_z_red.p3d)
                 };
                 visionMode[]= {
                     "Normal",

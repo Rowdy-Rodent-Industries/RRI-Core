@@ -20,7 +20,7 @@ class CfgPatches {
     };
 };
 
-class Mode_MTI_Fake;
+class Mode_rri_Fake;
 
 class CBA_DisposableLaunchers {
 	GWEAPON(RPS6_D)[] = {QGWEAPON(RPS6_D_Loaded),QGWEAPON(RPS6_D_Used)};

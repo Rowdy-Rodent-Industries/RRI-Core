@@ -4,12 +4,12 @@
 #define ITEM_LIST \
 
 #define UNIT_LIST \
-"mti_armoury_props_Prop_Base",\
-"mti_armoury_props_locker_base",\
-"mti_armoury_props_locker_jt",\
-"mti_armoury_props_locker_arc",\
-"mti_armoury_props_locker_command",\
-"mti_armoury_props_locker_fs",\
-"mti_armoury_props_locker_p2",\
-"mti_armoury_props_locker_pilot",\
-"mti_armoury_props_locker_rc"
+"rri_props_Prop_Base",\
+"rri_props_locker_base",\
+"rri_props_locker_jt",\
+"rri_props_locker_arc",\
+"rri_props_locker_command",\
+"rri_props_locker_fs",\
+"rri_props_locker_p2",\
+"rri_props_locker_pilot",\
+"rri_props_locker_rc"

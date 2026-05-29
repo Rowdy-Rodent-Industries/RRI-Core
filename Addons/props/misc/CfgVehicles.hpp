@@ -1,45 +1,5 @@
 class CfgVehicles {
     class EGVAR(props,Prop_Base);
-    class GVAR(shark_fren): EGVAR(props,Prop_Base) {
-        scope = 2;
-        scopecurator = 2;
-        author = AUTHOR;
-        displayName = "[SOB] Shark Friend";
-
-        model = QPATHTOF(shark_fren);
-        editorPreview = QPATHTOF(data\editorpreviews\shark.jpg);
-
-        vehicleClass = "Cargo";
-        editorCategory = QEGVAR(edcat,Props);
-        editorSubcategory = QEGVAR(edsubcat,misc);
-
-        ace_cargo_size = 2;
-        ace_cargo_canLoad = 1;
-        ace_dragging_canCarry = 1;
-        ace_dragging_canDrag = 1;
-        ace_dragging_dragPosition[] = {0, 1.2, 0};
-
-        class SimpleObject
-        {
-            eden = 1;
-            // ...
-        };
-
-        class ACE_Actions {
-            class ACE_MainActions {
-                displayName = "Interactions";
-                selection = "";
-                distance = 2;
-                condition = "true";
-
-                class GVAR(kick) {
-                    displayName = "<t color='#FFFF00'>Kick</t>";
-                    condition = "stance _player == 'STAND'";
-                    statement = "[_target,_player] remoteExec ['JLTS_fnc_mse6Kick',_target,true]";
-                };
-            };
-        };
-    };
 
     class GVAR(barricade): EGVAR(props,Prop_Base)
     {
@@ -48,7 +8,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Barricade";
 
-        model = QPATHTOF(mti_barricade);
+        model = QPATHTOF(rri_barricade.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\barricade\barricade_CO.paa)
@@ -73,7 +33,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Toolbox";
 
-        model = QPATHTOF(mti_toolbox);
+        model = QPATHTOF(rri_toolbox.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\toolbox\toolbox_CO.paa)
@@ -98,7 +58,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Advanced Firing Device";
 
-        model = QPATHTOF(mti_clacker);
+        model = QPATHTOF(rri_clacker.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\clacker\clacker_CO.paa)
@@ -123,7 +83,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Lockpick";
 
-        model = QPATHTOF(mti_lockpick);
+        model = QPATHTOF(rri_lockpick.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\lockpick\camo1_CO.paa)
@@ -148,7 +108,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Charity Wall";
 
-        model = QPATHTOF(charity_wall);
+        model = QPATHTOF(charity_wall.p3d);
         hiddenSelections[] = {
                 "camo1",
                 "camo2",

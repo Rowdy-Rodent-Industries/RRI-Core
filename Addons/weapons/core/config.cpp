@@ -27,7 +27,7 @@ class Mode_FullAuto;
 class Mode_Burst;
 class UGL_F;
 
-class Mode_MTI_Fake: Mode_SemiAuto {
+class Mode_rri_Fake: Mode_SemiAuto {
 	showToPlayer = 0;
 	showSwitchAction = 0;
 	enableAttack = 0;

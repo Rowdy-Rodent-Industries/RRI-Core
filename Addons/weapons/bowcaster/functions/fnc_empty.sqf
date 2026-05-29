@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 
 /*
-Function: mti_weapons_bowcaster_fnc_
+Function: rri_weapons_bowcaster_fnc_
 
 Description:
     Description...
@@ -14,7 +14,7 @@ Return Value:
 
 Example:
     (begin example)
-        [] call mti_weapons_bowcaster_fnc_;
+        [] call rri_weapons_bowcaster_fnc_;
     (end)
 
 Author:

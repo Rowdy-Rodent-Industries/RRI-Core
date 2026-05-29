@@ -10,7 +10,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "Z\mti_armoury\addons\props\locker\data\arc\Door_NOHQ.paa";
+	texture = "Z\rri\addons\props\locker\data\arc\Door_NOHQ.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -46,7 +46,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "Z\mti_armoury\addons\props\locker\data\arc\Door_as.paa";
+	texture = "Z\rri\addons\props\locker\data\arc\Door_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -58,7 +58,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "Z\mti_armoury\addons\props\locker\data\arc\Door_smdi.paa";
+	texture = "Z\rri\addons\props\locker\data\arc\Door_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

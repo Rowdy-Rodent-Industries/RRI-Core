@@ -4,7 +4,7 @@ class CfgGesturesMale
     class States
     {
         class GestureReloadBase;
-		class GestureReload_mti_dc15a: GestureReloadBase
+		class GestureReload_rri_dc15a: GestureReloadBase
 		{
 			file = QPATHTOF(data\anim\dc15a_reload.rtm);
 			speed = 0.3;
@@ -16,11 +16,11 @@ class CfgGesturesMale
 			leftHandIKCurve[]  = {0,1, 0.1,0, 0.9,0, 1,1};
 			rightHandIKCurve[] = {0,1,0.05,0,0.95,0,1,1};
 		};
-		class GestureReload_mti_dc15aContext: GestureReload_mti_dc15a
+		class GestureReload_rri_dc15aContext: GestureReload_rri_dc15a
 		{
 			mask = "handsWeapon_context";
 		};
-		class GestureReload_mti_dc15aContextAnimDrive: GestureReload_mti_dc15aContext
+		class GestureReload_rri_dc15aContextAnimDrive: GestureReload_rri_dc15aContext
 		{
 			mask = "handsWeapon_contextAnimDrive";
 		};

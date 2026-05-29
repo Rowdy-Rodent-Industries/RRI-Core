@@ -18,7 +18,7 @@ class CfgWeapons {
 	class GWEAPON(s195): hgun_P07_F {
 		scope = 2;
 		displayName = "[SOB] S-195";
-		model = QPATHTOF(mti_s195.p3d);
+		model = QPATHTOF(rri_s195.p3d);
 		hiddenSelections[] = {"camo1"};
 		baseWeapon = QGWEAPON(s195);
 		magazines[] = {QGMAG(s195),QGMAG(s195_slug)};

@@ -9,7 +9,7 @@ class GVAR(EE2_Scope): optic_KHS_old {
         opticType = 2;
         weaponInfoType = "RscWeaponRangeZeroingFOV";
         optics = 1;
-        modelOptics=QPATHTOF(data\acc\sights\EE-2_Scope\mti_reticle_ee2_z.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\EE-2_Scope\rri_reticle_ee2_z.p3d);
 
         class OpticsModes {
             class KHS {
@@ -23,7 +23,7 @@ class GVAR(EE2_Scope): optic_KHS_old {
                 discretefov[] = {0.06, 0.026};
                 discreteInitIndex = 0;
                 memoryPointCamera = "opticView";
-                modelOptics[] = {QPATHTOF(data\acc\sights\EE-2_Scope\mti_reticle_ee2_z.p3d),QPATHTOF(data\acc\sights\EE-2_Scope\mti_reticle_ee2_z.p3d)};
+                modelOptics[] = {QPATHTOF(data\acc\sights\EE-2_Scope\rri_reticle_ee2_z.p3d),QPATHTOF(data\acc\sights\EE-2_Scope\rri_reticle_ee2_z.p3d)};
                 visionMode[] = {"Normal"};
                 opticsFlare = 1;
                 opticsDisablePeripherialVision = 1;

@@ -6,7 +6,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Console #1";
 
-        model = QPATHTOF(mti_console1);
+        model = QPATHTOF(rri_console1.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\console1\camo1_co.paa),
@@ -34,7 +34,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\console2\console2_co.paa)};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\console2\console2.rvmat)};
-        model = QPATHTOF(mti_console2.p3d);
+        model = QPATHTOF(rri_console2.p3d);
         editorPreview = QPATHTOF(console\data\editorpreviews\console2.jpg);
 
         class UserActions {

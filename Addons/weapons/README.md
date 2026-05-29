@@ -6,4 +6,5 @@ rri_weapons
 - Make verpine model
 - make DC19sc model 
 - Make RSFK model 
+- make defib model
 - Fix up models

@@ -6,7 +6,7 @@ class CfgWeapons
     class GVAR(Injector_item_base): ACE_ItemCore {
         scope = 1;
         author = AUTHOR;
-        model = QPATHTOF(mti_injector.p3d);
+        model = QPATHTOF(rri_injector.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\injector\base\injector.rvmat)};
         hiddenSelectionsTextures[] = {QPATHTOF(data\injector\base\injector_CO.paa)};
@@ -193,7 +193,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bacta\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bacta\Base_CO.paa),QPATHTOF(data\bacta\Bacta_blue_CA.paa)};
-        model = QPATHTOF(mti_bacta_tank.p3d);
+        model = QPATHTOF(rri_bacta_tank.p3d);
         ACE_isMedicalItem = 1;
         animationMedic = "AinvPknlMstpSnonWnonDnon_medic1";
         picture = QPATHTOF(data\ui\BactaTank.paa);
@@ -243,11 +243,11 @@ class CfgWeapons
         displayName = "[SOB] Bacta Spray";
         descriptionShort = "Bacta Spray";
         descriptionUse = "Bacta Spray used by the medics of the Special Operations Brigade for injured troopers";
-        model = QPATHTOF(mti_bacta_spray.p3d);
+        model = QPATHTOF(rri_bacta_spray.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactaspray\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactaspray\base_CO.paa),QPATHTOF(data\bactaspray\bacta_blue_CA.paa)};
-        picture = QPATHTOF(data\ui\BactaSpray);
+        picture = QPATHTOF(data\ui\BactaSpray.paa);
         ACE_isMedicalItem = 1;
 
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -262,11 +262,11 @@ class CfgWeapons
         displayName = "[SOB] Anti-Chemical Inhaler";
         descriptionShort = "Anti-Chemical Inhaler";
         descriptionUse = "This inhaler clears your lungs of all chemicals taken in during combat. Only one is needed to cure yourself.";
-        model = QPATHTOF(mti_inhaler.p3d);
+        model = QPATHTOF(rri_inhaler.p3d);
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\inhaler\base.rvmat),"a3\characters_f_bootcamp\common\data\VRarmorEmmisive.rvmat"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\inhaler\base_CO.paa),QPATHTOF(data\inhaler\glass_CA.paa)};
-        picture = QPATHTOF(data\ui\Inhaler);
+        picture = QPATHTOF(data\ui\Inhaler.paa);
 
         ACE_isMedicalItem = 1;
 
@@ -282,7 +282,7 @@ class CfgWeapons
         displayName = "[SOB] Bacta Patch";
         descriptionShort = "A large Bacta-infused patch to deal with large trauma.";
         descriptionUse = "This patch is equipped with an integrated bacta supply. Its size makes it especially useful when dealing with large amounts of trauma to a single body part.";
-        model = QPATHTOF(mti_bacta_patch.p3d);
+        model = QPATHTOF(rri_bacta_patch.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\bactapatch\bacta.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\bactapatch\bacta_CO.paa)};
@@ -301,11 +301,11 @@ class CfgWeapons
         aceArsenalCategory = "Medical";
         displayName = "[SOB] RFX/K Medisensor";
         descriptionShort = "RFX/K Advanced Diagnostics Scanner";
-        model = QPATHTOF(mti_medical_scanner.p3d);
+        model = QPATHTOF(rri_medical_scanner.p3d);
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsmaterials[] = {QPATHTOF(data\medisensor\camo1.rvmat)};
         hiddenSelectionsTextures[] ={QPATHTOF(data\medisensor\camo1_CO.paa)};
-        picture = QPATHTOF(data\ui\Scanner);
+        picture = QPATHTOF(data\ui\Scanner.paa);
 
         ACE_isMedicalItem = 1;
 

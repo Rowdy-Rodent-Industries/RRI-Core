@@ -2,8 +2,8 @@ class GVAR(HRCO_Blue) : optic_Hamr {
     author=AUTHOR;
     scope=2;
     displayName="[SOB] MokTech Holo-RCO (Blue)";
-    picture=QPATHTOF(data\acc\sights\ui\H-RCO\MTI_icon_rco_blu_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-RCO\MTI_sight_rco_blu.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-RCO\rri_icon_rco_blu_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-RCO\rri_sight_rco_blu.p3d);
     descriptionShort="MokTech Industries SR 2-4x RCO Scope";
     weaponInfoType="RscOptics_sos";
 
@@ -11,7 +11,7 @@ class GVAR(HRCO_Blue) : optic_Hamr {
         mass=SCOPE_MASS;
         opticType=1;
         optics=1;
-        modelOptics=QPATHTOF(data\acc\sights\H-RCO\MTI_reticle_rco_blu.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-RCO\rri_reticle_rco_blu.p3d);
 
         class OpticsModes {
             class Hamr2Collimator {
@@ -59,20 +59,20 @@ class GVAR(HRCO_Blue) : optic_Hamr {
 
 class GVAR(HRCO_Green) : GVAR(HRCO_Blue) {
     displayName="[SOB] MokTech Holo-RCO (Green)";
-    picture=QPATHTOF(data\acc\sights\ui\H-RCO\MTI_icon_rco_grn_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-RCO\MTI_sight_rco_grn.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-RCO\rri_icon_rco_grn_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-RCO\rri_sight_rco_grn.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-RCO\MTI_reticle_rco_grn.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-RCO\rri_reticle_rco_grn.p3d);
     };
 };
 
 class GVAR(HRCO_Red) : GVAR(HRCO_Blue) {
     displayName="[SOB] MokTech Holo-RCO (Red)";
-    picture=QPATHTOF(data\acc\sights\ui\H-RCO\MTI_icon_rco_red_ca.paa);
-    model=QPATHTOF(data\acc\sights\H-RCO\MTI_sight_rco_red.p3d);
+    picture=QPATHTOF(data\acc\sights\ui\H-RCO\rri_icon_rco_red_ca.paa);
+    model=QPATHTOF(data\acc\sights\H-RCO\rri_sight_rco_red.p3d);
 
     class ItemInfo: ItemInfo {
-        modelOptics=QPATHTOF(data\acc\sights\H-RCO\MTI_reticle_rco_red.p3d);
+        modelOptics=QPATHTOF(data\acc\sights\H-RCO\rri_reticle_rco_red.p3d);
     };
 };

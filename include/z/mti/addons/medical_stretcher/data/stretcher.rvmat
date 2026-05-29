@@ -10,7 +10,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "z\mti\addons\medical_stretcher\data\stretcher_nohq.paa";
+	texture = "z\rri\addons\medical_stretcher\data\stretcher_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -46,7 +46,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "z\mti\addons\medical_stretcher\data\stretcher_as.paa";
+	texture = "z\rri\addons\medical_stretcher\data\stretcher_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -58,7 +58,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "z\mti\addons\medical_stretcher\data\stretcher_smdi.paa";
+	texture = "z\rri\addons\medical_stretcher\data\stretcher_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

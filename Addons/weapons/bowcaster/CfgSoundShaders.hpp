@@ -1,7 +1,7 @@
 class CfgSoundShaders {
     //--------- Light - Shots
     /*
-    class MTI_Bowcaster_Closure_SoundShader {
+    class rri_Bowcaster_Closure_SoundShader {
         samples[] = {
             {QPATHTOF(data\sounds\closure_1.wss),1},
             {QPATHTOF(data\sounds\closure_2.wss),1},
@@ -97,7 +97,7 @@ class CfgSoundShaders {
 
     //--------- Heavy - Shots
     /*
-    class MTI_Bowcaster_Heavy_Closure_SoundShader {
+    class rri_Bowcaster_Heavy_Closure_SoundShader {
         samples[] = {
             {QPATHTOF(data\sounds\closure_1.wss),1},
             {QPATHTOF(data\sounds\closure_2.wss),1},

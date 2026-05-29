@@ -6,7 +6,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Datapad";
 
-        model = QPATHTOF(mti_datapad.p3d);
+        model = QPATHTOF(rri_datapad.p3d);
         hiddenSelections[] = {"datapad","buttons","screen","panel"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\datapad\datapad_co.paa),
@@ -33,7 +33,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Holoprojector";
 
-        model = QPATHTOF(mti_holoprojector.p3d);
+        model = QPATHTOF(rri_holoprojector.p3d);
         hiddenSelections[] = {"Camo1","Camo2"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\holoprojector\Planet_CA.paa),QPATHTOF(data\holoprojector\Holoprojector_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\holoprojector.jpg);
@@ -55,7 +55,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] Antenna";
 
-        model = QPATHTOF(mti_antenna.p3d);
+        model = QPATHTOF(rri_antenna.p3d);
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] ={QPATHTOF(data\antenna\antenna_CO.paa)};
         editorPrevew = QPATHTOF(data\editorpreviews\antenna.jpg);
@@ -77,7 +77,7 @@ class CfgVehicles {
         author = AUTHOR;
         displayName = "[SOB] DataPad #2";
 
-        model = QPATHTOF(mti_datapad2.p3d);
+        model = QPATHTOF(rri_datapad2.p3d);
         hiddenSelections[] = {"Camo1","Screen"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\datapad2\datapad_CO.paa),QPATHTOF(data\datapad2\datapad_CO.paa)};
         editorPreview = QPATHTOF(data\editorpreviews\Datapad2.jpg);
