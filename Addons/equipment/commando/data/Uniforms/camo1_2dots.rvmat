@@ -1,0 +1,47 @@
+class stageTI
+{
+	texture="\z\rri\addons\equipment\commando\data\Uniforms\camo1_2dots_ti.paa";
+};
+Ambient[]= 	{0.5,0.5,0.5,1};
+Diffuse[]= 	{0.7,0.7,0.7,1};
+Emmisive[]= 	{0,0,0,1};
+ForcedDiffuse[]= 	{0,0,0,0};
+Specular[]= 	{0,0,0,0};
+SpecularPower=16;
+PixelShaderId="Super";//102
+VertexShaderId="Super";//23
+class stage1
+{
+	texture="ls_armor_bluefor\uniform\sob\commando\data\camo1_nohq.paa";
+	Texgen=1;
+};
+class stage2
+{
+	texture="#(argb,8,8,3)color(0.5,0.5,0.5,1,dt)";
+	Texgen=2;
+};
+class stage3
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,mc)";
+	Texgen=3;
+};
+class stage4
+{
+	texture="ls_armor_bluefor\uniform\sob\commando\data\camo1_as.paa";
+	Texgen=4;
+};
+class stage5
+{
+	texture="ls_armor_bluefor\uniform\sob\commando\data\camo1_smdi.paa";
+	Texgen=5;
+};
+class stage6
+{
+	texture="#(ai,64,64,1)fresnel(1,1)";
+	Texgen=6;
+};
+class stage7
+{
+	texture="a3\data_f\env_co.paa";
+	Texgen=7;
+};
