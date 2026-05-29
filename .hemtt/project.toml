@@ -5,3 +5,6 @@ mainprefix = "z"
 
 [hemtt.release]
 archive = false # Default: true
+
+[version]
+path = "addons/main/script_version.hpp"
