@@ -3,7 +3,7 @@ name: FixFNL
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   fix_fnl:
