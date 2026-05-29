@@ -131,7 +131,7 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       actions: write
     steps:
     - name: Call workflow to delete artifacts
