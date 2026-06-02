@@ -5,4 +5,4 @@
 "rri_weapon_rskf44"
 
 #define UNIT_LIST \
-"rri_weapon_rskf44_GH"
+"rri_weapon_rsfk44_GH"

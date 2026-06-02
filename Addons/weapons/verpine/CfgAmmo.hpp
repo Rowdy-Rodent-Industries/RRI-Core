@@ -8,7 +8,7 @@ class CfgAmmo
         caliber = 7.6;
         hit = 30;
 
-        GVAR_CORE(pangolin,bypassShield) = 1;
+        EGVAR(pangolin,bypassShield) = 1;
 
         indirectHit = 0;
         indirectHitRange = 0;
@@ -108,28 +108,28 @@ class CfgAmmo
 
     class GAMMO(Verpine_Deraformine): GAMMO(Verpine_Base) {
         hit = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_MEDICAL;
-        GVAR_CORE(medical,projectileMeds)[] = {"Deraformine",1};
+        EGVAR(weapons_core,ammoType) = AMMOTYPE_MEDICAL;
+        EGVAR(medical,projectileMeds)[] = {"Deraformine",1};
     };
 
     class GAMMO(Verpine_Latheniol): GAMMO(Verpine_Base) {
         hit = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_MEDICAL;
-        GVAR_CORE(medical,projectileMeds)[] = {"Latheniol",1};
+        EGVAR(weapons_core,ammoType) = AMMOTYPE_MEDICAL;
+        EGVAR(medical,projectileMeds)[] = {"Latheniol",1};
     };
 
     class GAMMO(Verpine_Tracking): GAMMO(Verpine_Base) {
         hit = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_TRACKING;
+        EGVAR(weapons_core,ammoType) = AMMOTYPE_TRACKING;
     };
 
     class GAMMO(Verpine_Ion): GAMMO(Verpine_Base) {
         hit = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_ION;
+        EGVAR(weapons_core,ammoType) = AMMOTYPE_ION;
     };
 
     class GAMMO(Verpine_Acid): GAMMO(Verpine_Base) {
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_ACID;
+        EGVAR(weapons_core,ammoType) = AMMOTYPE_ACID;
     };
 
     // Misc. Ammo

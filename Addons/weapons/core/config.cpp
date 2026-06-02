@@ -61,7 +61,7 @@ class Mode_rri_Fake: Mode_SemiAuto {
 	useActionTitle="";
 	artillerydispersion = 0.4;
 };
-
+#include "CfgEventHandlers.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgLights.hpp"
 #include "ComplexEffects.hpp"
