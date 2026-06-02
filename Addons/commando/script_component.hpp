@@ -1,60 +1,67 @@
-#define SUBCOMPONENT arc
-#define SUBCOMPONENT_BEAUTIFIED Equipment (ARC)
+#define COMPONENT commando
+#define COMPONENT_BEAUTIFIED commando
+#include "\z\rri\addons\main\script_mod.hpp"
+
+// #define DEBUG_MODE_FULL
+// #define DISABLE_COMPILE_CACHE
+// #define ENABLE_PERFORMANCE_COUNTERS
+
+#ifdef DEBUG_ENABLED_COMMANDO
+    #define DEBUG_MODE_FULL
+#endif
+
+#ifdef DEBUG_SETTINGS_COMMANDO
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_COMMANDO
+#endif
 
 // todo:
-#define ACEAX_LABEL_FW "ARC Facewear"
-#define ACEAX_LABEL_HELMET "ARC Helmet"
-#define ACEAX_LABEL_ALPHA_NVG "ARC NVG"
-#define ACEAX_LABEL_ARC_RANGE "ARC RangeFinder"
-#define ACEAX_LABEL_UNIFORM "ARC Armor"
-#define ACEAX_LABEL_VEST "ARC Vest"
+#define ACEAX_LABEL_FW_COMMANDO "Commando Facewear"
+#define ACEAX_LABEL_HELMET "Commando Helmet"
+#define ACEAX_LABEL_UNIFORM "Commando Armor"
+#define ACEAX_LABEL_VEST "Commando Vest"
+#define ACEAX_LABEL_BACKPACK "Commando Backpack"
 
-#define HELMET_PROTECTION \
-        class HitpointsProtectionInfo {\
-            class Head {\
+#define BACKPACK_MAXLOAD 500
+
+#define HELMET_PROTECTION\
+        class HitpointsProtectionInfo: HitpointsProtectionInfo {\
+            class Head: Head {\
                 armor = 8;\
-                hitpointName = "HitHead";\
                 passThrough = 0.5;\
             };\
         }
 
-#define HEARING_PROTECTION 0.80
-#define HEARING_MUFFLING 0.50
+#define HELMET_HEARING_PROTECTION 0.80
+#define HELMET_HEARING_MUFFLING 0.50
 
-#define HELMET_ACE_HEARING ace_hearing_protection = HEARING_PROTECTION;\
-ace_hearing_lowerVolume = HEARING_MUFFLING
-
-#define BACKPACK_MAXLOAD 400
-#define LR_RANGE 25000
-
-#define UNIFORM_SUPPLYCLASS QUOTE(Supply120)
-
-#define VEST_SUPPLYCLASS QUOTE(Supply300)
+#define UNIFORM_SUPPLYCLASS QUOTE(Supply200)
 
 #define VEST_PROTECTION \
         class HitpointsProtectionInfo {\
 			class Chest {\
 				HitpointName = "HitChest";\
-				armor = 11;\
+				armor = 9;\
 				PassThrough = 0.3;\
 			};\
 			class Legs {\
 				hitpointName = "HitLegs";\
-				armor = 11;\
+				armor = 9;\
 				passThrough = 0.3;\
 			};\
 			class Arms {\
 				hitpointName = "HitArms";\
-				armor = 6;\
+				armor = 4;\
 				passThrough = 0.3;\
 			};\
 		}
 
-#define UNIT_ARMOR 4
+#define VEST_SUPPLYCLASS QUOTE(Supply300)
+
+#define UNIT_ARMOR 2
 #define UNIT_ARMOR_STRUCTURAL 4
 #define UNIT_EXPLOSION_SHIELDING 0.4
 #define UNIT_MIN_TOTAL_DAMAGE_THRESHOLD 0.001
-#define UNIT_IMPACT_DAMAGE_MULTIPLIER 0.5
+#define UNIT_IMPACT_DAMAGE_MULTIPLIER  0.5
 
 #define UNIT_HITPOINTS class HitPoints { \
 	class HitFace { \
@@ -86,7 +93,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitFace max HitNeck"; \
 	}; \
 	class HitPelvis: HitHead { \
-		armor = 10; \
+		armor = 8; \
 		material = -1; \
 		name = "pelvis"; \
 		passThrough = 0.8; \
@@ -97,7 +104,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = ""; \
 	}; \
 	class HitAbdomen: HitPelvis { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "spine1"; \
 		passThrough = 0.8; \
@@ -107,7 +114,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		minimalHit = 0.01; \
 	}; \
 	class HitDiaphragm: HitAbdomen { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "spine2"; \
 		passThrough = 0.33; \
@@ -117,7 +124,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		minimalHit = 0.01; \
 	}; \
 	class HitChest: HitDiaphragm { \
-		armor = 10; \
+		armor = 8; \
 		material = -1; \
 		name = "spine3"; \
 		passThrough = 0.33; \
@@ -138,7 +145,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
 	}; \
 	class HitArms: HitBody { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "arms"; \
 		passThrough = 1; \
@@ -149,7 +156,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "0"; \
 	}; \
 	class HitHands: HitArms { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "hands"; \
 		passThrough = 1; \
@@ -160,7 +167,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitArms"; \
 	}; \
 	class HitLegs: HitHands { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "legs"; \
 		passThrough = 1; \
@@ -182,7 +189,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2"; \
 	}; \
 	class HitLeftArm { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "hand_l"; \
 		passThrough = 1; \
@@ -195,7 +202,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		name = "hand_r"; \
 	}; \
 	class HitLeftLeg { \
-		armor = 8; \
+		armor = 6; \
 		material = -1; \
 		name = "leg_l"; \
 		passThrough = 1; \
@@ -220,4 +227,4 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     };\
 }
 
-#include "\z\rri\addons\equipment\script_component.hpp"
+#include "\z\rri\addons\main\script_macros.hpp"

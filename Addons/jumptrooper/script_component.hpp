@@ -1,27 +1,47 @@
-#define SUBCOMPONENT commando
-#define SUBCOMPONENT_BEAUTIFIED Equipment (Commando)
+#define COMPONENT jumptrooper
+#define COMPONENT_BEAUTIFIED Jump Trooper
+#include "\z\rri\addons\main\script_mod.hpp"
+
+// #define DEBUG_MODE_FULL
+// #define DISABLE_COMPILE_CACHE
+// #define ENABLE_PERFORMANCE_COUNTERS
+
+#ifdef DEBUG_ENABLED_JUMPTROOPER
+    #define DEBUG_MODE_FULL
+#endif
+
+#ifdef DEBUG_SETTINGS_JUMPTROOPER
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_JUMPTROOPER
+#endif
 
 // todo:
-#define ACEAX_LABEL_FW_COMMANDO "Commando Facewear"
-#define ACEAX_LABEL_HELMET "Commando Helmet"
-#define ACEAX_LABEL_UNIFORM "Commando Armor"
-#define ACEAX_LABEL_VEST "Commando Vest"
-#define ACEAX_LABEL_BACKPACK "Commando Backpack"
+#define ACEAX_LABEL_HELMET "JumpTrooper Helmet"
+#define ACEAX_LABEL_NVG "JumpTrooper NVG"
+#define ACEAX_LABEL_UNIFORM "JumpTrooper Armor"
+#define ACEAX_LABEL_VEST "JumpTrooper Vest"
+#define ACEAX_LABEL_JUMPPACK "JumpTrooper Jumppack"
 
-#define BACKPACK_MAXLOAD 500
-
-#define HELMET_PROTECTION\
-        class HitpointsProtectionInfo: HitpointsProtectionInfo {\
-            class Head: Head {\
-                armor = 8;\
+#define HELMET_PROTECTION \
+        class HitpointsProtectionInfo {\
+            class Head {\
+                armor = 9;\
+                hitpointName = "HitHead";\
                 passThrough = 0.5;\
             };\
         }
 
-#define HELMET_HEARING_PROTECTION 0.80
-#define HELMET_HEARING_MUFFLING 0.50
+#define HEARING_PROTECTION 0.80
+#define HEARING_MUFFLING 0.50
 
-#define UNIFORM_SUPPLYCLASS QUOTE(Supply200)
+#define HELMET_ACE_HEARING ace_hearing_protection = HEARING_PROTECTION;\
+ace_hearing_lowerVolume = HEARING_MUFFLING
+
+#define BACKPACK_MAXLOAD 400
+#define LR_RANGE 25000
+
+#define UNIFORM_SUPPLYCLASS QUOTE(Supply120)
+
+#define VEST_SUPPLYCLASS QUOTE(Supply300)
 
 #define VEST_PROTECTION \
         class HitpointsProtectionInfo {\
@@ -42,13 +62,11 @@
 			};\
 		}
 
-#define VEST_SUPPLYCLASS QUOTE(Supply300)
-
-#define UNIT_ARMOR 2
+#define UNIT_ARMOR 4
 #define UNIT_ARMOR_STRUCTURAL 4
 #define UNIT_EXPLOSION_SHIELDING 0.4
 #define UNIT_MIN_TOTAL_DAMAGE_THRESHOLD 0.001
-#define UNIT_IMPACT_DAMAGE_MULTIPLIER  0.5
+#define UNIT_IMPACT_DAMAGE_MULTIPLIER 0.5
 
 #define UNIT_HITPOINTS class HitPoints { \
 	class HitFace { \
@@ -80,7 +98,7 @@
 		depends = "HitFace max HitNeck"; \
 	}; \
 	class HitPelvis: HitHead { \
-		armor = 8; \
+		armor = 7; \
 		material = -1; \
 		name = "pelvis"; \
 		passThrough = 0.8; \
@@ -91,7 +109,7 @@
 		depends = ""; \
 	}; \
 	class HitAbdomen: HitPelvis { \
-		armor = 6; \
+		armor = 3; \
 		material = -1; \
 		name = "spine1"; \
 		passThrough = 0.8; \
@@ -101,7 +119,7 @@
 		minimalHit = 0.01; \
 	}; \
 	class HitDiaphragm: HitAbdomen { \
-		armor = 6; \
+		armor = 3; \
 		material = -1; \
 		name = "spine2"; \
 		passThrough = 0.33; \
@@ -111,7 +129,7 @@
 		minimalHit = 0.01; \
 	}; \
 	class HitChest: HitDiaphragm { \
-		armor = 8; \
+		armor = 3; \
 		material = -1; \
 		name = "spine3"; \
 		passThrough = 0.33; \
@@ -132,7 +150,7 @@
 		depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
 	}; \
 	class HitArms: HitBody { \
-		armor = 6; \
+		armor = 3; \
 		material = -1; \
 		name = "arms"; \
 		passThrough = 1; \
@@ -214,4 +232,4 @@
     };\
 }
 
-#include "\z\rri\addons\equipment\script_component.hpp"
+#include "\z\rri\addons\main\script_macros.hpp"

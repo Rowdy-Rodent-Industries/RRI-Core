@@ -2,15 +2,10 @@
 #include "config_lists.hpp"
 
 class CfgPatches {
-    class SUBADDON {
-        addonRootClass = QADDON;
+    class ADDON {
         name = COMPONENT_NAME;
-        units[] = {
-            UNIT_LIST
-        };
-        weapons[] = {
-            ITEM_LIST
-        };
+        units[] = {UNIT_LIST};
+        weapons[] = {ITEM_LIST};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QE_ADDON(equipment),
@@ -18,8 +13,10 @@ class CfgPatches {
             "JLTS_characters_CloneArmor",
             "JLTS_characters_CloneArmor2",
             "SEA_JLTS_ExtendedArsenal"
-        };
-        skipWhenMissingDependencies = 1;
+            };
+        author = AUTHOR;
+        authors[] = {""};
+        url = CSTRING(URL);
         VERSION_CONFIG;
     };
 };

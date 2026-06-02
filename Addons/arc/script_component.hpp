@@ -1,17 +1,31 @@
-#define SUBCOMPONENT jumptrooper
-#define SUBCOMPONENT_BEAUTIFIED Equipment (Jump Trooper)
+#define COMPONENT arc
+#define COMPONENT_BEAUTIFIED arc
+#include "\z\rri\addons\main\script_mod.hpp"
+
+// #define DEBUG_MODE_FULL
+// #define DISABLE_COMPILE_CACHE
+// #define ENABLE_PERFORMANCE_COUNTERS
+
+#ifdef DEBUG_ENABLED_ARC
+    #define DEBUG_MODE_FULL
+#endif
+
+#ifdef DEBUG_SETTINGS_ARC
+    #define DEBUG_SETTINGS DEBUG_SETTINGS_ARC
+#endif
 
 // todo:
-#define ACEAX_LABEL_HELMET "JumpTrooper Helmet"
-#define ACEAX_LABEL_NVG "JumpTrooper NVG"
-#define ACEAX_LABEL_UNIFORM "JumpTrooper Armor"
-#define ACEAX_LABEL_VEST "JumpTrooper Vest"
-#define ACEAX_LABEL_JUMPPACK "JumpTrooper Jumppack"
+#define ACEAX_LABEL_FW "ARC Facewear"
+#define ACEAX_LABEL_HELMET "ARC Helmet"
+#define ACEAX_LABEL_ALPHA_NVG "ARC NVG"
+#define ACEAX_LABEL_ARC_RANGE "ARC RangeFinder"
+#define ACEAX_LABEL_UNIFORM "ARC Armor"
+#define ACEAX_LABEL_VEST "ARC Vest"
 
 #define HELMET_PROTECTION \
         class HitpointsProtectionInfo {\
             class Head {\
-                armor = 9;\
+                armor = 8;\
                 hitpointName = "HitHead";\
                 passThrough = 0.5;\
             };\
@@ -34,17 +48,17 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
         class HitpointsProtectionInfo {\
 			class Chest {\
 				HitpointName = "HitChest";\
-				armor = 9;\
+				armor = 11;\
 				PassThrough = 0.3;\
 			};\
 			class Legs {\
 				hitpointName = "HitLegs";\
-				armor = 9;\
+				armor = 11;\
 				passThrough = 0.3;\
 			};\
 			class Arms {\
 				hitpointName = "HitArms";\
-				armor = 4;\
+				armor = 6;\
 				passThrough = 0.3;\
 			};\
 		}
@@ -85,7 +99,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitFace max HitNeck"; \
 	}; \
 	class HitPelvis: HitHead { \
-		armor = 7; \
+		armor = 10; \
 		material = -1; \
 		name = "pelvis"; \
 		passThrough = 0.8; \
@@ -96,7 +110,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = ""; \
 	}; \
 	class HitAbdomen: HitPelvis { \
-		armor = 3; \
+		armor = 8; \
 		material = -1; \
 		name = "spine1"; \
 		passThrough = 0.8; \
@@ -106,7 +120,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		minimalHit = 0.01; \
 	}; \
 	class HitDiaphragm: HitAbdomen { \
-		armor = 3; \
+		armor = 8; \
 		material = -1; \
 		name = "spine2"; \
 		passThrough = 0.33; \
@@ -116,7 +130,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		minimalHit = 0.01; \
 	}; \
 	class HitChest: HitDiaphragm { \
-		armor = 3; \
+		armor = 10; \
 		material = -1; \
 		name = "spine3"; \
 		passThrough = 0.33; \
@@ -137,7 +151,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; \
 	}; \
 	class HitArms: HitBody { \
-		armor = 3; \
+		armor = 8; \
 		material = -1; \
 		name = "arms"; \
 		passThrough = 1; \
@@ -148,7 +162,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "0"; \
 	}; \
 	class HitHands: HitArms { \
-		armor = 6; \
+		armor = 8; \
 		material = -1; \
 		name = "hands"; \
 		passThrough = 1; \
@@ -159,7 +173,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "HitArms"; \
 	}; \
 	class HitLegs: HitHands { \
-		armor = 6; \
+		armor = 8; \
 		material = -1; \
 		name = "legs"; \
 		passThrough = 1; \
@@ -181,7 +195,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2"; \
 	}; \
 	class HitLeftArm { \
-		armor = 6; \
+		armor = 8; \
 		material = -1; \
 		name = "hand_l"; \
 		passThrough = 1; \
@@ -194,7 +208,7 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
 		name = "hand_r"; \
 	}; \
 	class HitLeftLeg { \
-		armor = 6; \
+		armor = 8; \
 		material = -1; \
 		name = "leg_l"; \
 		passThrough = 1; \
@@ -219,4 +233,4 @@ ace_hearing_lowerVolume = HEARING_MUFFLING
     };\
 }
 
-#include "\z\rri\addons\equipment\script_component.hpp"
+#include "\z\rri\addons\main\script_macros.hpp"
