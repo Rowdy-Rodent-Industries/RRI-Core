@@ -125,7 +125,10 @@ class CfgAmmo
 
     class GAMMO(Verpine_Ion): GAMMO(Verpine_Base) {
         hit = 1;
-        EGVAR(weapons_core,ammoType) = AMMOTYPE_ION;
+        ls_weapons_ammoType = 2;
+        ls_weapons_stunDuration = 10; // Time in seconds
+        ls_weapons_ionEngineDamage = 0.09; // % of engine damage
+        ls_weapons_ionFuelBurn = 0.1; // % of fuel to drain
     };
 
     class GAMMO(Verpine_Acid): GAMMO(Verpine_Base) {
