@@ -57,6 +57,22 @@
 
 #define VEST_SUPPLYCLASS QUOTE(Supply300)
 
+// --- Shield system ---
+// These are defaults; per-unit values can be overridden via vest CfgWeapons config:
+//   rri_commando_shieldMax   — maximum shield energy
+//   rri_commando_shieldRegen — energy restored per PFH tick
+#define SHIELD_MAX_DEFAULT          50
+#define SHIELD_REGEN_RATE_DEFAULT   5
+#define SHIELD_REGEN_DELAY_HIT      8
+#define SHIELD_REGEN_DELAY_BREACH   15
+#define SHIELD_PFH_INTERVAL         1
+
+// Shield audio cues
+#define SHIELD_SOUND_ACTIVATE       QGVAR(shield_activate)
+#define SHIELD_SOUND_FULL           QGVAR(shield_full)
+#define SHIELD_SOUND_HALF           QGVAR(shield_half)
+#define SHIELD_SOUND_BREACH         QGVAR(shield_breach)
+
 #define UNIT_ARMOR 2
 #define UNIT_ARMOR_STRUCTURAL 4
 #define UNIT_EXPLOSION_SHIELDING 0.4

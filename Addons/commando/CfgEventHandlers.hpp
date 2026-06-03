@@ -15,3 +15,19 @@ class Extended_PostInit_EventHandlers {
         init = QUOTE(call COMPILE_SCRIPT(XEH_postInit));
     };
 };
+
+class Extended_Local_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            local = QUOTE(call FUNC(localityChanged));
+        };
+    };
+};
+
+class Extended_Init_EventHandlers {
+    class CAManBase {
+        class ADDON {
+            init = QUOTE((_this select 0) call FUNC(initUnit));
+        };
+    };
+};

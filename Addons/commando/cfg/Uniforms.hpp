@@ -2,12 +2,8 @@ class GUNIFORM(base) : ls_sob_commando_uniform {
 	author = AUTHOR;
     displayName = "[SOB] Katarn-class Commando Armor";
 
-	GVAR_CORE(katarnOS,isSuit) = 1;
-	GVAR_CORE(katarnOS,hasOS) = 1;
-	GVAR_CORE(katarnOS,hasTaser) = 1;
-	GVAR_CORE(katarnOS,commandoID) = "XX";
-	GVAR_CORE(equipment,hasKnife) = 1;
-	GVAR_CORE(equipment,knife) = QGWEAPON(knife);
+	GVAR(hasKatarn) = 1;
+	GVAR(isSuit) = 1;
 	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
 
 	picture = QPATHTOF(data\ui\RCv1.paa);

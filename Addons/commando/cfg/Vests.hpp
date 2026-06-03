@@ -2,7 +2,8 @@ class GVEST(base) : ls_sob_commando_vest {
 	author = AUTHOR;
 	displayName = "[SOB] Katarn I Commando Vest";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
+	GVAR(hasKatarn) = 1;
+	GVAR(hasShield) = 1;
 	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
 
 	picture = QPATHTOF(data\ui\RCVest.paa);
@@ -25,8 +26,8 @@ class GVEST(Cadet) : ls_sob_commando_vest {
 	author = AUTHOR;
 	displayName = "[SOB] Katarn I Commando Vest (Cadet)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(pangolin,shieldStrength) = 50;
+	GVAR(hasShield) = 1;
+	GVAR(shieldStrength) = 50;
 	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
 
 	picture = QPATHTOF(data\ui\RCVest.paa);
@@ -49,7 +50,7 @@ class GVEST(sniper) : ls_sob_commando_sniper_vest {
 	author = AUTHOR;
 	displayName = "[SOB] Katarn I Commando Vest (Sniper)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
+	GVAR(hasShield) = 1;
 	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
 
 	picture = QPATHTOF(data\ui\Sniper1.paa);
@@ -72,7 +73,7 @@ class GVEST(tech) : ls_sob_commando_tech_vest {
 	author = AUTHOR;
 	displayName = "[SOB] Katarn I Commando Vest (Tech)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
+	GVAR(hasShield) = 1;
 	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
 
 	picture = QPATHTOF(data\ui\Tech1.paa);

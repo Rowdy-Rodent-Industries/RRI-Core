@@ -1,1 +1,15 @@
-
+PREP(activateShield);
+PREP(canActivateShield);
+PREP(canDeactivateShield);
+PREP(deactivateShield);
+PREP(hasKatarn);
+PREP(hasShield);
+PREP(hasSuit);
+PREP(initBattery);
+PREP(initShield);
+PREP(initUnit);
+PREP(loadHitHandlers);
+PREP(localityChanged);
+PREP(shieldHUD);
+PREP(shieldHitEffect);
+PREP(shieldPFH);
