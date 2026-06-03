@@ -8,7 +8,7 @@ class GHELMET(Trooper) : EGHELMET(equipment_trooper,p2_base) {
 		QPATHTOF(data\helmets\Clone_helmet_P2_fs_co.paa)
 	};
 
-	picture = QPATHTOEF(equipment,trooper\data\ui\P2Spec1.paa);
+	picture = QPATHTOEF(trooper,data\ui\P2Spec1.paa);
 
 	// class XtdGearInfo {
 	// 	model = QGVAR(helmet);
@@ -40,7 +40,7 @@ class GHELMET(tanker_base) : EGHELMET(equipment_custom,Tanker) {
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
 	hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\Clone_helmet_tanker_fs_co.paa),QPATHTOEF(equipment,custom\data\helmets\tanker\Visor_CO.paa)};
 
-	picture = QPATHTOEF(equipment,trooper\data\ui\P2Spec1.paa);
+	picture = QPATHTOF(data\ui\TankerHelmet.paa);
 
 	// class XtdGearInfo {
 	// 	model = QGVAR(helmet);

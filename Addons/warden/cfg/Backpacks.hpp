@@ -1,23 +1,23 @@
 class EGBACKPACK(equipment_custom,fsb);
 class GBACKPACK(fsb_trooper): EGBACKPACK(equipment_custom,fsb) {
-  scope = 2;
-  displayName = "[SOB] Warden Logistics Backpack (Trooper)";
-  hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\fs-b\camo_Trooper_co.paa),QPATHTOF(data\backpacks\fs-b\camo_co.paa),""};
+	scope = 2;
+	displayName = "[SOB] Warden Logistics Backpack (Trooper)";
+	hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\fs-b\camo_Trooper_co.paa),QPATHTOF(data\backpacks\fs-b\camo_co.paa),""};
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
 
-  class XtdGearInfo {
+	class XtdGearInfo {
 		model = QGVAR(backpack);
 		camo = "Trooper";
 	};
 };
 
 class GBACKPACK(fsb_medic): EGBACKPACK(equipment_custom,fsb) {
-  scope = 2;
-  displayName = "[SOB] Warden Logistics Backpack (Medic)";
-  hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\fs-b\camo_Medic_co.paa),QPATHTOF(data\backpacks\fs-b\camo_co.paa),""};
+	scope = 2;
+	displayName = "[SOB] Warden Logistics Backpack (Medic)";
+	hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\fs-b\camo_Medic_co.paa),QPATHTOF(data\backpacks\fs-b\camo_co.paa),""};
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
 
-  class XtdGearInfo {
+	class XtdGearInfo {
 		model = QGVAR(backpack);
 		camo = "Medic";
 	};

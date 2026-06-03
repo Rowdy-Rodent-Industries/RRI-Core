@@ -6,7 +6,7 @@ class GUNIFORM(base): JLTS_CloneArmor {
 	GVAR_CORE(equipment,hasKnife) = 1;
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport","pilot"};
 
-	picture = QPATHTOEF(equipment,trooper\data\ui\P2alt2v1.paa);
+	picture = QPATHTOEF(trooper,data\ui\P2alt2v1.paa);
 
     class ItemInfo: ItemInfo {
 		uniformType = "Neopren";

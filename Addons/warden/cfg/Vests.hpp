@@ -3,6 +3,7 @@ class GVEST(base_FS): JLTS_CloneVestSuspender {
 	author = AUTHOR;
 	displayName = "[SOB] Warden Suspenders (Black)";
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
+	picture = QPATHTOF(data\ui\Suspenders1.paa);
 
 	vestType = "Rebreather";
 
@@ -24,6 +25,7 @@ class GVEST(white_FS): JLTS_CloneVestSuspender_white {
 	author = AUTHOR;
 	displayName = "[SOB] Warden Suspenders (White)";
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
+	picture = QPATHTOF(data\ui\Suspenders1.paa);
 
 	vestType = "Rebreather";
 
@@ -45,6 +47,7 @@ class GVEST(Grey_FS): JLTS_CloneVestSuspender_41_Gree {
 	author = AUTHOR;
 	displayName = "[SOB] Warden Suspenders (Grey)";
 	GVAR_CORE(arsenal,whitelists)[] = {"fieldsupport"};
+	picture = QPATHTOF(data\ui\Suspenders1.paa);
 
 	vestType = "Rebreather";
 
