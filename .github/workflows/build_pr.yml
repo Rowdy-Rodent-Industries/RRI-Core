@@ -73,7 +73,7 @@ jobs:
       run: python ./tools/check_classes.py
 
   cleanup_artifacts:
-    needs: [check_paths, check_classes,update_config_lists,update_aceax_compat]
+    needs: [check_paths, check_classes]
     if: always()
     runs-on: ubuntu-latest
     permissions:
