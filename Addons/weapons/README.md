@@ -23,3 +23,5 @@ TODO:
 - Tracking shot
 - emergency flare
 - improv ammo if we really care for it
+- onhitmedical
+- onhitdefib
