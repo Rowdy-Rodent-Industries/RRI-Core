@@ -1,3 +1,6 @@
+#ifndef SCRIPT_MACROS_HPP
+#define SCRIPT_MACROS_HPP
+
 #include "\z\ace\addons\main\script_macros.hpp"
 #include "script_macros_armoury.hpp"
 
@@ -252,3 +255,4 @@ class Weapon_Base_F
 
 // AFM macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
+#endif // SCRIPT_MACROS_HPP

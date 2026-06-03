@@ -1,1 +1,12 @@
-
+PREP(activateBattery);
+PREP(batteryPFH);
+PREP(deactivateBattery);
+PREP(getBatteryData);
+PREP(hasBattery);
+PREP(katarnInitUnit);
+PREP(katarnTeamHUD);
+PREP(katarnUserHUD);
+PREP(localityChangedEH);
+PREP(shieldDamagedLocal);
+PREP(shieldParticles);
+PREP(woundHandler);

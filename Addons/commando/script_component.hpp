@@ -1,3 +1,5 @@
+#ifndef COMMANDO_COMPONENT_HPP
+#define COMMANDO_COMPONENT_HPP
 #define COMPONENT commando
 #define COMPONENT_BEAUTIFIED commando
 #include "\z\rri\addons\main\script_mod.hpp"
@@ -228,3 +230,5 @@
 }
 
 #include "\z\rri\addons\main\script_macros.hpp"
+
+#endif // keep at bottom

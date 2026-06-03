@@ -1,139 +1,145 @@
+//GVAR CORE MARCOS NEED FIXED
+
 class GVEST(base) : ls_sob_commando_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 100;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\RCVest.paa);
+    picture = QPATHTOF(data\ui\RCVest.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "Base";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "Base";
+        camo = "White";
+    };
 };
 
 class GVEST(Cadet) : ls_sob_commando_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest (Cadet)";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest (Cadet)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(pangolin,shieldStrength) = 50;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 75;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\RCVest.paa);
+    picture = QPATHTOF(data\ui\RCVest.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "Cadet";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "Cadet";
+        camo = "White";
+    };
 };
 
 class GVEST(sniper) : ls_sob_commando_sniper_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest (Sniper)";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest (Sniper)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 100;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\Sniper1.paa);
+    picture = QPATHTOF(data\ui\Sniper1.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "Sniper";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "Sniper";
+        camo = "White";
+    };
 };
 
 class GVEST(tech) : ls_sob_commando_tech_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest (Tech)";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest (Tech)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 100;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\Tech1.paa);
+    picture = QPATHTOF(data\ui\Tech1.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
-
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "Tech";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "Tech";
+        camo = "White";
+    };
 };
 
 class GVEST(eod) : ls_sob_commando_eod_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest (EOD)";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest (EOD)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 125;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\Demo1.paa);
+    picture = QPATHTOF(data\ui\Demo1.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "EOD";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "EOD";
+        camo = "White";
+    };
 };
 
 class GVEST(sl) : ls_sob_commando_sl_vest {
-	author = AUTHOR;
-	displayName = "[SOB] Katarn I Commando Vest (SL)";
+    author = AUTHOR;
+    displayName = "[SOB] Katarn I Commando Vest (SL)";
 
-	GVAR_CORE(pangolin,hasShield) = 1;
-	GVAR_CORE(arsenal,whitelists)[] = {"commando"};
+    GVAR(hasBattery) = 1;
+    GVAR(batteryCharge) = 100;
+    GVAR(batteryRecharge) = 4;
+    GVAR(regenTimeoutMod) = 1;
 
-	picture = QPATHTOF(data\ui\SL1.paa);
+    picture = QPATHTOF(data\ui\SL1.paa);
 
     class ItemInfo: ItemInfo {
-		containerClass = VEST_SUPPLYCLASS;
-		mass = 80;
-		vestType = "Rebreather";
-
+        containerClass = VEST_SUPPLYCLASS;
+        mass = 80;
+        vestType = "Rebreather";
         VEST_PROTECTION;
-	};
+    };
     class XtdGearInfo {
-		model = QGVAR(vest);
-		role = "SL";
-		camo = "White";
-	};
+        model = QGVAR(vest);
+        role = "SL";
+        camo = "White";
+    };
 };
