@@ -28,15 +28,13 @@ if !(_unit getVariable [QGVAR(batteryEnabled), false]) exitWith {};
 // particles
 [QGVAR(particleEffects), [_unit, ptcl_hit]] call CBA_fnc_globalEvent;
 
-// FIX: Handle _ammo whether it's passed as a config string or a custom array
 private _ammoClass = if (_ammo isEqualType []) then { _ammo select 0 } else { _ammo };
 private _hitVal = if (isClass (configFile >> "CfgAmmo" >> _ammoClass)) then {
     getNumber (configFile >> "CfgAmmo" >> _ammoClass >> "hit")
 } else {
-    15 // Default fallback damage if class is completely unknown
+    15 
 };
 
-// FIX: Safely parse body selection array
 private _hitBodypart = if (_selection isEqualType []) then { 
     if (count _selection > 0) then { _selection select 0 } else { "body" };
 } else { 
