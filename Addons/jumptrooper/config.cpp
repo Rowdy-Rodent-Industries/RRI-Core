@@ -13,8 +13,6 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QE_ADDON(equipment),
-            QE_ADDON(equipment_custom),
             "JLTS_characters_CloneArmor",
             "JLTS_characters_CloneArmor2"
         };

@@ -13,7 +13,6 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QE_ADDON(equipment),
             "ls_loadorder",
             "jlts_core"
         };
