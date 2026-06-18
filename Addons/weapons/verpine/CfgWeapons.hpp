@@ -20,7 +20,7 @@ class CfgWeapons {
     };
 
     class GWEAPON(Verpine): 3AS_DC15X_F {
-        scope = 1;
+        scope = 2;
         author = AUTHOR;
         displayName = "[SOB] Verpine Shatter Rifle";
         descriptionShort = "Verpine Shatter Rifle weapon platform used by the Special Operations Brigade.";

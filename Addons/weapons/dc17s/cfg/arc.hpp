@@ -104,11 +104,6 @@ class GWEAPON(DC17S_Dual_ARC): ls_weapon_dc17s_dual
     reloadMagazineSound[] = {"\ls\core\addons\sounds\weapons\reload\dc17s_dual.ogg",3.54813,1,10};
 
     muzzles[] = {"Right", "Left"};
-
-    ls_isWeaponType = 0;
-    GVAR_CORE(weapons_core,isDual) = 1;
-    GVAR_CORE(weapons_core,addLinkedItems) = 1;
-
 	maxRecoilSway = 0.0125;
 	swayDecaySpeed = 1.25;
 

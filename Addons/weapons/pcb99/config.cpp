@@ -22,6 +22,7 @@ class CfgPatches {
 
 class Mode_rri_Fake;
 
+#include "CfgEventHandlers.hpp"
 #include "CfgMovesBasic.hpp"
 #include "CfgGesturesMale.hpp"
 #include "CfgMagazineWells.hpp"

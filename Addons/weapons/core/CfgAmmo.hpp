@@ -203,7 +203,7 @@ class CfgAmmo {
     {
         hit = 1;
         indirectHot = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_BEANBAG;
+        GVAR(ammoType) = AMMOTYPE_BEANBAG;
     };
 
     class GAMMO(Stealth): GAMMO(Base)
@@ -320,7 +320,8 @@ class CfgAmmo {
         author = AUTHOR;
         effectfly = QGVAR(Rifle_Blue_Tracer);
 
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_STUN;
+        ls_weapons_ammoType = 1;
+        ls_weapons_stunDuration = 10;
 
         hit = 1;
         caliber = 0.869565;
@@ -378,7 +379,10 @@ class CfgAmmo {
         author = AUTHOR;
         effectfly = QGVAR(Rifle_Blue_Tracer);
 
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_ION;
+        ls_weapons_ammoType = 2;
+        ls_weapons_stunDuration = 10; // Time in seconds
+        ls_weapons_ionEngineDamage = 0.05; // % of engine damage
+        ls_weapons_ionFuelBurn = 0.05; // % of fuel to drain
 
         hit = 1;
         caliber = 0.869565;

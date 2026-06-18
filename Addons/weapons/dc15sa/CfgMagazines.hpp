@@ -14,7 +14,7 @@ class CfgMagazines {
         initSpeed = 528;
         ammo = QGAMMO(dc15sa);
 
-        GVAR_CORE(weapons_core,is15sRecharge) = 1;
+        ls_weapons_rechargeRate = 1;
     };
 
     class GMAG(dc19sa): GMAG(dc15sa) {

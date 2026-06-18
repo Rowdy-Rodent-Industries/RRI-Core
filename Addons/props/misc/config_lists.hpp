@@ -8,7 +8,6 @@
 "rri_props_misc_toolkit_item"
 
 #define UNIT_LIST \
-"rri_props_misc_shark_fren",\
 "rri_props_misc_barricade",\
 "rri_props_misc_toolbox",\
 "rri_props_misc_clacker",\

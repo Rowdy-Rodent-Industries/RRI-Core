@@ -4,3 +4,5 @@
 #define ITEM_LIST \
 
 #define UNIT_LIST \
+"rri_props_Prop_Base",\
+"rri_props_Cargo_Base"

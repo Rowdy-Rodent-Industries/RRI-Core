@@ -25,7 +25,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[SOB] PCB-99 Railgun";
 		descriptionShort = "PCB-99 used by marksmen of the Special Operations Brigade";
-        GVAR_CORE(weapons_core,hasSmartScope) = 1;
+        GVAR(hasSmartScope) = 1;
 
 		baseWeapon = QGWEAPON(pcb_base);
 
@@ -141,7 +141,7 @@ class CfgWeapons {
 		scope = 2;
 		author = AUTHOR;
 		displayName = "[SOB] PCB Scope";
-        GVAR_CORE(weapons_core,hasSmartScope) = 1;
+        GVAR(hasSmartScope) = 1;
 
 		picture = QPATHTOF(data\ui\Railgunscope_ca.paa);
 		UiPicture = QPATHTOF(data\ui\Railgunscope_ca.paa);

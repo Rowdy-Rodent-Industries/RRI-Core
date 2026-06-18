@@ -24,6 +24,9 @@ class CfgAmmo
 
     class GAMMO(Firepuncher_Ion): GAMMO(Firepuncher) {
         hit = 1;
-        GVAR_CORE(weapons_core,ammoType) = AMMOTYPE_ION;
+        ls_weapons_ammoType = 2;
+        ls_weapons_stunDuration = 10; // Time in seconds
+        ls_weapons_ionEngineDamage = 0.1; // % of engine damage
+        ls_weapons_ionFuelBurn = 0.1; // % of fuel to drain
     };
 };
